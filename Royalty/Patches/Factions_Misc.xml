@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== Change tribal label ========== -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+    <value>
+      <li>AR_Faction_Rome</li>
+      <li>AR_Faction_Hellas</li>
+      <li>AR_Faction_Sparta</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - Mediterran Factions</name>
+  <author>koni</author>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>koni.ar.medifactions</packageId>
+  <description>Ancient Rim is a mod series that expands the cultural and technoligial timeline beyond the vanilla neolithic, industrial and spacer stages.
+The Mediterran Factions mod populates RimWorld with factions that use the gear addet by Ancient Rim - Mediterran Edition/ SPQRim.
+
+Details:
+
+Rome and Sparta that have neutral or slightly negative relation to the player
+Hellada which is rather friendly
+Macedonia which is hostile and won't pursue for peace in its imperial interest
+
+
+	</description>
+  <modDependencies>
+    <li>
+      <packageId>koni.ar.core</packageId>
+      <displayName>Ancient Rim - core</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1907318659</steamWorkshopUrl>
+      <downloadUrl>https://www.dropbox.com/s/uisn03906v4be4y/AR_Core.7z?dl=0</downloadUrl>
+    </li>
+    <li>
+      <packageId>koni.ar.core</packageId>
+      <displayName>Ancient Rim - SPQRim</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/1734141653</steamWorkshopUrl>
+      <downloadUrl>https://www.dropbox.com/s/2r7hyie8mf0zjc3/AR_SPQRim.7z?dl=0</downloadUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
