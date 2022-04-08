@@ -16,11 +16,13 @@
       <displayName>JecsTools</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
     </li>
+	<!--
     <li>
       <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
       <displayName>Enable Oversized Weapons</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
     </li>
+	-->
     <li>
       <packageId>Mlie.AncientRimCore</packageId>
       <displayName>Ancient Rim - Core</displayName>
@@ -37,6 +39,7 @@
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>
     <li>Mlie.AncientRimSPQRim</li>
+	<li>syrchalis.processor.framework</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of konis mod

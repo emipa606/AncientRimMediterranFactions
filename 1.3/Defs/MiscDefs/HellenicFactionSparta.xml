@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <!--sparta-->
+  <FactionDef ParentName="FactionBase">
+    <defName>AR_Faction_Sparta</defName>
+    <label>Reformed Sparta</label>
+    <description>Like the Greek city-states this Rim World is somehow hosting, this Faction is an image of the Spartan society from Old Earth's classical antiquity, without its greatest draw backs. Sparta is unique both here and in its time on Old Earth because of its intensely stratified society- in which no man could promote himself -focused almost entirely on military conquest, slavery, and raiding the countryside for more slaves. Spartans also emphasized the (relative) equality of women, as compared to other tribal Factions, but their restrictions on slaves were far more harsh and had no upward mobility whatsoever. Like their Greek kin, these people have claimed to have lived here for millennia, something to which the Tribal Factions admit. \n \n On Old Earth, Sparta was actually rendered irrelevant and unable to fight back in the end because of their absence of upward mobility. The legendary Old Earth Spartiates, raised from birth, could lose their Spartan warrior status while a lower caste could never earn it! \n Old Earth Spartiates were amazingly cohesive, which counted for a lot in ancient formation warfare. The trade off was that Spartiate numbers were relatively tiny because of the low supply of Spartiates and the total unwillingness to even consider arming anyone who wasn't already member of their ruling class. In fact, Lysander, the greatest general and admiral in Old Earth Spartan history, who singlehandedly defeated Old Earth Athens, was a slave. Lysander could never become a true Old Earth Spartan, nor was he ever made one. \n Furthermore, in addition to killing off "imperfect" children, any "imperfect" survivors were adopted into the slave class. Old Earth Sparta actively ensured that only their ruling class could become Spartans, and thus, unless they were already born into an eligible class, they were forsaken to servitude. \n \n It seems that these Spartans learned from that mistake and have allowed lower, free castes to earn the ability to be Spartiates, barring only slaves. This demographic reversal has ensured the survival and refinement of their culture. \n With a meritocratic ability for low-level freemen classes to "earn" Spartiate status unseen in ancient Old Earth, this Sparta poses a threat that no Old Earth Spartan could ever maintain. \n On this planet, Sparta is, and has always been, a fiercely warlike society, so one should never disregard the threat of this civilization. Their soldiers are more powerful than they look. Rim Spartans wield shields that deflect any melee weapon to this day. They are still an existential threat to any developing colony or base that has not fortified itself. Either befriend them or avoid them at all costs if you value your life.</description>
+    <pawnsPlural>Lakedonians</pawnsPlural>
+    <pawnSingular>Lakedaimon</pawnSingular>
+	<earliestRaidDays>25</earliestRaidDays>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>0.9</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Archagetai</leaderTitle>
+    <factionIconPath>Icon/Lambda</factionIconPath>
+	<naturalEnemy>true</naturalEnemy>
+    <colorSpectrum>
+      <li>(255,235,122)</li>
+      <li>(180,173,150)</li>
+      <li>(183,122,61)</li>
+    </colorSpectrum>
+    <factionNameMaker>NamerFactionSparta</factionNameMaker>
+    <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+		<li MayRequire="shavius.classical.flavour">
+			<categories>
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+			</categories>
+			<commonality>0.85</commonality>
+		</li>
+      <li>
+        <categories>
+          <li>TribalHunter</li>
+        </categories>
+        <commonality>0.85</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+        <commonality>0.01</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>ImperialFighter</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+    </backstoryFilters>
+    <geneticVariance>0</geneticVariance>
+    <allowedCultures>
+      <li>Hellian</li>
+    </allowedCultures>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <!-- <li>Base_Neolithic_Standard</li> -->
+	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
+	  <li>Caravan_Neolithic_Slaver</li>
+	  <li>Caravan_Neolithic_WarMerchant</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-5</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0, 300)</li>
+        <li>(70, 300)</li>
+        <li>(700, 350)</li>
+        <li>(1300, 500)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+	</requiredMemes>
+	
+	<disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+		
+		<!-- Forbidden Mod Memes -->
+		<li MayRequire="llunak.MorePrecepts">Pacifism</li>
+		<li MayRequire="Qux.factionhippie">PeaceLove</li>
+		<li MayRequire="Zezz.Altrumeme">Altruism</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+		<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+		<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+		<li MayRequire="Ludeon.RimwWorld.Ideology">SZ_Structure_CultureQiYuan</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophilia</li>
+	</disallowedMemes>
+	
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+		
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Exalted</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+	</disallowedPrecepts>
+
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+		<!-- Earth and water. This simple tribute is all we desire. -->
+          <AR_Spartan>200</AR_Spartan>
+		  <AR_Toxotes>190</AR_Toxotes>
+		  <AR_Hoplite>250</AR_Hoplite>
+          <AR_Psilos>80</AR_Psilos>
+		  <AR_General>1</AR_General>
+		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
+		  <AR_Councilman>5</AR_Councilman>
+        </options>
+      </li>
+      <li>
+	  	<!-- You bring the crowns and heads of conquered kings to the city steps. -->
+		<!-- You threaten my people with slavery (to you) and death! You insult my queen! -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <AR_HellenicSword>250</AR_HellenicSword>
+          <AR_Hoplite>250</AR_Hoplite>
+          <AR_Peltast>250</AR_Peltast>
+          <AR_Toxotes>250</AR_Toxotes>
+          <AR_Psilos>250</AR_Psilos>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">250</VFEC_TownGuard>
+          <AR_Spartan>1500</AR_Spartan> <!-- Sparta was actually rendered irrelevant and unable to fight back in the end because people could LOSE their Spartan warrior status but could never EARN it unless they were already born into the ruling class. In almost every case, the greatest Spartan generals ever (e.g. Lysander) were slaves, not Spartiates. For the purposes of this game, we are assuming that this was changed and any freeman could earn the right to be a Spartiate. -->
+          <AR_HopliteHeavy>175</AR_HopliteHeavy>
+		  <TSP_AR_GunSpartan>50</TSP_AR_GunSpartan> <!-- The WHAT? -->
+		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
+          <AR_General>100</AR_General>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">40</VFEC_ScorpionOperator>
+        </options>
+      </li>
+      <li>
+	  <!-- No one, Greek nor Persian, NO ONE harms a messenger! -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <AR_Trader>1</AR_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>5</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <AR_HellenicSword>250</AR_HellenicSword>
+          <AR_Hoplite>250</AR_Hoplite>
+          <AR_Peltast>250</AR_Peltast>
+          <AR_Toxotes>250</AR_Toxotes>
+          <AR_Psilos>250</AR_Psilos>
+          <AR_Spartan>300</AR_Spartan>
+          <AR_HopliteHeavy>100</AR_HopliteHeavy>
+		  <AR_Preatorian>20</AR_Preatorian>
+		  <AR_General>75</AR_General>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+		  <AR_Councilman>5</AR_Councilman>
+		  <Slave>5</Slave>
+        </guards>
+      </li>
+      <li>
+		<!-- Oh, I've chosen my words carefully, Persian. Perhaps you should have done the same. -->
+        <kindDef>Settlement</kindDef>
+        <options>
+		  <!-- Deformed and weak Spartan babies were left to die, those who survived were not admitted as full citizens, but rather, enslaved themselves. They are not represented here. -->
+		  <TSP_AR_CitizenGirl>400</TSP_AR_CitizenGirl> <!-- Sparta was abnormally tolerant of women -->
+		  
+		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
+		  <AR_Councilman>15</AR_Councilman>
+		  
+          <AR_HellenicSword>250</AR_HellenicSword>
+          <AR_Hoplite>250</AR_Hoplite>
+          <AR_Peltast>200</AR_Peltast>
+          <AR_Toxotes>200</AR_Toxotes>
+          <AR_Psilos>250</AR_Psilos>
+          <AR_Spartan>600</AR_Spartan>
+          <AR_HopliteHeavy>300</AR_HopliteHeavy>
+		  <AR_Preatorian>40</AR_Preatorian>
+          <AR_General>120</AR_General>
+		  <TSP_AR_GunSpartan>100</TSP_AR_GunSpartan> <!-- The WHAT? -->
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+		  <Slave>200</Slave>
+        </options>
+      </li>
+    </pawnGroupMakers>
+	
+	<!-- This is blasphemy! This is madness! -->
+
+	<!-- Sparta had two kings, but that cannot be modelled here -->
+	<!-- One king was the "war king", and he is represented here as a General -->
+    <fixedLeaderKinds>
+      <li>AR_General</li>
+    </fixedLeaderKinds>
+	
+    <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
+	
+	<!-- Madness? -->
+	
+	<!-- THIS -->
+	<!-- IS -->
+	<!-- S P A R T A !!! -->
+  </FactionDef>
+</Defs>

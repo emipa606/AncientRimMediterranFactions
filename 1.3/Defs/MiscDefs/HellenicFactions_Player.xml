@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>AR_PlayerFaction</defName>
+    <label>Hellenic colony</label>
+    <description>Your own Greek colony.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>AR_Colonist</basicMemberKind>
+    <pawnSingular>plebian</pawnSingular>
+    <pawnsPlural>plebians</pawnsPlural>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+		<li MayRequire="shavius.classical.flavour">
+			<categories>
+				<li MayRequire="shavius.classical.flavour">Classical</li>
+			</categories>
+			<commonality>1</commonality>
+		</li>
+		<li>
+			<categories>
+				<li>Tribal</li>
+			</categories>
+			<commonality>0.5</commonality>
+		</li>
+		<li>
+			<categories>
+				<li>ImperialCommon</li>
+			</categories>
+			<commonality>0.1</commonality>
+		</li>
+    </backstoryFilters>
+    <factionIconPath>Icon/LaurelWreath</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerSettlementGreek</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerSettlementGreek</factionNameMaker>
+    <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+		<li>TribalStart</li>
+		<li>RomanStart</li>
+		<li>ClassicalStart</li>
+    </startingResearchTags>
+    <allowedCultures>
+      <li>Hellian</li>
+    </allowedCultures>
+    <apparelStuffFilter>
+		<thingDefs>
+			<li>Cloth</li>
+			<li>Leather_Pig</li>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+		</thingDefs>
+    </apparelStuffFilter>
+    <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+  </FactionDef>
+</Defs>

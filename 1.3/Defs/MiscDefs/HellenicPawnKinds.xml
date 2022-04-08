@@ -1,20 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <PawnKindDef Name="PawnRomeBase" Abstract="True">
-    <defaultFactionType>AR_Faction_Rome</defaultFactionType>
+    <!-- <defaultFactionType>AR_Faction_Rome</defaultFactionType> -->
     <chemicalAddictionChance>0.045</chemicalAddictionChance>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>15~24</initialResistanceRange>
-    <backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
-    <backstoryCategories>
-      <li>Outlander</li>
-    </backstoryCategories>
+	<!--
+    <backstoryCategories MayRequire="shavius.classical.flavour">
+		<li MayRequire="shavius.classical.flavour">Classical</li>
+	</backstoryCategories>
+	-->
+	<apparelTags>
+      <li>RomeCivil</li>
+    </apparelTags>
+	<invFoodDef>AR_Salad</invFoodDef>
+	<inventoryOptions>
+      <skipChance>0.5</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>33</choiceChance>
+          <thingDef>AR_RawOlives</thingDef>
+          <countRange>
+            <min>15</min>
+            <max>55</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>33</choiceChance>
+          <thingDef>AR_OliveOil</thingDef>
+          <countRange>
+            <min>15</min>
+            <max>40</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>AR_RawArtichoke</thingDef>
+          <countRange>
+            <min>15</min>
+            <max>40</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>33</choiceChance>
+          <thingDef>AR_RawPomegranate</thingDef>
+          <countRange>
+            <min>15</min>
+            <max>40</max>
+          </countRange>
+        </li>
+		<li>
+			<choiceChance>33</choiceChance>
+			<thingDef>VFEC_Jerky</thingDef>
+			<countRange>
+				<min>20</min>
+				<max>25</max>
+			</countRange>
+		</li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
   </PawnKindDef>
+
   <PawnKindDef Name="RomeCitizen" ParentName="PawnRomeBase">
     <defName>AR_Citizen</defName>
-    <label>citizen</label>
+    <label>civitas</label>
+	<labelPlural>civitates</labelPlural>
+	<fixedGender>Male</fixedGender> <!-- Separating females from males so that only men wear togas, which was a thing since 509 BC in the Roman Republic and beyond -->
     <race>Human</race>
-    <combatPower>25</combatPower>
+    <combatPower>30</combatPower>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <initialWillRange>1~3</initialWillRange>
@@ -25,15 +78,18 @@
     </gearHealthRange>
     <apparelMoney>
       <min>50</min>
-      <max>250</max>
+      <max>500</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>72</min>
-      <max>100</max>
+      <min>80</min>
+      <max>500</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
+		<li>Toolagri</li>
+		<li>NeolithicMelee</li>
+		<li>NeolithicMeleeBasic</li>
+		<li>Knife</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -47,14 +103,86 @@
     <apparelTags>
       <li>RomeCivil</li>
     </apparelTags>
+	<!-- ALL Roman citizens wore togas, the toga was LITERALLY the symbol of citizenship -->
+	<apparelRequired>
+      <li>AR_Toga</li>
+    </apparelRequired>
   </PawnKindDef>
+  
+  <PawnKindDef Name="RomeSocialiteGirl" ParentName="PawnRomeBase">
+    <defName>TSP_AR_CitizenGirl</defName>
+    <label>plebian</label>
+	<labelPlural>plebes</labelPlural>
+	<fixedGender>Female</fixedGender> <!-- Separating females from males so that only men wear togas, which was a sex-segregated thing since 509 BC in the Roman Republic and beyond -->
+    <race>Human</race>
+    <combatPower>5</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+	<canBeSapper>true</canBeSapper>
+    <initialWillRange>1~6</initialWillRange>
+    <initialResistanceRange>2~7</initialResistanceRange>
+	<requiredWorkTags>
+      <li>Intellectual</li>
+	  <li>Social</li>
+	</requiredWorkTags>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>0.9</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>600</min>
+      <max>2500</max> <!-- Roman women tended to be artisans -->
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>80</min>
+      <max>500</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>Toolagri</li>
+		<li>Neolithic</li>
+		<li>NeolithicMelee</li>
+		<li>NeolithicMeleeBasic</li>
+		<li>NeolithicMeleeDestructive</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.01</techHediffsChance>
+    <invNutrition>3</invNutrition>
+    <apparelTags>
+      <li>RomeCivil</li>
+    </apparelTags>
+	<apparelRequired>
+      <li>Cape</li> <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
+	  <li>AR_Tunic</li>
+    </apparelRequired>
+  </PawnKindDef>
+  
   <PawnKindDef Name="RomePatrician" ParentName="RomeCitizen">
     <defName>AR_Councilman</defName>
     <label>Senator</label>
+	<labelFemale>Senatrix</labelFemale>
     <labelPlural>Senators</labelPlural>
-    <factionLeader>true</factionLeader>
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
+	<factionLeader>true</factionLeader>
+	<fixedGender>Male</fixedGender>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	<requiredWorkTags>
+      <li>Intellectual</li>
+	  <li>Social</li>
+    </requiredWorkTags>
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
@@ -64,13 +192,15 @@
       <max>1800</max>
     </apparelMoney>
     <apparelTags>
-      <li>RomeOfficer</li>
+		<li>RomeCivil</li>
+		<li>RomeNoble</li>
     </apparelTags>
-    <apparelRequired>
-      <li>AR_LaurelWreath</li>
+    <apparelRequired Inherit="False">
+		<!-- Roman Senators did not wear laurel wreaths -->
       <li>AR_Toga</li>
     </apparelRequired>
   </PawnKindDef>
+
   <PawnKindDef ParentName="RomePatrician">
     <defName>AR_Trader</defName>
     <label>mercator</label>
@@ -80,17 +210,34 @@
       <max>3.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>900</min>
-      <max>1800</max>
+      <min>1000</min>
+      <max>5000</max>
     </apparelMoney>
+	<apparelTags>
+      <li>RomeCivil</li>
+	  <li>RomeNoble</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+		<!-- Roman Senators did not wear laurel wreaths -->
+      <li>AR_Toga</li>
+    </apparelRequired>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Legionary</defName>
-    <label>Legionary</label>
+    <label>Legionaire</label>
     <race>Human</race>
+	<fixedGender>Male</fixedGender>
     <canBeSapper>true</canBeSapper>
     <combatPower>60</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
+	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+      <li MayRequire="shavius.classical.flavour">
+        <categoriesAdulthood>
+		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -105,8 +252,9 @@
       <max>1000</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
+      <li>RomeSoldier</li>
       <li>Javeliner</li>
+	  <li>Lance</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -147,6 +295,13 @@
     <canBeSapper>true</canBeSapper>
     <combatPower>50</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -161,7 +316,7 @@
       <max>600</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
+      <li>RomeSoldier</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -198,7 +353,14 @@
     <labelFemalePlural>sagittarae</labelFemalePlural>
     <race>Human</race>
     <combatPower>50</combatPower>
-    <maxGenerationAge>65</maxGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -210,14 +372,16 @@
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>200</min>
-      <max>600</max>
+      <max>1000</max>
     </weaponMoney>
     <weaponTags>
-      <li>BowMen</li>
+		<li>BowMen</li>
+		<li>MedievalRangedBasic</li>
+		<li>MedievalRangedDecent</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
-      <max>300</max>
+      <max>500</max>
     </techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
@@ -240,6 +404,13 @@
     <race>Human</race>
     <combatPower>55</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -251,10 +422,12 @@
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>250</min>
-      <max>600</max>
+      <max>1600</max> <!-- These were considered early, elite commanders -->
     </weaponMoney>
     <weaponTags>
       <li>SpearMen</li>
+	  <li>Lance</li>
+	  <li>NeolithicMeleeAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -275,8 +448,8 @@
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
-          <min>200</min>
-          <max>2000</max>
+          <min>1850</min>
+          <max>3000</max>
         </shieldMoney>
         <shieldTags>
           <li>ShieldsRomeLegion</li>
@@ -286,12 +459,21 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Centurion</defName>
-    <label>centurio</label>
+    <label>centurion</label>
+	<fixedGender>Male</fixedGender>
     <race>Human</race>
-    <combatPower>60</combatPower>
+    <combatPower>80</combatPower>
     <itemQuality>Good</itemQuality>
-    <minGenerationAge>45</minGenerationAge>
-    <maxGenerationAge>65</maxGenerationAge>
+    <minGenerationAge>30</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+		  <li>ImperialFighter</li>
+		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>1.5</min>
       <max>2.8</max>
@@ -303,10 +485,11 @@
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>600</min>
-      <max>1000</max>
+      <max>1100</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
+      <li>LongSword</li>
+	  <li>Lance</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -320,11 +503,15 @@
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeOfficer</li>
+	  <li>Centurion</li>
+	  <li>ClassicalMilitary</li>
+	  <li>ClassicalMilitaryClassy</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaSegmentata</li>
       <li>AR_GaleaCenturio</li>
     </apparelRequired>
+	
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -337,13 +524,25 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+  
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Preatorian</defName>
     <label>praetorian</label>
     <race>Human</race>
+	<fixedGender>Male</fixedGender>
     <combatPower>80</combatPower>
-    <itemQuality>Superior</itemQuality>
-    <maxGenerationAge>65</maxGenerationAge>
+    <itemQuality>Excellent</itemQuality>
+    <maxGenerationAge>50</maxGenerationAge>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+		  <li>ImperialFighter</li>
+		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>1.5</min>
       <max>2.8</max>
@@ -354,11 +553,15 @@
     </apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>1200</min>
-      <max>2800</max>
+      <min>1800</min>
+      <max>3000</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
+      <li>RomeSoldier</li>
+	  <li>LongSword</li>
+	  <li>NeolithicHeavy</li>
+	  <li>NeolithicMeleeHeavy</li>
+	  <li>NeolithicMeleeAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -379,6 +582,7 @@
     </inventoryOptions>
     <apparelTags>
       <li>RomeCivil</li>
+	  <li>RomeOfficer</li>
       <li>Praetorian</li>
     </apparelTags>
     <apparelRequired>
@@ -398,29 +602,42 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_General</defName>
-    <label>General</label>
+    <label>general</label>
     <race>Human</race>
+	<fixedGender>Male</fixedGender>
     <combatPower>100</combatPower>
-    <itemQuality>Legendary</itemQuality>
-    <factionLeader>true</factionLeader>
-    <minGenerationAge>45</minGenerationAge>
+    <itemQuality>Excellent</itemQuality>
+    <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
+	<factionLeader>true</factionLeader>
+	<backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ImperialFighter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
     <gearHealthRange>
       <min>2.8</min>
       <max>3.6</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>1000</min>
-      <max>2100</max>
+      <min>900</min>
+      <max>9000</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>900</min>
-      <max>1800</max>
+      <min>2000</min>
+      <max>9000</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomanSoldier</li>
-    </weaponTags>
+      <li>RomeSoldier</li>
+	  <li>LongSword</li>
+	  <li>Lance</li>
+    </weaponTags>	
     <techHediffsMoney>
       <min>200</min>
       <max>300</max>
@@ -458,6 +675,118 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
+	<PawnKindDef ParentName="RomePatrician">
+		<defName>TSP_AR_Roman_Emperor</defName>
+		<label>Imperator</label>
+		<labelFemale>Imperatrix</labelFemale>
+		<race>Human</race>
+		<fixedGender>Male</fixedGender>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ImperialRoyal</li>
+					<li>ImperialFighter</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<combatPower>100</combatPower>
+		<itemQuality>Legendary</itemQuality>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>60</maxGenerationAge>
+		<gearHealthRange>
+			<min>2</min>
+			<max>4</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>5000</min>
+			<max>20000</max>
+		</apparelMoney>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>6000</min>
+			<max>16000</max>
+		</weaponMoney>
+		<weaponTags>
+			<!-- <li>RomeSoldier</li> -->
+			<li>Praetorian</li>
+			<li>NeolithicHeavy</li>
+			<li>NeolithicRangedChief</li>
+			<li>MedievalHeavy</li>
+			<li>MedievalRangedHeavy</li>
+			<li>NeolithicMeleeHeavy</li>
+			<li>LongSword</li>
+			<li>Lance</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>3000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.001</techHediffsChance>
+		<invNutrition>5</invNutrition>
+		<invFoodDef>MealLavish</invFoodDef>
+		<inventoryOptions>
+			<skipChance>0.05</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>33</choiceChance>
+					<thingDef>AR_Salad</thingDef>
+					<countRange>
+						<min>3</min>
+						<max>5</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>33</choiceChance>
+					<thingDef>AR_FryedMeat</thingDef>
+					<countRange>
+						<min>3</min>
+						<max>5</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>10</choiceChance>
+					<thingDef>Gold</thingDef>
+					<countRange>
+						<min>15</min>
+						<max>80</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<apparelTags>
+			<li>Praetorian</li>
+			<li>RomeOfficer</li>
+			<li>RomeNoble</li>
+			<li>RomeRoyal</li>
+			<li>RomanEmperor</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>AR_LaurelWreath</li>
+			<li>AR_Toga</li>
+			<li>AR_Sagum</li>
+		</apparelRequired>
+		<modExtensions>
+			<li Class="PawnShields.ShieldPawnGeneratorProperties">
+				<shieldMoney>
+					<min>5000</min>
+					<max>10000</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>ShieldsRomeLegion</li>
+				</shieldTags>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
   <!--hellenic pawns -->
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HellenicSword</defName>
@@ -477,10 +806,12 @@
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>200</min>
-      <max>600</max>
+      <max>1600</max>
     </weaponMoney>
     <weaponTags>
-      <li>Hellenic</li>
+      <li>MeleePiercer</li>
+	  <li>Sword</li>
+	  <li>LongSword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -507,6 +838,7 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Hoplite</defName>
     <label>hoplite</label>
@@ -521,13 +853,14 @@
       <min>300</min>
       <max>1200</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>500</min>
-      <max>1000</max>
+      <min>250</min>
+      <max>600</max>
     </weaponMoney>
     <weaponTags>
-      <li>SpearMen</li>
+	  <li>SimpleHoplite</li>
+	  <li>Spear</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -554,11 +887,12 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HopliteHeavy</defName>
     <label>heavy hoplite</label>
     <race>Human</race>
-    <combatPower>55</combatPower>
+    <combatPower>75</combatPower>
     <itemQuality>Superior</itemQuality>
     <maxGenerationAge>65</maxGenerationAge>
     <gearHealthRange>
@@ -571,11 +905,11 @@
     </apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>1000</min>
-      <max>2000</max>
+      <min>800</min>
+      <max>5000</max>
     </weaponMoney>
     <weaponTags>
-      <li>SpearMen</li>
+		<li>Lance</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -605,9 +939,10 @@
     <defName>AR_SwordMakedon</defName>
     <label>Macedonian swordsmen</label>
     <race>Human</race>
-    <canBeSapper>true</canBeSapper>
-    <combatPower>45</combatPower>
+    <canBeSapper>false</canBeSapper>
+    <combatPower>65</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
+	<fixedGender>Male</fixedGender>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -619,11 +954,20 @@
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>1000</min>
-      <max>2000</max>
+      <max>3000</max>
     </weaponMoney>
     <weaponTags>
-      <li>Hellenic</li>
+      <!-- <li>Hellenic</li> -->
+	  <li>LongSword</li>
+	  <li>Sword</li>
+	  <li>MeleePiercer</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>MedievalMeleeDecent</li>
+	  <li>MedievalMeleeAdvanced</li>
     </weaponTags>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
     <techHediffsMoney>
       <min>200</min>
       <max>300</max>
@@ -635,6 +979,7 @@
     <invNutrition>3.0</invNutrition>
     <apparelTags>
       <li>Macedon</li>
+	  <li>HellenicHeavy</li>
     </apparelTags>
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -648,12 +993,13 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HopliteMakedon</defName>
     <label>Macedonian hoplite</label>
     <race>Human</race>
-    <combatPower>45</combatPower>
-    <maxGenerationAge>65</maxGenerationAge>
+    <combatPower>55</combatPower>
+    <maxGenerationAge>70</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -668,8 +1014,14 @@
       <max>2000</max>
     </weaponMoney>
     <weaponTags>
-      <li>SpearMen</li>
+		<li>Spear</li>
+		<li>SimpleHoplite</li>
+		<li>NeolithicMeleeDecent</li>
+		<li>Javeliner</li>
     </weaponTags>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
     <techHediffsMoney>
       <min>200</min>
       <max>300</max>
@@ -694,44 +1046,72 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Spartan</defName>
-    <label>spartan</label>
+    <label>Spartiate</label>
+	<labelPlural>Spartiates</labelPlural>
     <race>Human</race>
-    <combatPower>45</combatPower>
-    <itemQuality>Legendary</itemQuality>
-    <maxGenerationAge>65</maxGenerationAge>
+    <combatPower>75</combatPower>
+	<fixedGender>Male</fixedGender>
+    <itemQuality>Excellent</itemQuality>
+	<minGenerationAge>21</minGenerationAge>
+    <maxGenerationAge>40</maxGenerationAge>
+	<isFighter>true</isFighter>
+	<canBeSapper>true</canBeSapper>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
     <gearHealthRange>
-      <min>0.5</min>
-      <max>1.0</max>
+      <min>1.0</min>
+      <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
       <min>100</min>
-      <max>500</max>
+      <max>2750</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>3000</min>
-      <max>5000</max>
+      <min>4000</min>
+      <max>8000</max>
     </weaponMoney>
     <weaponTags>
-      <li>SpearMen</li>
+	  <li>LongSword</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>MedievalMeleeAdvanced</li>
+	  <li>MedievalMeleeHeavy</li>
+	  <li>MedievalHeavy</li>
+	  <li>HellenicHeavy</li>
+	  <li>Lance</li>
     </weaponTags>
+	<invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
       <min>200</min>
       <max>300</max>
     </techHediffsMoney>
     <techHediffsTags>
-      <li>Simple</li>
+      <li>ImperialCommon</li>
     </techHediffsTags>
-    <techHediffsChance>0.001</techHediffsChance>
+    <techHediffsChance>0.05</techHediffsChance>
     <invNutrition>3.0</invNutrition>
+    <techHediffsRequired>
+		<li>StoneskinGland</li>
+    </techHediffsRequired>
     <apparelTags>
-      <li>Spartan</li>
+		<li>Spartan</li>
+		<li>ClassicalMilitary</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_Chalmys</li>
     </apparelRequired>
+	
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -744,6 +1124,82 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
+
+  <PawnKindDef ParentName="PawnRomeBase">
+    <defName>TSP_AR_GunSpartan</defName>
+    <label>magna tormentorum</label> <!-- Fictional Spartan "Artilleryman", as even a revolver would be seen as such by them. Google says this name has to do with artillery and is where "torment" comes from. -->
+	<labelPlural>magna tormentora</labelPlural>
+    <race>Human</race>
+    <combatPower>120</combatPower>
+	<fixedGender>Male</fixedGender>
+    <itemQuality>Legendary</itemQuality>
+	<minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>40</maxGenerationAge>
+	<isFighter>true</isFighter>
+	<canBeSapper>false</canBeSapper>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+	<requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <gearHealthRange>
+      <min>1.0</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>8000</min>
+      <max>10000</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>200</min>
+      <max>600</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>Revolver</li>
+		<li>SimpleGun</li>
+    </weaponTags>
+	<invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
+    <techHediffsMoney>
+      <min>50</min>
+      <max>1000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>ImperialCommon</li>
+    </techHediffsTags>
+    <techHediffsChance>0.33</techHediffsChance>
+    <invNutrition>6.0</invNutrition>
+    <techHediffsRequired>
+		<li>StoneskinGland</li>
+    </techHediffsRequired>
+    <apparelTags>
+		<li>Spartan</li>
+		<li>Praetorian</li>
+		<li>Toxotes</li>
+    </apparelTags>
+    <apparelRequired>
+		<li>AR_Chalmys</li>
+    </apparelRequired>
+	
+    <modExtensions>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+        <shieldMoney>
+          <min>10000</min>
+          <max>20000</max>
+        </shieldMoney>
+        <shieldTags>
+          <li>ShieldsGreekSparta</li>
+        </shieldTags>
+      </li>
+    </modExtensions>
+  </PawnKindDef>  
+  
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Peltast</defName>
     <label>peltast</label>
@@ -766,6 +1222,7 @@
     </weaponMoney>
     <weaponTags>
       <li>Javeliner</li>
+	  <!-- <li>ClassicalRangedJavelin</li> -->
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -782,8 +1239,8 @@
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
-          <min>0</min>
-          <max>500</max>
+          <min>500</min>
+          <max>1500</max>
         </shieldMoney>
         <shieldTags>
           <li>ShieldsGreekLight</li>
@@ -791,13 +1248,14 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Psilos</defName>
     <label>psilos</label>
     <race>Human</race>
     <canBeSapper>true</canBeSapper>
-    <combatPower>40</combatPower>
-    <maxGenerationAge>65</maxGenerationAge>
+    <combatPower>10</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -809,10 +1267,10 @@
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>200</min>
-      <max>600</max>
+      <max>1600</max>
     </weaponMoney>
     <weaponTags>
-      <li>Slinger</li>
+		<li>Slinger</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -838,12 +1296,20 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Toxotes</defName>
     <label>toxotes</label>
     <race>Human</race>
-    <combatPower>40</combatPower>
+    <combatPower>60</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+          <li>TribalHunter</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -852,13 +1318,22 @@
       <min>200</min>
       <max>600</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+	<apparelRequired>
+		<li>AR_Boeotian</li>
+    </apparelRequired>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>200</min>
       <max>600</max>
     </weaponMoney>
     <weaponTags>
-      <li>BowMen</li>
+		<li>BowMen</li>
+		<li>MedievalRanged</li>
+		<li>MedievalRangedBasic</li>
+		<li>MedievalRangedDecent</li>
+		<li>NeolithicRanged</li>
+		<li>NeolithicRangedDecent</li>
+		<li>NeolithicRangedAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -873,5 +1348,17 @@
       <li>Hellenic</li>
       <li>Toxotes</li>
     </apparelTags>
+	<modExtensions>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+		<!-- Shields were integral to this -->
+        <shieldMoney>
+          <min>1000</min>
+          <max>1500</max>
+        </shieldMoney>
+        <shieldTags>
+          <li>ShieldsGreekLight</li>
+        </shieldTags>
+      </li>
+    </modExtensions>
   </PawnKindDef>
 </Defs>
