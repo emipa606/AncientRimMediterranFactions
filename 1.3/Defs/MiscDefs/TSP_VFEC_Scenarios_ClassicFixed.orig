@@ -4,35 +4,30 @@
 
 <!-- Since Scenario Defs cannot be Patched, I had to remove the VFE Classical Mod's starting Scenario and duplicate it here. If the VFE Classical Mod is not installed, this does not show up. -->
 
-	<ScenarioDef MayRequire="oskarpotocki.vfe.classical">
-		<defName MayRequire="oskarpotocki.vfe.classical">VFEC_NewEmpireFixed</defName>
-		<label MayRequire="oskarpotocki.vfe.classical">Ave You!</label>
-		<description MayRequire="oskarpotocki.vfe.classical">
-Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden.
+	<ScenarioDef>
+		<defName>VFEC_NewEmpireFixed</defName>
+		<label>Ave You!</label>
+		<description>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden.
 		
 You gathered a few of the senators that sided with you and left the comforts of the Republics. It is time you formed your own empire, on your terms, and under your rule. Glory to the empire. Glory to the Emperor!
 		
-Note: You start as an enemy to all classical antiquity Factions, making any hopes of swaying Senators extremely difficult.
-		</description>
-		<scenario MayRequire="oskarpotocki.vfe.classical">
-			<summary MayRequire="oskarpotocki.vfe.classical">A gathering of noblemen with a grand purpose. It's your own Classical experience!</summary>
-			<playerFaction MayRequire="oskarpotocki.vfe.classical">
-				<def MayRequire="oskarpotocki.vfe.classical">PlayerFaction</def>
-				<factionDef MayRequire="oskarpotocki.vfe.classical">VFEC_NewEmpire</factionDef>
+Note: All classical antiquity Factions are permanently hostile to your "pretender" attempts. This will make peaceful unification impossible. Cross your own Rubicon, cast your die, and show them who truly rules the Rim!</description>
+		<scenario>
+			<summary>A gathering of noblemen with a grand purpose. It's your own Classical experience!</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>VFEC_NewEmpire</factionDef>
 			</playerFaction>
-			<parts MayRequire="oskarpotocki.vfe.classical">
+			
+			<parts>
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>
-Squabbling in the Senate and cutthroat politics left you with distaste for anything regarding the will of the people.
+					<text>Squabbling in the Senate and cutthroat politics left you with distaste for anything regarding the will of the people.
 
-You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republics. It is time you formed your own empire, on your terms, and under your rule.
+You deserve so much more; your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republics. It is time you formed your own empire, on your terms, and under your rule.
 
-Glory to the empire. Glory to the Emperor! 
-
-AVE CAESAR!
-					</text>
+AVE CAESAR!</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 			
@@ -40,7 +35,7 @@ AVE CAESAR!
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>4</pawnCount>
-					<pawnChoiceCount>12</pawnChoiceCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -58,11 +53,10 @@ AVE CAESAR!
 					<need>Food</need>
 					<levelRange>0~0.1</levelRange>
 				</li>
-						
-				<li Class="ScenPart_StartingAnimal">
-					<def>StartingAnimal</def>
-					<animalKind>Pig</animalKind>
-					<count>1</count>
+				
+				<li Class="ScenPart_PawnFilter_Age">
+					<def>PawnFilter_Age</def>
+					<allowedAgeRange>21~45</allowedAgeRange>
 				</li>
 
 				<!-- Player starting things -->
@@ -78,10 +72,16 @@ AVE CAESAR!
 					<count>100</count>
 				</li>
 						
-				<li Class="ScenPart_StartingThing_Defined" MayRequire="oskarpotocki.vfe.classical">
-					<def MayRequire="oskarpotocki.vfe.classical">StartingThing_Defined</def>
-					<thingDef MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</thingDef>
-					<count MayRequire="oskarpotocki.vfe.classical">400</count>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>VFEC_Jerky</thingDef>
+					<count>400</count>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Jade</stuff>
 				</li>
 					
 				<li Class="ScenPart_StartingThing_Defined">
@@ -93,37 +93,26 @@ AVE CAESAR!
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>AR_Toga</thingDef>
-					<stuff>Leather_Pig</stuff>
+					<stuff>WoolSheep</stuff>
+					<count>3</count>
 				</li>
-						
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>AR_Toga</thingDef>
-					<stuff>Leather_Pig</stuff>
-				</li>
-						
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>AR_Toga</thingDef>
-					<stuff>Leather_Pig</stuff>
-				</li>
-						
+
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>VFEC_Toga</thingDef>
-					<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
-				</li>
-						
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>AR_LaurelWreath</thingDef>
-					<count>1</count>
+					<stuff>VFEC_Tyrian</stuff>
 				</li>
 						
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>AR_Sagum</thingDef>
-					<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
+					<stuff>VFEC_Tyrian</stuff>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_LaurelWreath</thingDef>
+					<count>1</count>
 				</li>
 						
 				<li Class="ScenPart_StartingThing_Defined">
@@ -181,11 +170,11 @@ AVE CAESAR!
 					<count>1000</count>
 				</li>
 
-				<li Class="KCSG.ScenPart_AddStartingStructure" MayRequire="oskarpotocki.vfe.classical">
-					<def MayRequire="oskarpotocki.vfe.classical">VFEC_AddStartingStructure</def>
-					<structureLabel MayRequire="oskarpotocki.vfe.classical">A small camp</structureLabel>
-					<nearMapCenter MayRequire="oskarpotocki.vfe.classical">True</nearMapCenter>
-					<chooseFrom MayRequire="oskarpotocki.vfe.classical">
+				<li Class="KCSG.ScenPart_AddStartingStructure">
+					<def>VFEC_AddStartingStructure</def>
+					<structureLabel>A small camp</structureLabel>
+					<nearMapCenter>False</nearMapCenter>
+					<chooseFrom>
 						<li>VFEC_Camp1</li>
 						<li>VFEC_Camp2</li>
 						<li>VFEC_Camp3</li>
@@ -194,52 +183,84 @@ AVE CAESAR!
 					</chooseFrom>
 				</li>
 
+				<!--
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Pig</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+				</li>
+				-->
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
 					<factionDef>VFEC_CentralRepublic</factionDef>
+					<alwaysHostile>True</alwaysHostile>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-75~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+					<naturalGoodwillRange>-100~-100</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
-
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
 					<factionDef>VFEC_WesternRepublic</factionDef>
+					<alwaysHostile>True</alwaysHostile>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-75~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-100</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
-
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
 					<factionDef>VFEC_EasternRepublic</factionDef>
+					<alwaysHostile>True</alwaysHostile>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-75~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-100</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
-						
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
 					<factionDef>AR_Faction_Rome</factionDef>
 					<alwaysHostile>True</alwaysHostile>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-99~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-100</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
-						
+				
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<factionDef>AR_Faction_Sparta</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<startingGoodwillRange>-99~-100</startingGoodwillRange>
+					<naturalGoodwillRange>-99~-100</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
 					<factionDef>AR_Faction_Hellas</factionDef>
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-75~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-1</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-80</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
-						
+				
 				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
-					<factionDef>AR_Faction_Sparta</factionDef>
+					<factionDef>AR_Faction_Egypt</factionDef>
+					<!-- <alwaysHostile>False</alwaysHostile> -->
 					<affectStartingGoodwill>True</affectStartingGoodwill>
-					<startingGoodwillRange>-99~-100</startingGoodwillRange>
+					<startingGoodwillRange>-100~-100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-30</naturalGoodwillRange>
 					<def>VFEC_ForcedFactionGoodwill</def>
 				</li>
 
-				<li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
-					<def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
-					<numSenators MayRequire="oskarpotocki.vfe.classical">3</numSenators>
+				<li Class="VFEC.ScenPart_Senators">
+					<def>VFEC_Senators</def>
+					<numSenators>3</numSenators>
 				</li>
 			</parts>
 		</scenario>
