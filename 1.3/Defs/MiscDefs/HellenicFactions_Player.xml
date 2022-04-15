@@ -7,14 +7,14 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>AR_Colonist</basicMemberKind>
     <pawnSingular>plebian</pawnSingular>
-    <pawnsPlural>plebians</pawnsPlural>
+    <pawnsPlural>Greecians</pawnsPlural>
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
 		<li MayRequire="shavius.classical.flavour">
-			<categories>
+			<categories MayRequire="shavius.classical.flavour">
 				<li MayRequire="shavius.classical.flavour">Classical</li>
 			</categories>
-			<commonality>1</commonality>
+			<commonality MayRequire="shavius.classical.flavour">1</commonality>
 		</li>
 		<li>
 			<categories>
@@ -37,7 +37,7 @@
     <startingResearchTags>
 		<li>TribalStart</li>
 		<li>RomanStart</li>
-		<li>ClassicalStart</li>
+		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </startingResearchTags>
     <allowedCultures>
       <li>Hellian</li>
@@ -46,8 +46,14 @@
 		<thingDefs>
 			<li>Cloth</li>
 			<li>Leather_Pig</li>
+			<li>AR_Bronze</li>
+			<li>Leather_Patch</li>
 			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
 		</thingDefs>
+		<disallowedThingDefs>
+			<li>Steel</li>
+			<li>Plasteel</li>
+		</disallowedThingDefs>
     </apparelStuffFilter>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
     <colorSpectrum>

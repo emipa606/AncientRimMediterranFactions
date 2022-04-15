@@ -26,7 +26,7 @@
           </countRange>
         </li>
         <li>
-          <choiceChance>33</choiceChance>
+          <choiceChance>35</choiceChance>
           <thingDef>AR_OliveOil</thingDef>
           <countRange>
             <min>15</min>
@@ -34,7 +34,7 @@
           </countRange>
         </li>
         <li>
-          <choiceChance>10</choiceChance>
+          <choiceChance>25</choiceChance>
           <thingDef>AR_RawArtichoke</thingDef>
           <countRange>
             <min>15</min>
@@ -49,12 +49,12 @@
             <max>40</max>
           </countRange>
         </li>
-		<li>
-			<choiceChance>33</choiceChance>
-			<thingDef>VFEC_Jerky</thingDef>
-			<countRange>
-				<min>20</min>
-				<max>25</max>
+		<li MayRequire="oskarpotocki.vfe.classical">
+			<choiceChance MayRequire="oskarpotocki.vfe.classical">20</choiceChance>
+			<thingDef MayRequire="oskarpotocki.vfe.classical">VFEC_Jerky</thingDef>
+			<countRange MayRequire="oskarpotocki.vfe.classical">
+				<min MayRequire="oskarpotocki.vfe.classical">20</min>
+				<max MayRequire="oskarpotocki.vfe.classical">25</max>
 			</countRange>
 		</li>
       </subOptionsChooseOne>
@@ -158,7 +158,7 @@
       <li>RomeCivil</li>
     </apparelTags>
 	<apparelRequired>
-      <li>Cape</li> <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
+      <li>Apparel_Cape</li> <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
 	  <li>AR_Tunic</li>
     </apparelRequired>
   </PawnKindDef>
@@ -1062,10 +1062,12 @@
 	<backstoryFiltersOverride>
       <li>
         <categoriesAdulthood>
-          <li>TribalHunter</li>
+			<li>TribalHunter</li>
+			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
+	
 	<requiredWorkTags>
       <li>Violent</li>
     </requiredWorkTags>
