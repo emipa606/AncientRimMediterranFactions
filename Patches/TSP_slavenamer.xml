@@ -6,9 +6,10 @@
 	<xpath>/Defs/PawnKindDef[defName="Slave"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="Slave"]/label</xpath>
 			<value>
-				<label>slave</label> <!-- Ensures the title is always "slave", even when shuffled -->
+				<label Inherit="False">slave</label> <!-- Ensures the title is always "slave", even when shuffled -->
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -19,6 +20,7 @@
 	<xpath>/Defs/ThingDef[defName="Apparel_Collar"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/PawnKindDef[defName="Slave"]</xpath>
 			<value>
 				<apparelRequired>

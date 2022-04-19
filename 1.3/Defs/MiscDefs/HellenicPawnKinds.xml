@@ -4,18 +4,25 @@
     <!-- <defaultFactionType>AR_Faction_Rome</defaultFactionType> -->
     <chemicalAddictionChance>0.045</chemicalAddictionChance>
     <initialWillRange>1~3</initialWillRange>
-    <initialResistanceRange>15~24</initialResistanceRange>
+    <initialResistanceRange>3~8</initialResistanceRange>
 	<!--
     <backstoryCategories MayRequire="shavius.classical.flavour">
 		<li MayRequire="shavius.classical.flavour">Classical</li>
 	</backstoryCategories>
 	-->
+	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+      <li MayRequire="shavius.classical.flavour">
+        <categoriesChildhood>
+		  <li MayRequire="shavius.classical.flavour">Classical</li>
+        </categoriesChildhood>
+      </li>
+    </backstoryFiltersOverride>
 	<apparelTags>
       <li>RomeCivil</li>
     </apparelTags>
 	<invFoodDef>AR_Salad</invFoodDef>
 	<inventoryOptions>
-      <skipChance>0.5</skipChance>
+      <skipChance>0.4</skipChance>
       <subOptionsChooseOne>
         <li>
           <choiceChance>33</choiceChance>
@@ -72,6 +79,9 @@
     <isFighter>false</isFighter>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>5~14</initialResistanceRange>
+    <backstoryCategories MayRequire="shavius.classical.flavour">
+		<li MayRequire="shavius.classical.flavour">Classical</li>
+	</backstoryCategories>
     <gearHealthRange>
       <min>0.8</min>
       <max>2.0</max>
@@ -119,8 +129,11 @@
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
 	<canBeSapper>true</canBeSapper>
-    <initialWillRange>1~6</initialWillRange>
-    <initialResistanceRange>2~7</initialResistanceRange>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>1~7</initialResistanceRange>
+    <backstoryCategories MayRequire="shavius.classical.flavour">
+		<li MayRequire="shavius.classical.flavour">Classical</li>
+	</backstoryCategories>
 	<requiredWorkTags>
       <li>Intellectual</li>
 	  <li>Social</li>
@@ -171,7 +184,8 @@
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
 	<factionLeader>true</factionLeader>
-	<fixedGender>Male</fixedGender>
+	<isFighter>false</isFighter>
+	<!-- <fixedGender>Male</fixedGender> --> <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
 	<backstoryFiltersOverride>
       <li>
         <categories>
@@ -408,6 +422,7 @@
       <li>
         <categoriesAdulthood>
           <li>TribalHunter</li>
+		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- These were considered early, elite commanders -->
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
@@ -457,6 +472,7 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Centurion</defName>
     <label>centurion</label>
@@ -537,7 +553,7 @@
 	<backstoryFiltersOverride>
       <li>
         <categoriesAdulthood>
-          <li>TribalHunter</li>
+          <!-- <li>TribalHunter</li> -->
 		  <li>ImperialFighter</li>
 		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categoriesAdulthood>
@@ -602,7 +618,8 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_General</defName>
-    <label>general</label>
+    <label>legatus</label>
+	<labelPlural>legati</labelPlural>
     <race>Human</race>
 	<fixedGender>Male</fixedGender>
     <combatPower>100</combatPower>
@@ -785,6 +802,7 @@
 				</shieldTags>
 			</li>
 		</modExtensions>
+		<initialResistanceRange>23~28</initialResistanceRange>
 	</PawnKindDef>
 
   <!--hellenic pawns -->
@@ -1101,7 +1119,7 @@
     <techHediffsTags>
       <li>ImperialCommon</li>
     </techHediffsTags>
-    <techHediffsChance>0.05</techHediffsChance>
+    <techHediffsChance>0.1</techHediffsChance>
     <invNutrition>3.0</invNutrition>
     <techHediffsRequired>
 		<li>StoneskinGland</li>
@@ -1118,13 +1136,16 @@
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
-          <max>2000</max>
+          <max>10000</max>
         </shieldMoney>
         <shieldTags>
           <li>ShieldsGreekSparta</li>
         </shieldTags>
       </li>
     </modExtensions>
+	
+	<initialWillRange>5~15</initialWillRange>
+	<initialResistanceRange>40~50</initialResistanceRange>
   </PawnKindDef>
 
 

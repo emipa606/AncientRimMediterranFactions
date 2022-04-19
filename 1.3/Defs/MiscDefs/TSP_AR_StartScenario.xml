@@ -5,7 +5,7 @@
 		<label>Your Own City-State</label>
 		<description>Your own Greek colony. Start with research befitting a city-state in classical antiquity and forge your own Hellenic republic... or empire!</description>
 		<scenario>
-			<summary>Three Greek freemen uncovered treason, saved the Hellenic City-Staes, and then left the Faction to avoid the traitor's persecution.</summary>
+			<summary>Three Greek freemen uncovered treason, saved the Hellenic City-Staes, and then left to avoid the traitor's persecution.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>AR_PlayerFaction</factionDef>

@@ -40,7 +40,7 @@
 		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </startingResearchTags>
     <allowedCultures>
-      <li>Hellian</li>
+		<li>Hellian</li>
     </allowedCultures>
     <apparelStuffFilter>
 		<thingDefs>
