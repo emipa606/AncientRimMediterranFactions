@@ -31,19 +31,13 @@
         <categories>
           <li>Tribal</li>
         </categories>
-        <commonality>0.75</commonality>
-      </li>
-      <li>
-        <categories>
-          <li>ImperialCommon</li>
-        </categories>
-        <commonality>0.05</commonality>
+        <commonality>1</commonality>
       </li>
 	  <li>
         <categories>
           <li>ImperialFighter</li>
         </categories>
-        <commonality>0.2</commonality>
+        <commonality>0.1</commonality>
       </li>
     </backstoryFilters>
     <geneticVariance>1</geneticVariance>
