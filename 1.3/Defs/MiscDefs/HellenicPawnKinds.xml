@@ -299,6 +299,7 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Hastatus</defName>
     <label>hastatus</label>
@@ -359,6 +360,7 @@
       </li>
     </modExtensions>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Sagittarius</defName>
     <label>sagittarius</label>
@@ -409,6 +411,7 @@
     <apparelRequired>
     </apparelRequired>
   </PawnKindDef>
+
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Triarius</defName>
     <label>triarius</label>
@@ -498,7 +501,7 @@
       <min>500</min>
       <max>1000</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>600</min>
       <max>1100</max>

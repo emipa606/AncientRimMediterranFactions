@@ -5,7 +5,7 @@
 		<label>Your Own City-State</label>
 		<description>Your own Greek colony. Start with research befitting a city-state in classical antiquity and forge your own Hellenic republic... or empire!</description>
 		<scenario>
-			<summary>Three Greek freemen uncovered treason, saved the Hellenic City-Staes, and then left to avoid the traitor's persecution.</summary>
+			<summary>Three Greek freemen uncovered treason, saved the City-Staes, and then left to avoid the traitor's persecution.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>AR_PlayerFaction</factionDef>
@@ -128,6 +128,17 @@ Will your city-state survive at all?
 					<thingDef>AR_ClassicalSculpture</thingDef>
 					<stuff>BlocksMarble</stuff>
 				</li>
+				
+				<!-- I considered adding this, but I ultimately decided against it. This starting Scenario has you playing as Greeks, not Romans. I kept it here for referencing purposes. -->
+				<!--
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="sasha.legionaryequipment">
+					<def MayRequire="sasha.legionaryequipment">StartingThing_Defined</def>
+					<thingDef MayRequire="sasha.legionaryequipment">Roman_Standard</thingDef>
+					<stuff MayRequire="sasha.legionaryequipment">AR_Bronze</stuff>
+					<count MayRequire="sasha.legionaryequipment">1</count>
+					<allowRoofed MayRequire="sasha.legionaryequipment">True</allowRoofed>
+				</li>
+				-->
 
 				<li Class="ScenPart_ScatterThingsAnywhere">
 					<def>ScatterThingsAnywhere</def>

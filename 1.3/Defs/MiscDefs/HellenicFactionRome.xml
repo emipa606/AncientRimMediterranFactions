@@ -5,6 +5,7 @@
     <defName>AR_Faction_Rome</defName>
     <label>Rome</label>
     <description>This particular Faction appears to be an exact mirror image of Old Earth's ancient Roman Empire, which is over five thousand years old and technically lasted for another thousand years after it was divided. The Romans of Old Earth built one of the largest, longest lasting, and technologically advanced civilizations in Old Earth's classical antiquity, whose legacy has lasted for the rest of human history and continues to impact the language, culture, and societal structure of most of the myriad human civilizations that exist even now. \n These people claim to have lived here for millennia, something that even the tribesmen on this Rim World have attested to, and no one is sure how they got here or how they managed to preserve the traditions of classical antiquity for this long. \n \n Then, as now, these far-flung Romans think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with ancient weapons like swords and spears. Do not disregard the threat of this civilization, however: their soldiers are more powerful than they look, wield shields that deflect any melee weapon to this day, and in large numbers, they can still destroy an entire colony in a day.</description>
+	<categoryTag>Tribal</categoryTag>
     <pawnsPlural>Romans</pawnsPlural>
     <pawnSingular>Roman</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
@@ -133,7 +134,6 @@
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
 	</disallowedPrecepts>
-	
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>

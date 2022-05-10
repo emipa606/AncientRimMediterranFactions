@@ -4,6 +4,7 @@
     <defName>AR_PlayerFaction</defName>
     <label>Hellenic colony</label>
     <description>Your own Greek colony.</description>
+	<categoryTag>Tribal</categoryTag>
     <isPlayer>true</isPlayer>
     <basicMemberKind>AR_Colonist</basicMemberKind>
     <pawnSingular>plebian</pawnSingular>
