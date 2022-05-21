@@ -6,7 +6,7 @@
     <value>
       <li>AR_Faction_Rome</li>
       <li>AR_Faction_Hellas</li>
-      <li>AR_Faction_Sparta</li>
+	  <li>AR_PlayerFaction</li>
     </value>
   </Operation>
 </Patch>
