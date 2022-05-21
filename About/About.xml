@@ -16,13 +16,11 @@
       <displayName>JecsTools</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
     </li>
-	<!--
     <li>
       <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
       <displayName>Enable Oversized Weapons</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
     </li>
-	-->
     <li>
       <packageId>Mlie.AncientRimCore</packageId>
       <displayName>Ancient Rim - Core</displayName>
@@ -33,8 +31,14 @@
       <displayName>Ancient Rim - SPQRim</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458182631</steamWorkshopUrl>
     </li>
+	<li>
+		<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+	</li>
   </modDependencies>
   <loadAfter>
+	<li>oskarpotocki.vanillafactionsexpanded.core</li>
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>

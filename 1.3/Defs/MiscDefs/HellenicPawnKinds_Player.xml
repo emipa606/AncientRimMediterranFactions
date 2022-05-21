@@ -8,18 +8,17 @@
     <initialResistanceRange>15~24</initialResistanceRange>
     <backstoryCategories>
 		<li>Tribal</li>
-		<li>Classical</li>
+		<li MayRequire="shavius.classical.flavour">Classical</li>
     </backstoryCategories>
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>
       <li>RomePlayer</li>
 	  <li>Hellenic</li>
-	  <li>Classical</li>
     </apparelTags>
 	<apparelRequired>
 		<li>AR_Tunic</li>
 	</apparelRequired>
-    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
     <apparelMoney>
       <min>200</min>
       <max>900</max>
@@ -32,6 +31,8 @@
     </techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
+	  <li>Poor</li>
+	  <li>Common</li>
     </techHediffsTags>
   </PawnKindDef>
 </Defs>
