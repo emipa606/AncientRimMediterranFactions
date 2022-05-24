@@ -22,7 +22,7 @@
     </apparelTags>
 	<invFoodDef>AR_Salad</invFoodDef>
 	<inventoryOptions>
-      <skipChance>0.4</skipChance>
+      <skipChance>0.3</skipChance>
       <subOptionsChooseOne>
         <li>
           <choiceChance>33</choiceChance>
@@ -143,7 +143,7 @@
       <max>0.9</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>600</min>
+      <min>700</min>
       <max>2500</max> <!-- Roman women tended to be artisans -->
     </apparelMoney>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
@@ -181,7 +181,7 @@
     <defName>AR_Councilman</defName>
     <label>Senator</label>
 	<labelFemale>Senatrix</labelFemale>
-    <labelPlural>Senators</labelPlural>
+    <labelPlural>Senatores</labelPlural>
     <minGenerationAge>40</minGenerationAge>
     <maxGenerationAge>100</maxGenerationAge>
 	<factionLeader>true</factionLeader>
@@ -261,7 +261,7 @@
       <min>300</min>
       <max>900</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>400</min>
       <max>1000</max>
@@ -633,9 +633,10 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
 	<factionLeader>true</factionLeader>
-	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
-      <li MayRequire="shavius.classical.flavour">
-        <categoriesAdulthood MayRequire="shavius.classical.flavour">
+	<backstoryFiltersOverride>
+      <li>
+        <categoriesAdulthood>
+		  <li>ImperialFighter</li>
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categoriesAdulthood>
       </li>
@@ -713,6 +714,7 @@
       <li>
         <categoriesAdulthood>
           <li>ImperialFighter</li>
+		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
@@ -727,7 +729,7 @@
       <min>900</min>
       <max>9000</max>
     </apparelMoney>
-    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>2000</min>
       <max>9000</max>
@@ -879,8 +881,8 @@
 			<li>AR_Sagum</li>
 		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
-			<li MayRequire="oskarpotocki.vfe.classical">
-				<bodyPartGroup MayRequire="oskarpotocki.vfe.classical">Shoulders</bodyPartGroup>
+			<li>
+				<requiredTag>Cape</requiredTag>
 				<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
 			</li>
 			<li MayRequire="oskarpotocki.vfe.classical">
@@ -1080,6 +1082,7 @@
 	  <li>NeolithicMeleeAdvanced</li>
 	  <li>MedievalMeleeDecent</li>
 	  <li>MedievalMeleeAdvanced</li>
+	  <li>Macedon</li>
     </weaponTags>
 	<requiredWorkTags>
       <li>Violent</li>
@@ -1179,6 +1182,7 @@
       <li>
         <categoriesAdulthood>
 			<li>TribalHunter</li>
+			<li>Sadist</li>
 			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
         </categoriesAdulthood>
       </li>
@@ -1216,7 +1220,7 @@
     <techHediffsTags>
       <li>ImperialCommon</li>
     </techHediffsTags>
-    <techHediffsChance>0.1</techHediffsChance>
+    <techHediffsChance>0.04</techHediffsChance>
     <invNutrition>3.0</invNutrition>
     <techHediffsRequired>
 		<li>StoneskinGland</li>
@@ -1258,12 +1262,19 @@
 	<isFighter>true</isFighter>
 	<canBeSapper>false</canBeSapper>
 	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-			<li>TribalHunter</li>
-			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
-        </categoriesAdulthood>
-      </li>
+		<li>
+			<categoriesChildhood Inherit="False">
+				<li>TribalHunter</li>
+				<li>Sadist</li>
+			</categoriesChildhood>
+		</li>
+		<li>
+			<categoriesAdulthood Inherit="False">
+				<li>TribalHunter</li>
+				<li>Sadist</li>
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
+			</categoriesAdulthood>
+		</li>
     </backstoryFiltersOverride>
 	<requiredWorkTags>
       <li>Violent</li>
@@ -1340,8 +1351,8 @@
       <max>600</max>
     </weaponMoney>
     <weaponTags>
-      <li>Javeliner</li>
-	  <!-- <li>ClassicalRangedJavelin</li> -->
+		<li>Javeliner</li>
+		<li>ClassicalRangedJavelin</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
