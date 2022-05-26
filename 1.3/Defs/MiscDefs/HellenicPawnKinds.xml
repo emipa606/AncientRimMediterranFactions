@@ -922,13 +922,12 @@
     </apparelMoney>
     <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     <weaponMoney>
-      <min>200</min>
-      <max>1600</max>
+      <min>220</min>
+      <max>600</max>
     </weaponMoney>
     <weaponTags>
       <li>MeleePiercer</li>
 	  <li>Sword</li>
-	  <li>LongSword</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -977,7 +976,7 @@
     </weaponMoney>
     <weaponTags>
 	  <li>SimpleHoplite</li>
-	  <li>Spear</li>
+	  <li>SimpleSpear</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -1009,7 +1008,7 @@
     <defName>AR_HopliteHeavy</defName>
     <label>heavy hoplite</label>
     <race>Human</race>
-    <combatPower>75</combatPower>
+    <combatPower>60</combatPower>
     <itemQuality>Superior</itemQuality>
     <maxGenerationAge>65</maxGenerationAge>
     <gearHealthRange>
@@ -1055,7 +1054,8 @@
 
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_SwordMakedon</defName>
-    <label>Macedonian swordsmen</label>
+    <label>Macedonian swordsman</label>
+	<labelPlural>Macedonian swordsmen</labelPlural>
     <race>Human</race>
     <canBeSapper>false</canBeSapper>
     <combatPower>65</combatPower>
@@ -1133,10 +1133,8 @@
       <max>2000</max>
     </weaponMoney>
     <weaponTags>
-		<li>Spear</li>
 		<li>SimpleHoplite</li>
-		<li>NeolithicMeleeDecent</li>
-		<li>Javeliner</li>
+		<li>SimpleSpear</li>
     </weaponTags>
 	<requiredWorkTags>
       <li>Violent</li>
@@ -1179,6 +1177,13 @@
 	<isFighter>true</isFighter>
 	<canBeSapper>true</canBeSapper>
 	<backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+			<li>TribalHunter</li>
+			<li>Sadist</li>
+			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
+        </categoriesChildhood>
+      </li>
       <li>
         <categoriesAdulthood>
 			<li>TribalHunter</li>
