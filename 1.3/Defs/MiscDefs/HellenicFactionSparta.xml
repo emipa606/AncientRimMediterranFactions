@@ -33,8 +33,14 @@
 			<categories>
 				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
 			</categories>
-			<commonality>0.85</commonality>
+			<commonality>1</commonality>
 		</li>
+      <li>
+        <categories>
+          <li>Sadist</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
       <li>
         <categories>
           <li>TribalHunter</li>
@@ -142,9 +148,10 @@
         <kindDef>Peaceful</kindDef>
         <options>
 		<!-- Earth and water. This simple tribute is all we desire. -->
-          <AR_Spartan>200</AR_Spartan>
+          <AR_Spartan>500</AR_Spartan>
 		  <AR_Toxotes>190</AR_Toxotes>
 		  <AR_Hoplite>250</AR_Hoplite>
+		  <AR_HopliteHeavy>50</AR_HopliteHeavy>
           <AR_Psilos>80</AR_Psilos>
 		  <AR_General>1</AR_General>
 		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
@@ -167,7 +174,7 @@
 		  <TSP_AR_GunSpartan>50</TSP_AR_GunSpartan> <!-- The WHAT? -->
 		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
           <AR_General>100</AR_General>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">40</VFEC_ScorpionOperator>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">3</VFEC_ScorpionOperator>
         </options>
       </li>
       <li>
@@ -188,13 +195,13 @@
           <AR_Peltast>250</AR_Peltast>
           <AR_Toxotes>250</AR_Toxotes>
           <AR_Psilos>250</AR_Psilos>
-          <AR_Spartan>300</AR_Spartan>
+          <AR_Spartan>400</AR_Spartan>
           <AR_HopliteHeavy>100</AR_HopliteHeavy>
 		  <AR_Preatorian>20</AR_Preatorian>
 		  <AR_General>75</AR_General>
 		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
 		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
-		  <AR_Councilman>5</AR_Councilman>
+		  <AR_Councilman>1</AR_Councilman>
 		  <Slave>5</Slave>
         </guards>
       </li>
@@ -202,7 +209,7 @@
 		<!-- Oh, I've chosen my words carefully, Persian. Perhaps you should have done the same. -->
         <kindDef>Settlement</kindDef>
         <options>
-		  <!-- Deformed and weak Spartan babies were left to die, those who survived were not admitted as full citizens, but rather, enslaved themselves. They are not represented here. -->
+		  <!-- Deformed and weak Spartan babies were left to die; those who survived were not admitted as full citizens, but rather, enslaved themselves. They are not represented here. -->
 		  <TSP_AR_CitizenGirl>400</TSP_AR_CitizenGirl> <!-- Sparta was abnormally tolerant of women -->
 		  
 		  <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
@@ -213,7 +220,7 @@
           <AR_Peltast>200</AR_Peltast>
           <AR_Toxotes>200</AR_Toxotes>
           <AR_Psilos>250</AR_Psilos>
-          <AR_Spartan>600</AR_Spartan>
+          <AR_Spartan>750</AR_Spartan>
           <AR_HopliteHeavy>300</AR_HopliteHeavy>
 		  <AR_Preatorian>40</AR_Preatorian>
           <AR_General>120</AR_General>

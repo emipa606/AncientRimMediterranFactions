@@ -51,20 +51,22 @@
         <commonality>0.1</commonality>
       </li>
     </backstoryFilters>
-    <geneticVariance>0.8</geneticVariance>
+    <geneticVariance>0.4</geneticVariance>
     <allowedCultures>
-      <li>Romulus</li>
+		<li>Romulus</li>
     </allowedCultures>
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
+		<li>Caravan_Neolithic_BulkGoods</li>
+		<li>Caravan_Neolithic_WarMerchant</li>
+		<li>Caravan_Neolithic_Slaver</li>
+		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
-      <li>Visitor_Neolithic_Standard</li>
+		<li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Neolithic_Standard</li>
+		<li>Base_Neolithic_Standard</li>
+		<li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-5</min>
@@ -124,8 +126,6 @@
 		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
 		
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Exalted</li>
 	
@@ -139,16 +139,21 @@
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <AR_Citizen>100</AR_Citizen>
-		  <TSP_AR_CitizenGirl>90</TSP_AR_CitizenGirl>
-          <AR_Councilman>20</AR_Councilman>
-          <AR_Sagittarius>30</AR_Sagittarius>
-          <AR_Hastatus>30</AR_Hastatus>
-		  <AR_Legionary>40</AR_Legionary>
-		  <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">15</VFEC_Legionnaire>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">15</VFEC_RepublicSenator>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">3</VFEC_ScorpionOperator>
-		  <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+			<AR_Citizen>100</AR_Citizen>
+			<TSP_AR_CitizenGirl>95</TSP_AR_CitizenGirl>
+			<AR_Councilman>20</AR_Councilman>
+			<AR_Sagittarius>30</AR_Sagittarius>
+			<AR_Hastatus>30</AR_Hastatus>
+			<AR_Legionary>50</AR_Legionary>
+			<AR_Hoplite>30</AR_Hoplite>
+			<AR_HopliteHeavy>10</AR_HopliteHeavy>
+			<AR_General>1</AR_General>
+			<VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">20</VFEC_RepublicVillager>
+			<VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">15</VFEC_Legionnaire>
+			<VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">7</VFEC_RepublicSenator>
+			<VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+			<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+			<TSP_AR_Legate>3</TSP_AR_Legate>
         </options>
       </li>
       <li>
@@ -157,27 +162,32 @@
 			<AR_Citizen>20</AR_Citizen>
 			<AR_Hastatus>250</AR_Hastatus>
 			<AR_Councilman>50</AR_Councilman>
-			<AR_Sagittarius>250</AR_Sagittarius>
-			<AR_Triarius>250</AR_Triarius>
-			<AR_General>50</AR_General>
+			<AR_Sagittarius>300</AR_Sagittarius>
+			<AR_Triarius>100</AR_Triarius>
+			<AR_General>1</AR_General>
+			<TSP_AR_Legate>50</TSP_AR_Legate>
 			<AR_Legionary>250</AR_Legionary>
-			<VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">30</VFEC_Legionnaire>
-			<VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">15</VFEC_ScorpionOperator>
+			<VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicVillager>
+			<VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">90</VFEC_Legionnaire>
+			<VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">30</VFEC_ScorpionOperator>
 			<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">5</TSP_AR_Aquilifer>
-			<!-- <Slave>200</Slave> -->
+			<AR_Hoplite>200</AR_Hoplite>
+			<AR_HopliteHeavy>110</AR_HopliteHeavy>
+			<Slave>200</Slave>
         </options>
       </li>
       <li>
         <kindDef>Combat</kindDef>
         <options>
-			<!-- <Slave>20</Slave> -->
-			<AR_Citizen>2</AR_Citizen>
-			<AR_Councilman>3</AR_Councilman>
+			<Slave>10</Slave>
+			<AR_Citizen>1</AR_Citizen>
 			<AR_Preatorian>50</AR_Preatorian>
 			<AR_Legionary>250</AR_Legionary>
-			<AR_Centurion>50</AR_Centurion>
+			<AR_Centurion>60</AR_Centurion>
+			<AR_Hoplite>40</AR_Hoplite>
+			<AR_HopliteHeavy>80</AR_HopliteHeavy>
 			<VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">60</VFEC_Legionnaire>
-			<VFEC_Centurion MayRequire="oskarpotocki.vfe.classical">50</VFEC_Centurion>
+			<VFEC_Centurion MayRequire="oskarpotocki.vfe.classical">60</VFEC_Centurion>
 			<TSP_AR_Legate>50</TSP_AR_Legate>
 			<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">10</TSP_AR_Aquilifer>
 			<TSP_AR_Roman_Emperor>10</TSP_AR_Roman_Emperor>
@@ -197,36 +207,43 @@
         <guards>
           <AR_Citizen>100</AR_Citizen>
 		  <TSP_AR_CitizenGirl>55</TSP_AR_CitizenGirl>
-          <AR_Councilman>1</AR_Councilman>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
-          <AR_Hastatus>250</AR_Hastatus>
-          <AR_Sagittarius>250</AR_Sagittarius>
-          <AR_Triarius>250</AR_Triarius>
-          <AR_Preatorian>200</AR_Preatorian>
-          <AR_Centurion>100</AR_Centurion>
-		  <AR_Legionary>250</AR_Legionary>
-		  <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">150</VFEC_Legionnaire>
+          <AR_Councilman>10</AR_Councilman>
+		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">10</VFEC_RepublicSenator>
+          <AR_Hastatus>275</AR_Hastatus>
+          <AR_Sagittarius>300</AR_Sagittarius>
+          <AR_Triarius>40</AR_Triarius>
+          <AR_Preatorian>20</AR_Preatorian>
+          <AR_Centurion>40</AR_Centurion>
+		  <AR_Legionary>300</AR_Legionary>
+		  <AR_Hoplite>200</AR_Hoplite>
+		  <AR_HopliteHeavy>200</AR_HopliteHeavy>
+		  <VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">100</VFEC_Legionnaire>
 		  <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">5</TSP_AR_Aquilifer>
+		  <Slave>2</Slave>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <AR_Citizen>500</AR_Citizen>
-          <AR_Preatorian>200</AR_Preatorian>
-          <AR_Hastatus>150</AR_Hastatus>
-          <AR_Councilman>80</AR_Councilman>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">80</VFEC_RepublicSenator>
-          <AR_Sagittarius>50</AR_Sagittarius>
-          <AR_Triarius>50</AR_Triarius>
-          <AR_Centurion>100</AR_Centurion>
-          <AR_Legionary>250</AR_Legionary>
-          <AR_General>50</AR_General>
-		  <TSP_AR_Legate>50</TSP_AR_Legate>
-		  <TSP_AR_CitizenGirl>400</TSP_AR_CitizenGirl>
-		  <TSP_AR_Roman_Emperor>25</TSP_AR_Roman_Emperor>
-		  <Slave>150</Slave>
-		  <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">5</TSP_AR_Aquilifer>
+			<VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">100</VFEC_RepublicVillager>
+			<AR_Citizen>500</AR_Citizen>
+			<AR_Preatorian>100</AR_Preatorian>
+			<AR_Hastatus>150</AR_Hastatus>
+			<AR_Councilman>80</AR_Councilman>
+			<VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">70</VFEC_RepublicSenator>
+			<AR_Sagittarius>200</AR_Sagittarius>
+			<AR_Triarius>50</AR_Triarius>
+			<AR_Centurion>100</AR_Centurion>
+			<AR_Legionary>250</AR_Legionary>
+			<AR_General>50</AR_General>
+			<TSP_AR_Legate>50</TSP_AR_Legate>
+			<TSP_AR_CitizenGirl>500</TSP_AR_CitizenGirl>
+			<TSP_AR_Roman_Emperor>25</TSP_AR_Roman_Emperor>
+			<AR_Hoplite>300</AR_Hoplite>
+			<AR_HopliteHeavy>130</AR_HopliteHeavy>
+			<!-- <Slave>150</Slave> -->
+			<VFEC_Legionnaire MayRequire="oskarpotocki.vfe.classical">140</VFEC_Legionnaire>
+			<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">5</TSP_AR_Aquilifer>
         </options>
       </li>
     </pawnGroupMakers>

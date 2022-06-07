@@ -54,12 +54,14 @@
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
+	  <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-5</min>
@@ -138,13 +140,15 @@
         <kindDef>Peaceful</kindDef>
         <options>
           <AR_Citizen>200</AR_Citizen>
-		  <TSP_AR_CitizenGirl>100</TSP_AR_CitizenGirl>
+		  <TSP_AR_CitizenGirl>150</TSP_AR_CitizenGirl>
           <AR_Councilman>50</AR_Councilman>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">30</VFEC_RepublicSenator>
+		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">15</VFEC_RepublicVillager>
           <AR_HellenicSword>20</AR_HellenicSword>
           <AR_Peltast>20</AR_Peltast>
           <AR_Toxotes>20</AR_Toxotes>
           <AR_Psilos>20</AR_Psilos>
+		  <AR_General>5</AR_General>
         </options>
       </li>
       <li>
@@ -156,7 +160,7 @@
           <AR_Peltast>250</AR_Peltast>
           <AR_Toxotes>250</AR_Toxotes>
           <AR_Psilos>250</AR_Psilos>
-          <AR_HopliteHeavy>100</AR_HopliteHeavy>
+          <AR_HopliteHeavy>200</AR_HopliteHeavy>
           <AR_General>50</AR_General>
 		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
         </options>

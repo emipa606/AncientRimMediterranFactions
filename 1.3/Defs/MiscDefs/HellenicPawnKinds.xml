@@ -2,21 +2,21 @@
 <Defs>
   <PawnKindDef Name="PawnRomeBase" Abstract="True">
     <!-- <defaultFactionType>AR_Faction_Rome</defaultFactionType> -->
-    <chemicalAddictionChance>0.045</chemicalAddictionChance>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <initialWillRange>1~3</initialWillRange>
-    <initialResistanceRange>3~8</initialResistanceRange>
+    <initialResistanceRange>3~6</initialResistanceRange>
 	<!--
     <backstoryCategories MayRequire="shavius.classical.flavour">
 		<li MayRequire="shavius.classical.flavour">Classical</li>
 	</backstoryCategories>
 	-->
 	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
-      <li MayRequire="shavius.classical.flavour">
-        <categoriesChildhood MayRequire="shavius.classical.flavour">
-		  <li MayRequire="shavius.classical.flavour">Classical</li>
-        </categoriesChildhood>
-      </li>
-    </backstoryFiltersOverride>
+		<li MayRequire="shavius.classical.flavour">
+			<categoriesChildhood MayRequire="shavius.classical.flavour">
+				<li MayRequire="shavius.classical.flavour">Classical</li>
+			</categoriesChildhood>
+		</li>
+	</backstoryFiltersOverride>
 	<apparelTags>
       <li>RomeCivil</li>
     </apparelTags>
@@ -79,15 +79,19 @@
     <isFighter>false</isFighter>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>5~14</initialResistanceRange>
-    <backstoryCategories MayRequire="shavius.classical.flavour">
-		<li MayRequire="shavius.classical.flavour">Classical</li>
-	</backstoryCategories>
+    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+		<li MayRequire="savius.classical.flavour">
+			<categoriesAdulthood>
+				<li MayRequire="shavius.classical.flavour">Classical</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.8</min>
       <max>2.0</max>
     </gearHealthRange>
     <apparelMoney>
-      <min>50</min>
+      <min>300</min>
       <max>500</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
@@ -131,9 +135,13 @@
 	<canBeSapper>true</canBeSapper>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>1~7</initialResistanceRange>
-    <backstoryCategories MayRequire="shavius.classical.flavour">
-		<li MayRequire="shavius.classical.flavour">Classical</li>
-	</backstoryCategories>
+	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+		<li MayRequire="savius.classical.flavour">
+			<categoriesAdulthood>
+				<li MayRequire="shavius.classical.flavour">Classical</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
 	<requiredWorkTags>
       <li>Intellectual</li>
 	  <li>Social</li>
@@ -153,7 +161,7 @@
     </weaponMoney>
     <weaponTags>
 		<li>Toolagri</li>
-		<li>Neolithic</li>
+		<!-- <li>Neolithic</li> -->
 		<li>NeolithicMelee</li>
 		<li>NeolithicMeleeBasic</li>
 		<li>NeolithicMeleeDestructive</li>
@@ -169,7 +177,7 @@
     <invNutrition>3</invNutrition>
     <apparelTags>
       <li>RomeCivil</li>
-	  <li>Cape</li>
+	  <!-- <li>Cape</li> --> <!-- Doesn't need the tag because it's already covered below. This will stop two capes from spawning on one Pawn. -->
     </apparelTags>
 	<apparelRequired>
       <li>Apparel_Cape</li> <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
@@ -188,12 +196,13 @@
 	<isFighter>false</isFighter>
 	<!-- <fixedGender>Male</fixedGender> --> <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
 	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-          <li>ImperialCommon</li>
-        </categoriesAdulthood>
-      </li>
-    </backstoryFiltersOverride>
+		<li>
+			<categoriesAdulthood>
+				<li>ImperialCommon</li>
+				<li MayRequire="shavius.classical.flavour">Classical</li>
+			</categoriesAdulthood>
+		</li>
+	</backstoryFiltersOverride>
 	<requiredWorkTags>
       <li>Intellectual</li>
 	  <li>Social</li>
@@ -247,11 +256,11 @@
     <combatPower>60</combatPower>
     <maxGenerationAge>45</maxGenerationAge>
 	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
-      <li MayRequire="shavius.classical.flavour">
-        <categoriesAdulthood>
-		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
-        </categoriesAdulthood>
-      </li>
+		<li MayRequire="shavius.classical.flavour">
+			<categoriesAdulthood>
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+			</categoriesAdulthood>
+		</li>
     </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
@@ -312,13 +321,6 @@
     <canBeSapper>true</canBeSapper>
     <combatPower>50</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
-	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-          <li>TribalHunter</li>
-        </categoriesAdulthood>
-      </li>
-    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -330,23 +332,27 @@
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>200</min>
-      <max>600</max>
+      <max>350</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomeSoldier</li>
+		<li>SimpleSpear</li>
+		<li>SimpleHoplite</li>
+		<li>Hastatus</li>
     </weaponTags>
     <techHediffsMoney>
-      <min>200</min>
+      <min>90</min>
       <max>300</max>
     </techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
+	  <li>Poor</li>
     </techHediffsTags>
-    <techHediffsChance>0.001</techHediffsChance>
+    <techHediffsChance>0.1</techHediffsChance>
     <invNutrition>3.0</invNutrition>
     <apparelTags>
-      <li>RomeSoldier</li>
-      <li>RomeCivil</li>
+		<li>RomeSoldier</li>
+		<li>RomeCivil</li>
+		<li>Classical</li>
     </apparelTags>
     <apparelRequired>
     </apparelRequired>
@@ -354,9 +360,9 @@
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
-          <max>2000</max>
+          <max>4000</max>
         </shieldMoney>
-        <shieldTags>
+       <shieldTags>
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -394,6 +400,7 @@
     </weaponMoney>
     <weaponTags>
 		<li>BowMen</li>
+		<li>ClassicalArcher</li>
 		<li>MedievalRangedBasic</li>
 		<li>MedievalRangedDecent</li>
     </weaponTags>
@@ -532,8 +539,7 @@
       <li>AR_LoricaSegmentata</li>
       <li>AR_GaleaCenturio</li>
 	  <li MayRequire="sasha.legionaryequipment">Apparel_Cloth</li> <!-- Pauldimentum -->
-    </apparelRequired>
-	
+    </apparelRequired>	
     <modExtensions>
       <li Class="PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
@@ -541,7 +547,7 @@
           <max>2000</max>
         </shieldMoney>
         <shieldTags>
-          <li>ShieldsRomeLight</li>
+          <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
     </modExtensions>
@@ -555,14 +561,15 @@
     <combatPower>80</combatPower>
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
+	<factionLeader>true</factionLeader>
 	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-          <!-- <li>TribalHunter</li> -->
-		  <li>ImperialFighter</li>
-		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
-        </categoriesAdulthood>
-      </li>
+		<li>
+			<categoriesAdulthood>
+				<!-- <li>TribalHunter</li> -->
+				<li>ImperialFighter</li>
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+			</categoriesAdulthood>
+		</li>
     </backstoryFiltersOverride>
     <gearHealthRange>
       <min>1.5</min>
@@ -650,7 +657,7 @@
     </gearHealthRange>
     <apparelMoney>
       <min>900</min>
-      <max>9000</max>
+      <max>2000</max>
     </apparelMoney>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
@@ -658,7 +665,7 @@
       <max>9000</max>
     </weaponMoney>
     <weaponTags>
-      <li>RomeSoldier</li>
+      <li>HellenicHeavy</li>
 	  <li>LongSword</li>
 	  <li>Lance</li>
     </weaponTags>	
@@ -680,8 +687,9 @@
       </countRange>
     </inventoryOptions>
     <apparelTags>
-      <li>RomeCivil</li>
+      <li>Hellenic</li>
       <li>RomeOfficer</li>
+	  <li>ClassicalMilitaryClassy</li>
     </apparelTags>
     <apparelRequired>
       <li>AR_LoricaMusculataG</li>
@@ -694,6 +702,7 @@
         </shieldMoney>
         <shieldTags>
           <li>ShieldsGreek</li>
+		  <li>ShieldsGreekHeavy</li>
         </shieldTags>
       </li>
     </modExtensions>
@@ -710,16 +719,16 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
 	<factionLeader>true</factionLeader>
-	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-          <li>ImperialFighter</li>
-		  <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
-        </categoriesAdulthood>
-      </li>
+	<backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+		<li MayRequire="shavius.classical.flavour">
+			<categoriesAdulthood MayRequire="shavius.classical.flavour">
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
+			</categoriesAdulthood>
+		</li>
     </backstoryFiltersOverride>
 	<requiredWorkTags>
       <li>Violent</li>
+	  <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
       <min>2.8</min>
@@ -761,6 +770,7 @@
       <li>RomeOfficer</li>
 	  <li>RomeLegion</li>
 	  <li>Legate</li>
+	  <li>ClassicalMilitaryClassy</li>
     </apparelTags>
     <apparelRequired>
 		<li MayRequire="sasha.legionaryequipment">Apparel_GaliaL</li>
@@ -821,10 +831,13 @@
 			<!-- <li>RomeSoldier</li> -->
 			<li>Praetorian</li>
 			<li>NeolithicHeavy</li>
+			<li>NeolithicRangedHeavy</li>
 			<li>NeolithicRangedChief</li>
 			<li>MedievalHeavy</li>
 			<li>MedievalRangedHeavy</li>
+			<li>MedievalRangedAdvanced</li>
 			<li>NeolithicMeleeHeavy</li>
+			<li>NeolithicMeleeAdvanced</li>
 			<li>LongSword</li>
 			<li>Lance</li>
 		</weaponTags>
@@ -873,7 +886,9 @@
 			<li>RomeOfficer</li>
 			<li>RomeNoble</li>
 			<li>RomeRoyal</li>
-			<li>RomanEmperor</li>
+			<li>RomeEmperor</li>
+			<li>ClassicalWreath</li>
+			<li>Classical</li>
 		</apparelTags>
 		<apparelRequired Inherit="False">
 			<li>AR_LaurelWreath</li>
@@ -882,13 +897,19 @@
 		</apparelRequired>
 		<specificApparelRequirements Inherit="False">
 			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<requiredTag>ClassicalWreath</requiredTag>
+			</li>
+			<li>
 				<requiredTag>Cape</requiredTag>
 				<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
 			</li>
+			<!--
 			<li MayRequire="oskarpotocki.vfe.classical">
 				<bodyPartGroup MayRequire="oskarpotocki.vfe.classical">Neck</bodyPartGroup>
 				<stuff MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</stuff>
 			</li>
+			-->
 		</specificApparelRequirements>
 		<modExtensions>
 			<li Class="PawnShields.ShieldPawnGeneratorProperties">
@@ -901,13 +922,13 @@
 				</shieldTags>
 			</li>
 		</modExtensions>
-		<initialResistanceRange>23~28</initialResistanceRange>
+		<initialResistanceRange>40~60</initialResistanceRange>
 	</PawnKindDef>
 
   <!--hellenic pawns -->
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HellenicSword</defName>
-    <label>hellenic swordsmen</label>
+    <label>Hellenic swordsmen</label>
     <race>Human</race>
     <canBeSapper>true</canBeSapper>
     <combatPower>45</combatPower>
@@ -1047,6 +1068,7 @@
         </shieldMoney>
         <shieldTags>
           <li>ShieldsGreek</li>
+		  <li>ShieldsGreekHeavy</li>
         </shieldTags>
       </li>
     </modExtensions>
@@ -1118,7 +1140,7 @@
     <label>Macedonian hoplite</label>
     <race>Human</race>
     <combatPower>55</combatPower>
-    <maxGenerationAge>70</maxGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.0</max>
@@ -1177,19 +1199,21 @@
 	<isFighter>true</isFighter>
 	<canBeSapper>true</canBeSapper>
 	<backstoryFiltersOverride>
+		<!--
       <li>
         <categoriesChildhood>
 			<li>TribalHunter</li>
 			<li>Sadist</li>
-			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
+			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categoriesChildhood>
       </li>
+		-->
       <li>
-        <categoriesAdulthood>
+		<categoriesAdulthood>
 			<li>TribalHunter</li>
 			<li>Sadist</li>
 			<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
-        </categoriesAdulthood>
+		</categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
 	<requiredWorkTags>
@@ -1209,13 +1233,14 @@
       <max>8000</max>
     </weaponMoney>
     <weaponTags>
-	  <li>LongSword</li>
-	  <li>NeolithicMeleeAdvanced</li>
-	  <li>MedievalMeleeAdvanced</li>
-	  <li>MedievalMeleeHeavy</li>
-	  <li>MedievalHeavy</li>
-	  <li>HellenicHeavy</li>
-	  <li>Lance</li>
+		<li>LongSword</li>
+		<li>NeolithicMeleeHeavy</li>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>MedievalMeleeHeavy</li>
+		<li>MedievalHeavy</li>
+		<li>HellenicHeavy</li>
+		<li>Lance</li>
     </weaponTags>
 	<invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
@@ -1267,16 +1292,20 @@
 	<isFighter>true</isFighter>
 	<canBeSapper>false</canBeSapper>
 	<backstoryFiltersOverride>
+		<!--
 		<li>
 			<categoriesChildhood Inherit="False">
 				<li>TribalHunter</li>
 				<li>Sadist</li>
+				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
 			</categoriesChildhood>
 		</li>
+		-->
 		<li>
 			<categoriesAdulthood Inherit="False">
 				<li>TribalHunter</li>
 				<li>Sadist</li>
+				<li>ImperialFighter</li>
 				<li MayRequire="shavius.classical.flavour">ClassicalLegion</li> <!-- Spartans aren't Legionnaires, obviously, but they use these backstories to represent their elite training -->
 			</categoriesAdulthood>
 		</li>
@@ -1304,19 +1333,21 @@
 	<invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
       <min>50</min>
-      <max>1000</max>
+      <max>300</max>
     </techHediffsMoney>
     <techHediffsTags>
-      <li>ImperialCommon</li>
+		<li>ImperialCommon</li>
     </techHediffsTags>
-    <techHediffsChance>0.33</techHediffsChance>
+    <techHediffsChance>0.13</techHediffsChance>
     <invNutrition>6.0</invNutrition>
     <techHediffsRequired>
 		<li>StoneskinGland</li>
     </techHediffsRequired>
     <apparelTags>
 		<li>Spartan</li>
+		<!--
 		<li>Praetorian</li>
+		-->
 		<li>Toxotes</li>
     </apparelTags>
     <apparelRequired>
@@ -1439,11 +1470,11 @@
     <combatPower>60</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
 	<backstoryFiltersOverride>
-      <li>
-        <categoriesAdulthood>
-          <li>TribalHunter</li>
-        </categoriesAdulthood>
-      </li>
+		<li>
+			<categoriesAdulthood>
+				<li>TribalHunter</li>
+			</categoriesAdulthood>
+		</li>
     </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
@@ -1463,6 +1494,7 @@
     </weaponMoney>
     <weaponTags>
 		<li>BowMen</li>
+		<li>Gastraphates</li>
 		<li>MedievalRanged</li>
 		<li>MedievalRangedBasic</li>
 		<li>MedievalRangedDecent</li>
