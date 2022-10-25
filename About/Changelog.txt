@@ -1,5 +1,8 @@
 # Changelog for AncientRimMediterranFactions
 
+1.4.1 - Mod updated for 1.4 and passed autotests
+
+
 1.0.3.0 - Added back Jecs tools dependency for shields compatibility reasons
 
 
