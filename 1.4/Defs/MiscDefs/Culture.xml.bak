@@ -61,7 +61,7 @@
   <CultureDef>
     <defName>Hellian</defName>
     <label>hellian</label>
-    <description>The ancient Hellenic culture.</description>
+    <description>The ancient Hellan culture.</description>
     <pawnNameMaker>NamerPersonGreece</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>

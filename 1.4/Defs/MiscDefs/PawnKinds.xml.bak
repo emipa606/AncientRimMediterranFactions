@@ -50,7 +50,7 @@
   </PawnKindDef>
   <PawnKindDef Name="RomePatrician" ParentName="RomeCitizen">
     <defName>AR_Councilman</defName>
-    <label>senator</label>
+    <label>Senator</label>
     <labelPlural>Senators</labelPlural>
     <factionLeader>true</factionLeader>
     <minGenerationAge>40</minGenerationAge>
@@ -86,7 +86,7 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Legionary</defName>
-    <label>legionary</label>
+    <label>Legionary</label>
     <race>Human</race>
     <canBeSapper>true</canBeSapper>
     <combatPower>60</combatPower>
@@ -287,7 +287,6 @@
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Centurion</defName>
     <label>centurio</label>
-    <labelFemale>centuria</labelFemale>
     <race>Human</race>
     <combatPower>60</combatPower>
     <itemQuality>Good</itemQuality>
@@ -341,7 +340,6 @@
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Preatorian</defName>
     <label>praetorian</label>
-    <labelFemale>praetoria</labelFemale>
     <race>Human</race>
     <combatPower>80</combatPower>
     <itemQuality>Superior</itemQuality>
@@ -400,7 +398,7 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_General</defName>
-    <label>general</label>
+    <label>General</label>
     <race>Human</race>
     <combatPower>100</combatPower>
     <itemQuality>Legendary</itemQuality>
@@ -463,10 +461,7 @@
   <!--hellenic pawns -->
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_HellenicSword</defName>
-    <label>Hellenic swordsman</label>
-    <labelPlural>Hellenic swordsmen</labelPlural>
-    <labelFemale>Hellenic swordswoman</labelFemale>
-    <labelFemalePlural>Hellenic swordswomen</labelFemalePlural>
+    <label>hellenic swordsmen</label>
     <race>Human</race>
     <canBeSapper>true</canBeSapper>
     <combatPower>45</combatPower>
@@ -608,10 +603,7 @@
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_SwordMakedon</defName>
-    <label>Macedonian swordsman</label>
-    <labelPlural>Macedonian swordsmen</labelPlural>
-    <labelFemale>Macedonian swordswoman</labelFemale>
-    <labelFemalePlural>Macedonian swordswomen</labelFemalePlural>
+    <label>Macedonian swordsmen</label>
     <race>Human</race>
     <canBeSapper>true</canBeSapper>
     <combatPower>45</combatPower>

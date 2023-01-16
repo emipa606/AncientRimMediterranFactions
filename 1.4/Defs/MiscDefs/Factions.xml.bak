@@ -4,7 +4,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Rome</defName>
     <label>Rome</label>
-    <description>These people have lived here for a millennium. They think to be the first and only true civilization on this world and believe that it is their duty to bring their civilization to other people. Normally they work with simple mechanical tools and fight with equally simple mechanical weapons. But when simple doesn't cut it, they're able to construct complicate mechanical devices. They have great armies and gifted diplomats. They mostly worship a multitude of gods.</description>
+    <description>These people have lived here for millennium. They think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with also simple mechanical weapons. But these must'nt be simple, they're able to construct complicate mechanical machines. They have great armys and gifted diplomats. Mostly there is a worship with a high amount of gods.</description>
     <pawnsPlural>romans</pawnsPlural>
     <pawnSingular>roman</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
@@ -139,7 +139,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Hellas</defName>
     <label>Hellada</label>
-    <description>These people have lived here for a millennium. They think to be the first and only true civilization on this world and believe that it is their duty to bring their civilization to other people. Normally they work with simple mechanical tools and fight with equally simple mechanical weapons. But when simple doesn't cut it, they're able to construct complicate mechanical devices. They have great armies and gifted diplomats. They mostly worship a multitude of gods.</description>
+    <description>These people have lived here for millennium. They think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with also simple mechanical weapons. But these must'nt be simple, they're able to construct complicate mechanical machines. They have great armys and gifted diplomats. Mostly there is a worship with a high amount of gods.</description>
     <pawnsPlural>greeks</pawnsPlural>
     <pawnSingular>greeks</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
@@ -268,7 +268,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Sparta</defName>
     <label>Sparta</label>
-    <description>These people have lived here for a millennium. They think to be the first and only true civilization on this world and believe that it is their duty to bring their civilization to other people. Normally they work with simple mechanical tools and fight with equally simple mechanical weapons. But when simple doesn't cut it, they're able to construct complicate mechanical devices. They have great armies and gifted diplomats. They mostly worship a multitude of gods.</description>
+    <description>These people have lived here for millennium. They think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with also simple mechanical weapons. But these must'nt be simple, they're able to construct complicate mechanical machines. They have great armys and gifted diplomats. Mostly there is a worship with a high amount of gods.</description>
     <pawnsPlural>greeks</pawnsPlural>
     <pawnSingular>greeks</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
@@ -398,7 +398,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Macedonia</defName>
     <label>Macedonia</label>
-    <description>These people have lived here for a millennium. They think to be the first and only true civilization on this world and believe that it is their duty to bring their civilization to other people. Normally they work with simple mechanical tools and fight with equally simple mechanical weapons. But when simple doesn't cut it, they're able to construct complicate mechanical devices. They have great armies and gifted diplomats. They mostly worship a multitude of gods.</description>
+    <description>These people have lived here for millennium. They think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with also simple mechanical weapons. But these must'nt be simple, they're able to construct complicate mechanical machines. They have great armys and gifted diplomats. Mostly there is a worship with a high amount of gods.</description>
     <pawnsPlural>greeks</pawnsPlural>
     <pawnSingular>greeks</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
