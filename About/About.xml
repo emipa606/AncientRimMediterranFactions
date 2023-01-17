@@ -32,25 +32,13 @@
       <displayName>Ancient Rim - SPQRim</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458182631</steamWorkshopUrl>
     </li>
-	<li>
-		<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
-		<displayName>Vanilla Expanded Framework</displayName>
-		<steamWorkshopUrl>https://www.steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
-	</li>
   </modDependencies>
   <loadAfter>
-	<li>oskarpotocki.vanillafactionsexpanded.core</li>
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>Mlie.AncientRimCore</li>
     <li>Mlie.AncientRimSPQRim</li>
-	<li>syrchalis.processor.framework</li>
-	<li>vanillaexpanded.vmemese</li>
-	<li>sarg.alphamemes</li>
   </loadAfter>
-  <loadBefore>
-	<li>sasha.legionaryequipment</li>
-  </loadBefore>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734664809
@@ -90,5 +78,6 @@ Macedonia which is hostile and won't pursue for peace in its imperial interest
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
 
-</description>
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861]Last updated 2023-01-16[/url]</description>
 </ModMetaData>
