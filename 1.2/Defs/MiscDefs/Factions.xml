@@ -142,7 +142,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>Icon/FactionBase</settlementTexturePath>
+    <settlementTexturePath>Icon/AncientFactionBase</settlementTexturePath>
   </FactionDef>
   <!--hellada-->
   <FactionDef ParentName="HumanFactionBase">
@@ -280,7 +280,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>Icon/FactionBase</settlementTexturePath>
+    <settlementTexturePath>Icon/AncientFactionBase</settlementTexturePath>
   </FactionDef>
   <!--sparta-->
   <FactionDef ParentName="HumanFactionBase">
@@ -419,7 +419,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>Icon/FactionBase</settlementTexturePath>
+    <settlementTexturePath>Icon/AncientFactionBase</settlementTexturePath>
   </FactionDef>
   <!--macedonia-->
   <FactionDef>
@@ -538,6 +538,6 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <settlementTexturePath>Icon/FactionBase</settlementTexturePath>
+    <settlementTexturePath>Icon/AncientFactionBase</settlementTexturePath>
   </FactionDef>
 </Defs>

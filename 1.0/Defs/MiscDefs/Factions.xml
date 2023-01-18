@@ -131,7 +131,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icon/FactionBase</homeIconPath>
+    <homeIconPath>Icon/AncientFactionBase</homeIconPath>
   </FactionDef>
   <!--hellada-->
   <FactionDef ParentName="HumanFactionBase">
@@ -258,7 +258,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icon/FactionBase</homeIconPath>
+    <homeIconPath>Icon/AncientFactionBase</homeIconPath>
   </FactionDef>
   <!--sparta-->
   <FactionDef ParentName="HumanFactionBase">
@@ -386,7 +386,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icon/FactionBase</homeIconPath>
+    <homeIconPath>Icon/AncientFactionBase</homeIconPath>
   </FactionDef>
   <!--macedonia-->
   <FactionDef>
@@ -494,6 +494,6 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icon/FactionBase</homeIconPath>
+    <homeIconPath>Icon/AncientFactionBase</homeIconPath>
   </FactionDef>
 </Defs>
