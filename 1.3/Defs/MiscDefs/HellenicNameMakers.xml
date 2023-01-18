@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonRome</defName>
@@ -7,13 +7,13 @@
         <li>name-&gt;[NamesRome] of [PlacesRome]</li>
         <li>name-&gt;[NamesRome] [NamesRome]</li>
         <li>name-&gt;[NamesRome] the [Numbers].</li>
-		<li>name-&gt;[NamesRome] the [Color]</li>
+        <li>name-&gt;[NamesRome] the [Color]</li>
         <li>name-&gt;[NamesRome] [NamesRome] of [PlacesRome]</li>
         <li>name-&gt;[NamesRome] [NamesRome] [NamesRome]</li>
         <li>name-&gt;[NamesRome] [NamesRome] the [Numbers].</li>
-		<li>name-&gt;[NamesRome] [NamesRome] [RomanNumeral]</li>
-		<li>name-&gt;[NamesRome] [ImperialNameLast][SylB]</li>
-		<li>name-&gt;[NamesRome] [ImperialNameLast][SylB]</li>
+        <li>name-&gt;[NamesRome] [NamesRome] [RomanNumeral]</li>
+        <li>name-&gt;[NamesRome] [ImperialNameLast][SylB]</li>
+        <li>name-&gt;[NamesRome] [ImperialNameLast][SylB]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -51,13 +51,13 @@
       <rulesStrings>
         <li>name-&gt; Imperium Romana</li>
         <li>name-&gt; Roma</li>
-		<li>name-&gt; Rema</li>
-		<li>name-&gt; Byzantium</li>
-		<li>name-&gt; Basileia Rhomaion</li>
+        <li>name-&gt; Rema</li>
+        <li>name-&gt; Byzantium</li>
+        <li>name-&gt; Basileia Rhomaion</li>
         <li>name-&gt; Roman Empire</li>
         <li>name-&gt; Roman [empire]</li>
-		<li>name-&gt; Imperium Rema</li>
-		<li>name-&gt; Romulus Land</li>
+        <li>name-&gt; Imperium Rema</li>
+        <li>name-&gt; Romulus Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -70,9 +70,9 @@
         <li>name-&gt; The Greek Cities</li>
         <li>name-&gt; Delian League</li>
         <li>name-&gt; Athenia</li>
-		<li>name-&gt; League of [Color] Greeks</li>
-		<li>name-&gt; The [Color] City-States</li>
-		<li>name-&gt; Hellenic Land</li>
+        <li>name-&gt; League of [Color] Greeks</li>
+        <li>name-&gt; The [Color] City-States</li>
+        <li>name-&gt; Hellenic Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -84,8 +84,8 @@
         <li>name-&gt; Peloponnesian League</li>
         <li>name-&gt; Lakedaimon</li>
         <li>name-&gt; Laconia</li>
-		<li>name-&gt; Lycurgus League</li>
-		<li>name-&gt; Lysander Land</li>
+        <li>name-&gt; Lycurgus League</li>
+        <li>name-&gt; Lysander Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -94,14 +94,14 @@
     <rulePack>
       <rulesStrings>
         <li>name-&gt; [Color] Diadochus</li>
-		<li>name-&gt; [ColorBadass] Diadochus</li>
+        <li>name-&gt; [ColorBadass] Diadochus</li>
         <li>name-&gt; Neo-Macedonia</li>
         <li>name-&gt; Macedonian Satrapies</li>
-		<li>name-&gt; The [Color] Satrapy</li>
-		<li>name-&gt; The [ColorBadass] Satrapy</li>
+        <li>name-&gt; The [Color] Satrapy</li>
+        <li>name-&gt; The [ColorBadass] Satrapy</li>
         <li>name-&gt; Neo-Seleucid Diadochus</li>
-		<li>name-&gt; Lost Diadochus</li>
-		<li>name-&gt; Alexander Land</li>
+        <li>name-&gt; Lost Diadochus</li>
+        <li>name-&gt; Alexander Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

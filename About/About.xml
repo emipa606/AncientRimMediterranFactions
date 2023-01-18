@@ -13,30 +13,12 @@
   </supportedVersions>
   <modDependencies>
     <li>
-      <packageId>jecrell.jecstools</packageId>
-      <displayName>JecsTools</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
-      <displayName>Enable Oversized Weapons</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>Mlie.AncientRimCore</packageId>
-      <displayName>Ancient Rim - Core</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2458180650</steamWorkshopUrl>
-    </li>
-    <li>
       <packageId>Mlie.AncientRimSPQRim</packageId>
       <displayName>Ancient Rim - SPQRim</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2458182631</steamWorkshopUrl>
     </li>
   </modDependencies>
   <loadAfter>
-    <li>jecrell.jecstools</li>
-    <li>CarnySenpai.EnableOversizedWeapons</li>
-    <li>Mlie.AncientRimCore</li>
     <li>Mlie.AncientRimSPQRim</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
@@ -79,5 +61,6 @@ Macedonia which is hostile and won't pursue for peace in its imperial interest
 [/list]
 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861]Last updated 2023-01-16[/url]</description>
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861]Last updated 2023-01-18[/url]</description>
 </ModMetaData>
