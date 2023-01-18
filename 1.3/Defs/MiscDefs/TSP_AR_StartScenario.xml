@@ -1,0 +1,201 @@
+﻿
+<Defs>
+	<scenarioDef>
+		<defName>TSP_AR_RomePlayer</defName>
+		<label>Your Own City-State</label>
+		<description>Your own Greek colony. Start with research befitting a city-state in classical antiquity and forge your own Hellenic republic... or empire!</description>
+		<scenario>
+			<summary>Three Greek freemen uncovered treason, saved the City-Staes, and then left to avoid the traitor's persecution.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>AR_PlayerFaction</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>
+You cried as your loved ones parted ways with you, but it had to be this way.
+
+You and your fellow newfound colonists were free citizens in the Hellenic City-States Faction. However, you accidentally uncovered a scandal in one of the Faction Bases' republican legislatures!
+	
+A powerful Senator had betrayed his republic for Sparta and was even cooperating with the Sky People and their Thunder Sticks, embued with lead blessed by the lightning of Zeus himself!
+
+He was about to send a missive requesting a massive, joint raid on the entire Faction and all its constituent bases from both the Sky People and Sparta.
+
+While he was ousted and executed and the plans intercepted, he still had many supporters among those sky people with Zeus' power in their Thunder Sticks. Now, his collaborators in Rim Sparta and the Sky People both want you dead.
+
+Your village's legislature, grateful to you but unable to protect you from their wrath, is now assisting you in forming your own city-state, giving you basic goods and land. You remain an ally of theirs, and you will need it.
+
+Will you build a thriving republic in the model of your friends back home? Will your ambitions end the democratic hopes of your people and forge a new empire?
+
+Will your city-state survive at all?
+				</text>
+				<closeSound>GameStartSting</closeSound>
+				
+				</li>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>3</pawnCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+				</li>
+				<li Class="ScenPart_SetNeedLevel">
+					<def>SetNeedLevel</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<need>Food</need>
+					<levelRange>0~0.1</levelRange>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gold</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Jade</stuff>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>2</count>
+					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+					<allowRoofed>False</allowRoofed>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_Salad</thingDef>
+					<count>12</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_FryedMeat</thingDef>
+					<count>4</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_FryedEgg</thingDef>
+					<count>4</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_OliveOil</thingDef>
+					<count>100</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_RawOlives</thingDef>
+					<count>500</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_Toga</thingDef>
+					<stuff>Cloth</stuff>
+					<count>3</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Cloth</thingDef>
+					<count>100</count>
+				</li>
+				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>AR_ClassicalSculpture</thingDef>
+					<stuff>BlocksMarble</stuff>
+				</li>
+				
+				<!-- I considered adding this, but I ultimately decided against it. This starting Scenario has you playing as Greeks, not Romans. I kept it here for referencing purposes. -->
+				<!--
+				<li Class="ScenPart_StartingThing_Defined" MayRequire="sasha.legionaryequipment">
+					<def MayRequire="sasha.legionaryequipment">StartingThing_Defined</def>
+					<thingDef MayRequire="sasha.legionaryequipment">Roman_Standard</thingDef>
+					<stuff MayRequire="sasha.legionaryequipment">AR_Bronze</stuff>
+					<count MayRequire="sasha.legionaryequipment">1</count>
+					<allowRoofed MayRequire="sasha.legionaryequipment">True</allowRoofed>
+				</li>
+				-->
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>AR_Xiphos</thingDef>
+					<stuff>AR_Bronze</stuff>
+					<allowRoofed>True</allowRoofed>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Bow_Short</thingDef>
+					<allowRoofed>True</allowRoofed>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>AR_Lance</thingDef>
+					<stuff>AR_Bronze</stuff>
+					<count>1</count>
+					<allowRoofed>True</allowRoofed>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>AR_Bronze</thingDef>
+					<count>1000</count>
+					<allowRoofed>False</allowRoofed>
+				</li>
+
+				<li Class="ScenPart_CreateIncident">
+					<def>CreateIncident</def>
+					<incident>TraderCaravanArrival</incident>
+					<intervalDays>0.1</intervalDays>
+				</li>
+
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<factionDef MayRequire="oskarpotocki.vanillafactionsexpanded.core">AR_Faction_Sparta</factionDef>
+					<alwaysHostile MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</alwaysHostile>
+					<startingGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">-99~-100</startingGoodwillRange>
+					<naturalGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">-99~-100</naturalGoodwillRange>
+					<def MayRequire="oskarpotocki.vanillafactionsexpanded.core">VFEC_ForcedFactionGoodwill</def>
+				</li>
+
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+					<factionDef MayRequire="oskarpotocki.vanillafactionsexpanded.core">AR_Faction_Hellas</factionDef>
+					<affectStartingGoodwill MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</affectStartingGoodwill>
+					<startingGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">76~100</startingGoodwillRange>
+					<affectNaturalGoodwill MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</affectNaturalGoodwill>
+					<naturalGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">40~55</naturalGoodwillRange>
+					<def MayRequire="oskarpotocki.vanillafactionsexpanded.core">VFEC_ForcedFactionGoodwill</def>
+				</li>
+
+				<li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
+					<def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
+					<numSenators MayRequire="oskarpotocki.vfe.classical">1</numSenators>
+				</li>
+			</parts>
+		</scenario>
+	</scenarioDef>
+</Defs>
