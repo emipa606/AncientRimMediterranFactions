@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <!--macedonia-->
+  <FactionDef ParentName="FactionBase">
+    <defName>AR_Faction_Macedonia</defName>
+    <label>Lost Macedonian Diadochus</label>
+    <description>Over five thousand years ago, in Old Earth's classical antiquity, Alexander the Great conquered one of the largest contiguous, land-based empires in human history, stretching from his Greek homeland, to Egypt, and all the way to the Indus River. This unification was the start of interactions between what would become Greece (then Rome) and Persia. Upon his death, with no declared heir, Alexander's family and loyal generals met and agreed to the Partition of Babylon, which divided the spoils of his empire agmonst the Diadochis (literally, ''successors''). The Partition ultimately failed, and the Diadochis went to war with each other until only three stood: one in Macedonia, one in Persia, and one under the Ptomeley Pharaohs of Egypt. \n \n Somehow, even after five thousand years, the heirs of those divided satrapies continue to exist in the fringes of human civilization, unspoiled by the technology of Core Worlds and Glitter Worlds, and unconquered by the mysterious Roman and Greek remnants on the planet. This Rim World is home to one such Lost Diadochus' satrapy. \n No one has any idea how generals and Macedonians from classical antiquity arrived here, but the society they maintain continues to mirror the civilization that Alexander built, in both cosmopolitan culture and warlike mindsets. \n \n This also means that it mirrors Alexander's ambition. \n \n The Diadochus of this Rim World, having united the Macedonian satrapies' bases under his rule, now seeks to revive Alexander the Great's legacy on a new globe. No alliances will be made and no peace brokered, for this Diadochus will seek to do what even Alexander the Great could not: conquer the world.</description>
+	<categoryTag>Tribal</categoryTag>
+	<earliestRaidDays>3</earliestRaidDays>
+    <pawnSingular>Makedon</pawnSingular>
+    <pawnsPlural>Macedonians</pawnsPlural>
+    <listOrderPriority>30</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Diadochus</leaderTitle>
+    <factionIconPath>Icon/MakedonStar</factionIconPath>
+    <colorSpectrum>
+      <li>(255,235,122)</li>
+      <li>(180,173,150)</li>
+      <li>(183,122,61)</li>
+    </colorSpectrum>
+    <factionNameMaker>NamerFactionMacedonia</factionNameMaker>
+    <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+	  <li>
+        <categories>
+          <li>ImperialFighter</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+    </backstoryFilters>
+    <geneticVariance>1</geneticVariance>
+    <allowedCultures>
+		<li>Hellian</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
+    </allowedCultures>
+    <permanentEnemy>true</permanentEnemy>
+    <allowedArrivalTemperatureRange>
+      <min>-5</min>
+      <max>55</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,150)</li>
+        <li>(70, 200)</li>
+        <li>(700, 300)</li>
+        <li>(1300, 400)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+	
+	<requiredMemes>
+		<li MayRequire="Ludeon.Rimworld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
+	</requiredMemes>
+	
+	<disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+		
+		<!-- Forbidden Mod Memes -->
+		<li MayRequire="llunak.MorePrecepts">Pacifism</li>
+		<li MayRequire="Qux.factionhippie">PeaceLove</li>
+		<li MayRequire="Zezz.Altrumeme">Altruism</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+		<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+		<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+		<li MayRequire="Ludeon.RimwWorld.Ideology">SZ_Structure_CultureQiYuan</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+	</disallowedMemes>
+	
+	<disallowedPrecepts>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+		
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Exalted</li>
+	
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
+		
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+	</disallowedPrecepts>
+	
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <AR_Citizen>50</AR_Citizen>
+          <AR_HopliteMakedon>20</AR_HopliteMakedon>
+          <AR_Peltast>100</AR_Peltast>
+          <AR_Toxotes>100</AR_Toxotes>
+          <AR_Psilos>100</AR_Psilos>
+		  <AR_Preatorian>30</AR_Preatorian>
+		  <AR_General>15</AR_General>
+		  <TSP_AR_CitizenGirl>20</TSP_AR_CitizenGirl>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <AR_Citizen>5</AR_Citizen>
+          <AR_HopliteMakedon>350</AR_HopliteMakedon>
+          <AR_SwordMakedon>350</AR_SwordMakedon>
+          <AR_HopliteHeavy>100</AR_HopliteHeavy>
+		  <AR_Preatorian>80</AR_Preatorian>
+          <AR_Peltast>100</AR_Peltast>
+          <AR_Toxotes>100</AR_Toxotes>
+          <AR_Psilos>100</AR_Psilos>
+          <AR_General>75</AR_General>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <AR_Trader>1</AR_Trader>
+		  <VFEC_RepublicTrader MayRequire="oskarpotocki.vfe.classical">2</VFEC_RepublicTrader>
+        </traders>
+        <carriers>
+          <Dromedary>4</Dromedary>
+          <Elephant>5</Elephant>
+		  <Muffalo>1</Muffalo>
+        </carriers>
+        <guards>
+          <AR_HopliteMakedon>200</AR_HopliteMakedon>
+          <AR_SwordMakedon>200</AR_SwordMakedon>
+          <AR_Peltast>100</AR_Peltast>
+          <AR_Toxotes>100</AR_Toxotes>
+          <AR_Psilos>100</AR_Psilos>
+		  <AR_Citizen>50</AR_Citizen>
+		  <TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
+		  <AR_Preatorian>10</AR_Preatorian>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <AR_Citizen>500</AR_Citizen>
+          <AR_HellenicSword>250</AR_HellenicSword>
+		  <TSP_AR_CitizenGirl>175</TSP_AR_CitizenGirl>
+          <AR_Hoplite>250</AR_Hoplite>
+          <AR_Peltast>250</AR_Peltast>
+          <AR_Toxotes>250</AR_Toxotes>
+          <AR_Psilos>250</AR_Psilos>
+          <AR_HopliteMakedon>200</AR_HopliteMakedon>
+          <AR_SwordMakedon>200</AR_SwordMakedon>
+          <AR_HopliteHeavy>100</AR_HopliteHeavy>
+		  <AR_Preatorian>100</AR_Preatorian>
+          <AR_General>100</AR_General>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <modExtensions>
+        <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
+          <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
+            <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
+    </modExtensions>
+	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <fixedLeaderKinds>
+		<li>AR_General</li>
+    </fixedLeaderKinds>
+    <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
+  </FactionDef>
+</Defs>
