@@ -79,7 +79,6 @@
 	
 	<requiredMemes>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
-		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnnection</li> -->
 		
 		<!-- If you have the Mod -->
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
@@ -144,10 +143,13 @@
           <AR_Councilman>50</AR_Councilman>
 		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
 		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">15</VFEC_RepublicVillager>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">10</VFEC_ScorpionOperator>
           <AR_HellenicSword>20</AR_HellenicSword>
           <AR_Peltast>20</AR_Peltast>
           <AR_Toxotes>20</AR_Toxotes>
           <AR_Psilos>20</AR_Psilos>
+		  <AR_Hoplite>20</AR_Hoplite>
+		  <AR_HopliteHeavy>10</AR_HopliteHeavy>
 		  <AR_General>5</AR_General>
         </options>
       </li>

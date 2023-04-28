@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
   <FactionDef ParentName="FactionBase">
     <defName>AR_PlayerFaction</defName>
@@ -21,7 +22,7 @@
 			<categories>
 				<li>Tribal</li>
 			</categories>
-			<commonality>0.5</commonality>
+			<commonality>0.4</commonality>
 		</li>
 		<li>
 			<categories>
@@ -45,11 +46,11 @@
     </allowedCultures>
     <apparelStuffFilter>
 		<thingDefs>
-			<li>Cloth</li>
+			<!-- <li>Cloth</li> -->
 			<li>Leather_Pig</li>
 			<li>AR_Bronze</li>
 			<li>Leather_Patch</li>
-			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+			<!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li> -->
 		</thingDefs>
 		<disallowedThingDefs>
 			<li>Steel</li>

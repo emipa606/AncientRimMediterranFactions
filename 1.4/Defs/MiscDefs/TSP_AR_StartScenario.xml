@@ -22,7 +22,7 @@ A powerful Senator had betrayed his republic for Sparta and was even cooperating
 
 He was about to send a missive requesting a massive, joint raid on the entire Faction and all its constituent bases from both the Sky People and Sparta.
 
-While he was ousted and executed and the plans intercepted, he still had many supporters among those sky people with Zeus' power in their Thunder Sticks. Now, his collaborators in Rim Sparta and the Sky People both want you dead.
+While he was ousted and executed and the plans were intercepted, he still had many supporters among those sky people with Zeus' power in their Thunder Sticks. Now, his collaborators in Rim Sparta and the Sky People both want you dead.
 
 Your village's legislature, grateful to you but unable to protect you from their wrath, is now assisting you in forming your own city-state, giving you basic goods and land. You remain an ally of theirs, and you will need it.
 
@@ -170,7 +170,7 @@ Will your city-state survive at all?
           <affectStartingGoodwill MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</affectStartingGoodwill>
           <startingGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">76~100</startingGoodwillRange>
           <affectNaturalGoodwill MayRequire="oskarpotocki.vanillafactionsexpanded.core">True</affectNaturalGoodwill>
-          <naturalGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">40~55</naturalGoodwillRange>
+          <naturalGoodwillRange MayRequire="oskarpotocki.vanillafactionsexpanded.core">60~70</naturalGoodwillRange>
           <def MayRequire="oskarpotocki.vanillafactionsexpanded.core">VFEC_ForcedFactionGoodwill</def>
         </li>
         <li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">

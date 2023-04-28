@@ -63,6 +63,7 @@
     </caravanTraderKinds>
     <visitorTraderKinds>
 		<li>Visitor_Neolithic_Standard</li>
+		<li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
 		<li>Base_Neolithic_Standard</li>
