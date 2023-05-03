@@ -56,8 +56,10 @@
 		<li>name-&gt; Basileia Rhomaion</li>
         <li>name-&gt; Roman Empire</li>
         <li>name-&gt; Roman [empire]</li>
+		<li>name-&gt; Reman [empire]</li>
 		<li>name-&gt; Imperium Rema</li>
 		<li>name-&gt; Romulus Land</li>
+		<li>name-&gt; Remus Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -101,7 +103,7 @@
 		<li>name-&gt; The [ColorBadass] Satrapy</li>
         <li>name-&gt; Neo-Seleucid Diadochus</li>
 		<li>name-&gt; Lost Diadochus</li>
-		<li>name-&gt; Alexander Land</li>
+		<li>name-&gt; Diadochi Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
