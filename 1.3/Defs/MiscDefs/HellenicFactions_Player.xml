@@ -4,31 +4,31 @@
     <defName>AR_PlayerFaction</defName>
     <label>Hellenic colony</label>
     <description>Your own Greek colony.</description>
-	<categoryTag>Tribal</categoryTag>
+    <categoryTag>Tribal</categoryTag>
     <isPlayer>true</isPlayer>
     <basicMemberKind>AR_Colonist</basicMemberKind>
     <pawnSingular>plebian</pawnSingular>
     <pawnsPlural>Greecians</pawnsPlural>
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
-		<li MayRequire="shavius.classical.flavour">
-			<categories MayRequire="shavius.classical.flavour">
-				<li MayRequire="shavius.classical.flavour">Classical</li>
-			</categories>
-			<commonality MayRequire="shavius.classical.flavour">1</commonality>
-		</li>
-		<li>
-			<categories>
-				<li>Tribal</li>
-			</categories>
-			<commonality>0.5</commonality>
-		</li>
-		<li>
-			<categories>
-				<li>ImperialCommon</li>
-			</categories>
-			<commonality>0.1</commonality>
-		</li>
+      <li MayRequire="shavius.classical.flavour">
+        <categories MayRequire="shavius.classical.flavour">
+          <li MayRequire="shavius.classical.flavour">Classical</li>
+        </categories>
+        <commonality MayRequire="shavius.classical.flavour">1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>ImperialCommon</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
     </backstoryFilters>
     <factionIconPath>Icon/LaurelWreath</factionIconPath>
     <playerInitialSettlementNameMaker>NamerSettlementGreek</playerInitialSettlementNameMaker>
@@ -36,27 +36,27 @@
     <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
-		<li>TribalStart</li>
-		<li>RomanStart</li>
-		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+      <li>TribalStart</li>
+      <li>RomanStart</li>
+      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
     </startingResearchTags>
     <allowedCultures>
-		<li>Hellian</li>
+      <li>Hellian</li>
     </allowedCultures>
     <apparelStuffFilter>
-		<thingDefs>
-			<li>Cloth</li>
-			<li>Leather_Pig</li>
-			<li>AR_Bronze</li>
-			<li>Leather_Patch</li>
-			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
-		</thingDefs>
-		<disallowedThingDefs>
-			<li>Steel</li>
-			<li>Plasteel</li>
-		</disallowedThingDefs>
+      <thingDefs>
+        <li>Cloth</li>
+        <li>Leather_Pig</li>
+        <li>AR_Bronze</li>
+        <li>Leather_Patch</li>
+        <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+      </disallowedThingDefs>
     </apparelStuffFilter>
-    <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
+    <settlementTexturePath>Icon/ClassicalAntiquityFactionBase</settlementTexturePath>
     <colorSpectrum>
       <li>(0, 0.737, 0.847)</li>
     </colorSpectrum>
