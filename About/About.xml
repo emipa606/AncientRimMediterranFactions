@@ -20,6 +20,10 @@
   </modDependencies>
   <loadAfter>
     <li>Mlie.AncientRimSPQRim</li>
+	<li>wvc.sergkart.itt.techtreepatch</li>
+	<li>oskarpotocki.vfe.classical</li>
+	<li>shavius.classical.flavour</li>
+	<li>zal.legionaryequipment</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod

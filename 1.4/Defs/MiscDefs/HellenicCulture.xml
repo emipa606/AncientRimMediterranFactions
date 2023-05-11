@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <CultureDef>
     <defName>Romulus</defName>
-    <label>romulus</label>
+    <label>Romulus</label>
     <description>The great Roman culture.</description>
     <pawnNameMaker>NamerPersonRome</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
@@ -20,48 +20,64 @@
       <despised>Ultratech</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
+      <li MayRequire="vanillaexpanded.vmemese">
+        <category MayRequire="vanillaexpanded.vmemese">VME_Hedonist</category>
+        <priority MayRequire="vanillaexpanded.vmemese">2</priority>
+      </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>
-        <priority>2</priority>
+        <priority>1</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
-      <li>
-        <tag>Tribal</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoBeard</tag>
-        <baseWeight>10</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>BeardTribal</tag>
-        <baseWeight>0.3</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooFaceTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooBodyTribal</tag>
-        <baseWeight>0.4</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
+		<li>
+			<tag>Roman</tag>
+			<baseWeight>2</baseWeight>
+			<weightFactor>1.05</weightFactor>
+		</li>
+		
+		<li>
+			<tag>Tribal</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		<li>
+			<tag>NoBeard</tag>
+			<baseWeight>20</baseWeight>
+			<weightFactor>2</weightFactor>
+		</li>
+		
+		<li>
+			<tag>BeardTribal</tag>
+			<baseWeight>0</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		
+		<li>
+			<tag>TattooFaceTribal</tag>
+			<baseWeight>0.4</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		
+		<li>
+			<tag>TattooBodyTribal</tag>
+			<baseWeight>0.2</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+		
+		<li>
+			<tag>NoTattoo</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
   </CultureDef>
+  
+  
   <CultureDef>
     <defName>Hellian</defName>
-    <label>hellian</label>
-    <description>The ancient Hellenic culture.</description>
+    <label>Hellian</label>
+    <description>The ancient Hellan culture.</description>
     <pawnNameMaker>NamerPersonGreece</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
@@ -71,19 +87,28 @@
     <allowedPlaceTags>
       <li>OriginTribal</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>Icon/LaurelWreath</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Neolithic</noble>
       <despised>Ultratech</despised>
     </preferredWeaponClasses>
     <thingStyleCategories>
+      <li MayRequire="vanillaexpanded.vmemese">
+        <category MayRequire="vanillaexpanded.vmemese">VME_Hedonist</category>
+        <priority MayRequire="vanillaexpanded.vmemese">1</priority>
+      </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Totemic</category>
         <priority>2</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
+		<li>
+			<tag>Roman</tag>
+			<baseWeight>2</baseWeight>
+			<weightFactor>2</weightFactor>
+		</li>
       <li>
         <tag>Tribal</tag>
         <baseWeight>1</baseWeight>
