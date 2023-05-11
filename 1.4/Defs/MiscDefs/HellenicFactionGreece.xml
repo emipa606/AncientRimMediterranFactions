@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Defs> 
+<Defs>
   <!--hellada-->
   <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Hellas</defName>
     <label>Hellada city-states</label>
     <description>Clearly mirrored from Old Earth's classical antiquity, this Faction appears to emulate the decentralized connection of the Old Earth's Greek city-states prior to the conquest by Rome, particularly those like Athens. These Greeks think to be the perfect civilization on this Rim World and believe to be committed to bring their civilization to other people. \n They thrive on lively debate, granting significant political freedom to their Pawns, and open their doors to tradesmen every day at sunrise. Known for their decadence as much as their mastery of the arts, culture, and political sciences, these people claim to have lived here for millennia. Even the tribesmen admit that they were here long before them. No one is sure how they got here or how they managed to preserve the traditions of classical antiquity for this long. Moreover, Old Earth's Hellenic city-states fell to the far more advanced society of the Roman Republic (later an Empire), something that the Romans in this part of the Rim have failed to do. \n \n These Greeks approach the rest of this Rim World the same as the more honorable tribesmen do, and in a way starkly resembling their Old Earth forefathers. Despite their obvious technological weakness, this Faction can be a valuable friend because of their skill with low-tech warfare, their numbers, and their wealth. They pursue a gentle way of life where they can, spending their days arguing, philosophizing, and drinking. They are open to trade and alliances, even with strange peoples.</description>
-	<categoryTag>Tribal</categoryTag>
+    <categoryTag>Tribal</categoryTag>
     <pawnsPlural>Greeks</pawnsPlural>
     <pawnSingular>Greek</pawnSingular>
     <listOrderPriority>30</listOrderPriority>
@@ -26,12 +26,12 @@
     <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
-		<li MayRequire="shavius.classical.flavour">
-			<categories>
-				<li MayRequire="shavius.classical.flavour">Classical</li>
-			</categories>
-			<commonality>1.5</commonality>
-		</li>
+      <li MayRequire="shavius.classical.flavour">
+        <categories>
+          <li MayRequire="shavius.classical.flavour">Classical</li>
+        </categories>
+        <commonality>1.5</commonality>
+      </li>
       <li>
         <categories>
           <li>Tribal</li>
@@ -48,20 +48,20 @@
     <geneticVariance>0.8</geneticVariance>
     <allowedCultures>
       <li>Hellian</li>
-	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
+      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
     </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
-	  <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
+      <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-5</min>
@@ -76,81 +76,71 @@
         <li>(100000, 10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
-	
-	<requiredMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
-		
-		<!-- If you have the Mod -->
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
-	</requiredMemes>
-	
-	<disallowedMemes>
-		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
-		
-		<!-- Forbidden Mod Memes -->
-		<li MayRequire="Zezz.Altrumeme">Altruism</li>
-		<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
-		<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
-		<li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
-	</disallowedMemes>
-	
-	<disallowedPrecepts>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-		<!-- For some reason, the game eliminates the entire Slavery Precept when generating Greek city-states if this line is included -->
-		<!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
-		
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
-		<li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
-		
-		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
-		
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
-		<!-- <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li> -->
-	
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
-		<!-- For some reason, the game eliminates the entire Precept category when generating Greek city-states if this line is included -->
-		<!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
-	</disallowedPrecepts>
-	
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <!-- If you have the Mod -->
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+      <!-- Forbidden Mod Memes -->
+      <li MayRequire="Zezz.Altrumeme">Altruism</li>
+      <li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+      <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+      <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <!-- For some reason, the game eliminates the entire Slavery Precept when generating Greek city-states if this line is included -->
+      <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
+      <!-- <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li> -->
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
+      <!-- For some reason, the game eliminates the entire Precept category when generating Greek city-states if this line is included -->
+      <!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Respected</li> -->
+    </disallowedPrecepts>
     <pawnGroupMakers>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
           <AR_Citizen>200</AR_Citizen>
-		  <TSP_AR_CitizenGirl>150</TSP_AR_CitizenGirl>
+          <TSP_AR_CitizenGirl>150</TSP_AR_CitizenGirl>
           <AR_Councilman>50</AR_Councilman>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
-		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">15</VFEC_RepublicVillager>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">10</VFEC_ScorpionOperator>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">15</VFEC_RepublicVillager>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">10</VFEC_ScorpionOperator>
           <AR_HellenicSword>20</AR_HellenicSword>
           <AR_Peltast>20</AR_Peltast>
           <AR_Toxotes>20</AR_Toxotes>
           <AR_Psilos>20</AR_Psilos>
-		  <AR_Hoplite>20</AR_Hoplite>
-		  <AR_HopliteHeavy>10</AR_HopliteHeavy>
-		  <AR_General>5</AR_General>
+          <AR_Hoplite>20</AR_Hoplite>
+          <AR_HopliteHeavy>10</AR_HopliteHeavy>
+          <AR_General>5</AR_General>
         </options>
       </li>
       <li>
@@ -164,7 +154,7 @@
           <AR_Psilos>250</AR_Psilos>
           <AR_HopliteHeavy>200</AR_HopliteHeavy>
           <AR_General>50</AR_General>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
         </options>
       </li>
       <li>
@@ -180,7 +170,7 @@
         </carriers>
         <guards>
           <AR_Citizen>50</AR_Citizen>
-		  <TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
+          <TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
           <AR_Councilman>50</AR_Councilman>
           <AR_HellenicSword>250</AR_HellenicSword>
           <AR_Hoplite>250</AR_Hoplite>
@@ -188,17 +178,17 @@
           <AR_Toxotes>250</AR_Toxotes>
           <AR_Psilos>250</AR_Psilos>
           <AR_HopliteHeavy>100</AR_HopliteHeavy>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">35</VFEC_RepublicSenator>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
           <AR_Citizen>500</AR_Citizen>
-		  <TSP_AR_CitizenGirl>400</TSP_AR_CitizenGirl>
+          <TSP_AR_CitizenGirl>400</TSP_AR_CitizenGirl>
           <AR_Councilman>120</AR_Councilman>
-		  <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">80</VFEC_RepublicSenator>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">80</VFEC_RepublicSenator>
           <AR_HellenicSword>250</AR_HellenicSword>
           <AR_Hoplite>250</AR_Hoplite>
           <AR_Peltast>250</AR_Peltast>
@@ -206,23 +196,23 @@
           <AR_Psilos>250</AR_Psilos>
           <AR_HopliteHeavy>100</AR_HopliteHeavy>
           <AR_General>50</AR_General>
-		  <Slave>75</Slave>
-		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
+          <Slave>75</Slave>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">50</VFEC_ScorpionOperator>
         </options>
       </li>
     </pawnGroupMakers>
     <modExtensions>
-        <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
-          <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
-          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
-            <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
-          </chooseFromlayouts>
-        </li>
+      <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
+        <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
+        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
+          <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
+        </chooseFromlayouts>
+      </li>
     </modExtensions>
-	<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <fixedLeaderKinds>
-		<li>AR_Councilman</li>
-		<li MayRequire="oskarpotocki.fge.classical">VFEC_RepublicSenator</li>
+      <li>AR_Councilman</li>
+      <li MayRequire="oskarpotocki.fge.classical">VFEC_RepublicSenator</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
   </FactionDef>

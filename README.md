@@ -33,7 +33,4 @@ Macedonia which is hostile and won't pursue for peace in its imperial interest
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861]Last updated 2023-01-18
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861]Last updated 2023-05-11
