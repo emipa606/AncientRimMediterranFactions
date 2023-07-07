@@ -86,9 +86,9 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Abhorrent</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Horrible</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
