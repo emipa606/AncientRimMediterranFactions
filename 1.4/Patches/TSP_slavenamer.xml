@@ -35,7 +35,7 @@
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="Slave"]</xpath>
+      <xpath>/Defs/PawnKindDef[defName="Slave"]/apparelRequired</xpath>
       <value>
           <li>Apparel_Collar</li>
       </value>
