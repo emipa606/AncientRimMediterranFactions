@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ScenarioDef Name="RAVENFACE_AncientRim">
     <defName>RAVENFACE_AncientRim</defName>
@@ -18,74 +17,74 @@
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-				<def>ConfigPage_ConfigureStartingPawns</def>
-				<pawnCount>3</pawnCount>
-				<pawnChoiceCount>8</pawnChoiceCount>
-			</li>
-			<li Class="ScenPart_PlayerPawnsArriveMethod">
-				<def>PlayerPawnsArriveMethod</def>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Silver</thingDef>
-				<count>25</count>
-			</li>
-			<li Class="ScenPart_ScatterThingsNearPlayerStart">
-				<def>ScatterThingsNearPlayerStart</def>
-				<thingDef>AR_Bronze</thingDef>
-				<count>20</count>
-				<allowRoofed>false</allowRoofed>
-			</li>
-			<li Class="ScenPart_ScatterThingsNearPlayerStart">
-				<def>ScatterThingsNearPlayerStart</def>
-				<thingDef>WoodLog</thingDef>
-				<count>300</count>
-				<allowRoofed>false</allowRoofed>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MealLavish_Veg</thingDef>
-				<count>15</count>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>AR_HoplonSpartan</thingDef>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>AR_Corinthian</thingDef>
-				<stuff>AR_Iron</stuff>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MeleeWeapon_Spear</thingDef>
-				<stuff>AR_Iron</stuff>
-				<count>2</count>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>Campfire</thingDef>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>MealFine</thingDef>
-				<count>5</count>
-			</li>
-			<li Class="ScenPart_StartingThing_Defined">
-				<def>StartingThing_Defined</def>
-				<thingDef>PassiveCooler</thingDef>
-			</li>
-			<li Class="ScenPart_PlayerPawnsArriveMethod">
-				<def>PlayerPawnsArriveMethod</def>
-			</li>
-			<li Class="ScenPart_SetNeedLevel">
-				<def>SetNeedLevel</def>
-				<chance>1</chance>
-				<context>PlayerStarter</context>
-				<need>Food</need>
-				<levelRange>0~0.1</levelRange>
-			</li>
-		</parts>
-	</scenario>
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>25</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>AR_Bronze</thingDef>
+          <count>20</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>300</count>
+          <allowRoofed>false</allowRoofed>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealLavish_Veg</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>AR_HoplonSpartan</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>AR_Corinthian</thingDef>
+          <stuff>AR_Iron</stuff>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Spear</thingDef>
+          <stuff>AR_Iron</stuff>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Campfire</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealFine</thingDef>
+          <count>5</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>PassiveCooler</thingDef>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+        </li>
+        <li Class="ScenPart_SetNeedLevel">
+          <def>SetNeedLevel</def>
+          <chance>1</chance>
+          <context>PlayerStarter</context>
+          <need>Food</need>
+          <levelRange>0~0.1</levelRange>
+        </li>
+      </parts>
+    </scenario>
   </ScenarioDef>
 </Defs>
