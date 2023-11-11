@@ -102,7 +102,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
     </disallowedPrecepts>
-    <pawnGroupMakers>
+    <pawnGroupMakers Inherit="False">
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
@@ -175,12 +175,11 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
-        <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
-          <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
+			<li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical">
+			  <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
+			  </chooseFromlayouts>
+			</li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <fixedLeaderKinds>
