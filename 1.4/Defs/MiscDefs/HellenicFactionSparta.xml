@@ -162,7 +162,8 @@
           <AR_Spartan>1500</AR_Spartan>
           <!-- Sparta was actually rendered irrelevant and unable to fight back in the end because people could LOSE their Spartan warrior status but could never EARN it unless they were already born into the ruling class. In almost every case, the greatest Spartan generals ever (e.g. Lysander) were slaves, not Spartiates. For the purposes of this game, we are assuming that this was changed and any freeman could earn the right to be a Spartiate. -->
           <AR_HopliteHeavy>175</AR_HopliteHeavy>
-          <TSP_AR_GunSpartan>50</TSP_AR_GunSpartan> <!-- The WHAT? -->
+          <TSP_AR_GunSpartan>50</TSP_AR_GunSpartan>
+          <!-- The WHAT? -->
           <!-- TIL (10/26/2021 AD) Sparta had a Senate equivalent -->
           <AR_General>100</AR_General>
           <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">3</VFEC_ScorpionOperator>
@@ -214,7 +215,8 @@
           <AR_HopliteHeavy>300</AR_HopliteHeavy>
           <AR_Preatorian>40</AR_Preatorian>
           <AR_General>120</AR_General>
-          <TSP_AR_GunSpartan>100</TSP_AR_GunSpartan> <!-- The WHAT? -->
+          <TSP_AR_GunSpartan>100</TSP_AR_GunSpartan>
+          <!-- The WHAT? -->
           <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">50</VFEC_TownGuard>
           <Slave>200</Slave>
         </options>
@@ -227,8 +229,6 @@
       <li>AR_General</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
-	<modExtensions>
-	</modExtensions>
     <!-- Madness? -->
     <!-- THIS -->
     <!-- IS -->
