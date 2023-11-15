@@ -1,5 +1,8 @@
 # Changelog for AncientRimMediterranFactions
 
+1.4.5 - Some patch-fixes and also the inclusion of an updated version of the 1.3 scenario by [url=https://www.steamcommunity.com/sharedfiles/filedetails/?id=2608733073]RAVENFACE[/url], fixed by TurtleShroom.
+
+
 1.4.4 - Added bug-fixes and compatibility with some other mods, now in 1.4. Thanks TurtleShroom
 
 
