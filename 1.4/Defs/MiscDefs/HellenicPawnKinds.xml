@@ -143,7 +143,6 @@
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
-      <li>Intellectual</li>
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -207,7 +206,6 @@
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
-      <li>Intellectual</li>
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -725,7 +723,6 @@
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
-      <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
       <min>2.8</min>
@@ -799,12 +796,15 @@
         <categoriesAdulthood>
           <li>ImperialRoyal</li>
           <li>ImperialFighter</li>
+		  <li>TribalHunter</li>
+		  <li>Hunter</li>
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Social</li>
+	  <li>Intellectual</li>
     </requiredWorkTags>
     <combatPower>100</combatPower>
     <itemQuality>Legendary</itemQuality>
