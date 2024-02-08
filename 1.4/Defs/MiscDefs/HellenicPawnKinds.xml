@@ -210,7 +210,7 @@
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
-    <requiredWorkTags>
+    <requiredWorkTags Inherit="False">
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -243,6 +243,7 @@
       <min>1000</min>
       <max>5000</max>
     </apparelMoney>
+    <requiredWorkTags Inherit="False"></requiredWorkTags> <!-- No requirements to ensure Caravans always spawn -->
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -811,7 +812,7 @@
     <requiredWorkTags>
       <li>Violent</li>
       <li>Social</li>
-	  <li>Intellectual</li>
+	  <!-- <li>Intellectual</li> -->
     </requiredWorkTags>
     <combatPower>100</combatPower>
     <itemQuality>Legendary</itemQuality>
