@@ -165,7 +165,6 @@
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_Slaver</li>
       <li>Caravan_Neolithic_ShamanMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>

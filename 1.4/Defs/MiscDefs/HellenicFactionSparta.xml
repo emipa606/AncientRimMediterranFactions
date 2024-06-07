@@ -60,8 +60,9 @@
       </li>
     </backstoryFilters>
     <geneticVariance>0</geneticVariance>
-    <allowedCultures>
+    <allowedCultures Inherit="False">
       <li>Hellian</li>
+	  <li>Hellenes</li>
     </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_WarMerchant</li>
