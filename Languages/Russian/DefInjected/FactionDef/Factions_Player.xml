@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--1.4/Defs/FactionDefs/Factions_Player.xml-->
+<PlayerHellenes.label>Племя эллинов</PlayerHellenes.label>
+<PlayerHellenes.description>Небольшая группа эллинов.</PlayerHellenes.description>
+<PlayerHellenes.pawnSingular>эллин</PlayerHellenes.pawnSingular>
+<PlayerHellenes.pawnsPlural>эллины</PlayerHellenes.pawnsPlural>
+
+</LanguageData>

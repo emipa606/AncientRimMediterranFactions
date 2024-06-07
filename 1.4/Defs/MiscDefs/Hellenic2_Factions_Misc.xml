@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <FactionDef ParentName="FactionBase" Name="HellenesBase" Abstract="True">
+    <pawnSingular>Hellen</pawnSingular>
+    <pawnsPlural>Hellenic party</pawnsPlural>
+    <categoryTag>Tribal</categoryTag>
+    <listOrderPriority>20</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/HellenicSettlement</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/Expanding/HellenicSettlement</settlementTexturePath>
+    <factionNameMaker>TP_NamerFactionHellenic</factionNameMaker>
+    <settlementNameMaker>TP_NamerSettlementHellenic</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <allowedCultures>
+      <li>Hellenes</li>
+	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
+    </allowedCultures>
+	<disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+      <li MayRequire="llunak.MorePrecepts">Pacifism</li>
+      <li MayRequire="Qux.factionhippie">PeaceLove</li>
+      <li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+      <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+      <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+	</disallowedMemes>
+	<disallowedPrecepts>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <!-- For some reason, the game eliminates the entire Slavery Precept when generating Greek city-states if this line is included -->
+      <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+      <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+	</disallowedPrecepts>
+	<!--
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
+      </xenotypeChances>
+    </xenotypeSet>
+	-->
+    <backstoryFilters>
+      <li MayRequire="shavius.classical.flavour">
+        <categories>
+          <li MayRequire="shavius.classical.flavour">Classical</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+            <li MayRequire="shavius.Classical.Flavour">Classical</li>
+			<li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+        <li>Leather_Pig</li>
+        <li>AR_Bronze</li>
+		<li MayRequore="TSP.Isengriff.Storytime">Leather_Jeub</li>
+        <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li> -->
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+      </disallowedThingDefs>
+    </apparelStuffFilter>
+    <caravanTraderKinds>
+		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+       
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
+    </baseTraderKinds>
+	<raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <leaderTitle>strategos</leaderTitle>
+  </FactionDef>
+
+  <FactionDef ParentName="HellenesBase">
+    <defName>HellenesCivil</defName>
+    <label>Pan-Hellenic coalition</label>
+    <description>A peaceful union of Hellenic cities, combining elements of the Roman, Macedonian, and several various Greek Factions, alongside assimilated Corunan tribesmen. This Faction was formed from the union of dozens of smaller Mediterranean-cultured city states alongside several minor Corunan tribes. Unlike their peers and constituent parts, this Faction is open-minded and seeks to enjoy the company of other cultures and civilizations. \n \n They are eager to expand their combined power primarily by trade and cultural influence, not war. \n However, this does not make them push overs: though pacifistic, they believe strong in self-defense and maintain standing regiments of soldiers to protect themselves from aggresion. For this reason, attacking them is harder to do than most tribesmen. Their Pan-Hellenic ethos comprises courage, hospitality, wisdom and individualism.</description>
+    <colorSpectrum>
+      <li>(0.25, 0.70, 0.95)</li>
+      <li>(0.50, 0.65, 1)</li>
+      <li>(0.10, 0.50, 1)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/HellenicSettlement</factionIconPath>
+	<requiredMemes>
+		<li MayRequire="kirby.morereligiousorigins">Structure_OriginHellenic</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+		<li MayRequire="erdelf.humanoidalienraces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
+	</requiredMemes>
+	  <disallowedMemes>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+	  </disallowedMemes>
+	  <disallowedPrecepts>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
+		<!-- <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li> -->
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
+		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
+	  </disallowedPrecepts>
+  <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <allowedCultures Inherit="False">
+      <li>Hellenes</li>
+    </allowedCultures>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+       <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
+    <raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>7</Tribal_Archer>
+          <Tribal_Hunter>7</Tribal_Hunter>
+          <Tribal_HeavyArcher>7</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+          <AR_Citizen>5</AR_Citizen>
+          <AR_HellenicSword>5</AR_HellenicSword>
+          <AR_Hoplite>10</AR_Hoplite>
+          <AR_Peltast>5</AR_Peltast>
+          <AR_Toxotes>5</AR_Toxotes>
+          <AR_Psilos>5</AR_Psilos>
+          <AR_HopliteHeavy>4</AR_HopliteHeavy>
+          <AR_General>3</AR_General>
+          <AR_Spartan>3</AR_Spartan>
+		  <AR_Preatorian>5</AR_Preatorian>
+		  <TSP_AR_GunSpartan>1</TSP_AR_GunSpartan>
+		  <AR_HopliteMakedon>5</AR_HopliteMakedon>
+          <AR_Sagittarius>5</AR_Sagittarius>
+          <AR_Hastatus>5</AR_Hastatus>
+          <AR_Legionary>4</AR_Legionary>
+		  <TSP_AR_Legate>3</TSP_AR_Legate>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">5</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">8</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">6</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicAuxilia>
+          <VFEC_Centurion MayRequire="oskarpotocki.vfe.classical">3</VFEC_Centurion>
+		  <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>9</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+          <AR_Citizen>10</AR_Citizen>
+          <TSP_AR_CitizenGirl>15</TSP_AR_CitizenGirl>
+          <AR_Councilman>8</AR_Councilman>
+          <AR_HellenicSword>5</AR_HellenicSword>
+          <AR_Peltast>5</AR_Peltast>
+          <AR_Toxotes>5</AR_Toxotes>
+          <AR_Psilos>5</AR_Psilos>
+          <AR_Hoplite>5</AR_Hoplite>
+          <AR_HopliteHeavy>5</AR_HopliteHeavy>
+          <AR_General>5</AR_General>
+		  <AR_Preatorian>5</AR_Preatorian>
+		  <AR_HopliteMakedon>5</AR_HopliteMakedon>
+          <AR_Sagittarius>5</AR_Sagittarius>
+          <AR_Hastatus>5</AR_Hastatus>
+          <AR_Legionary>4</AR_Legionary>
+		  <TSP_AR_Legate>3</TSP_AR_Legate>
+		  <Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">14</Tribal_Child>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">10</VFEC_RepublicVillager>
+          <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">10</VFEC_RepublicSenator>
+          <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+        </options>
+      </li>
+	  <li MayRequire="sasha.legionaryequipment">
+		<kindDef MayRequire="sasha.legionaryequipment">Peaceful</kindDef>
+		<options MayRequire="sasha.legionaryequipment">
+			<TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">999</TSP_AR_Aquilifer>
+		</options>
+	  </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+          <Horse>4</Horse>
+          <Donkey>13</Donkey>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <AR_Citizen>5</AR_Citizen>
+          <TSP_AR_CitizenGirl>5</TSP_AR_CitizenGirl>
+          <AR_Councilman>20</AR_Councilman>
+          <AR_HellenicSword>10</AR_HellenicSword>
+          <AR_Hoplite>10</AR_Hoplite>
+          <AR_Peltast>5</AR_Peltast>
+          <AR_Toxotes>5</AR_Toxotes>
+          <AR_Psilos>5</AR_Psilos>
+          <AR_HopliteHeavy>10</AR_HopliteHeavy>
+			<AR_Spartan>3</AR_Spartan>
+			<AR_Preatorian>5</AR_Preatorian>
+			<TSP_AR_GunSpartan>1</TSP_AR_GunSpartan>
+			<AR_HopliteMakedon>5</AR_HopliteMakedon>
+			<VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+			<VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">5</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
+          <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">4</VFEC_RepublicAuxilia>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+          <AR_Citizen>17</AR_Citizen>
+          <TSP_AR_CitizenGirl>17</TSP_AR_CitizenGirl>
+          <AR_Councilman>10</AR_Councilman>
+          <AR_HellenicSword>10</AR_HellenicSword>
+          <AR_Hoplite>10</AR_Hoplite>
+          <AR_Peltast>5</AR_Peltast>
+          <AR_Toxotes>5</AR_Toxotes>
+          <AR_Psilos>5</AR_Psilos>
+          <AR_HopliteHeavy>5</AR_HopliteHeavy>
+          <AR_General>10</AR_General>
+          <Slave>15</Slave>
+		  <AR_Preatorian>5</AR_Preatorian>
+		  <TSP_AR_GunSpartan>1</TSP_AR_GunSpartan>
+		  <AR_HopliteMakedon>5</AR_HopliteMakedon>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">5</VFEC_TownGuard>
+          <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">8</VFEC_RepublicVillager>
+          <VFEC_Legionnaire MayRequire="oskarpotocki.fge.classical">5</VFEC_Legionnaire>
+          <VFEC_RepublicSenator MayRequire="oskarpotocki.fge.classical">1</VFEC_RepublicSenator>
+          <TSP_AR_Aquilifer MayRequire="sasha.legionaryequipment">2</TSP_AR_Aquilifer>
+		  <VFEC_ScorpionOperator MayRequire="oskarpotocki.vfe.classical">5</VFEC_ScorpionOperator>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">4</VFEC_RepublicAuxilia>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+          <AR_Citizen>5</AR_Citizen>
+		  <AR_Spartan>1</AR_Spartan>
+		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicAuxilia>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+		  <AR_Citizen>5</AR_Citizen>
+		  <AR_Spartan>8</AR_Spartan>
+		  <TSP_AR_GunSpartan>6</TSP_AR_GunSpartan>
+		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">5</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">2</VFEC_RepublicAuxilia>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+		  <AR_Citizen>5</AR_Citizen>
+		  <AR_Spartan>3</AR_Spartan>
+		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+		  <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicAuxilia>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+		  <AR_Spartan>3</AR_Spartan>
+		  <AR_HopliteMakedon>1</AR_HopliteMakedon>
+		  <AR_Citizen>5</AR_Citizen>
+		  <TSP_AR_CitizenGirl>11</TSP_AR_CitizenGirl>
+		  <VFEC_TownGuard MayRequire="oskarpotocki.vfe.classical">2</VFEC_TownGuard>
+		  <VFEC_RepublicVillager MayRequire="oskarpotocki.fge.classical">3</VFEC_RepublicVillager>
+          <VFEC_RepublicArcher MayRequire="oskarpotocki.vfe.classical">1</VFEC_RepublicArcher>
+          <VFEC_RepublicAuxilia MayRequire="oskarpotocki.vfe.classical">2</VFEC_RepublicAuxilia>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+
+</Defs>
