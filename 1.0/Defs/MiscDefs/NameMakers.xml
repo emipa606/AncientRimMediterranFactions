@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>NamerPersonRome</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[NamesRome] of [PlacesRome]</li>
-        <li>name-&gt;[NamesRome] [NamesRome]</li>
-        <li>name-&gt;[NamesRome] the [Numbers].</li>
-        <li>name-&gt;[NamesRome] [NamesRome] of [PlacesRome]</li>
-        <li>name-&gt;[NamesRome] [NamesRome] [NamesRome]</li>
-        <li>name-&gt;[NamesRome] [NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] of [PlacesRome]</li>
+        <li>name->[NamesRome] [NamesRome]</li>
+        <li>name->[NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] [NamesRome] of [PlacesRome]</li>
+        <li>name->[NamesRome] [NamesRome] [NamesRome]</li>
+        <li>name->[NamesRome] [NamesRome] the [Numbers].</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -31,7 +31,7 @@
     <defName>NamerFactionBaseRome</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt;[PlacesRome]</li>
+        <li>name->[PlacesRome]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -45,11 +45,11 @@
     <defName>NamerFactionRome</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Imperium Romana</li>
-        <li>name-&gt; Roma</li>
-        <li>name-&gt; Roman Empire</li>
-        <li>name-&gt; Roman Republic</li>
-        <li>name-&gt; Latin League</li>
+        <li>name-> Imperium Romana</li>
+        <li>name-> Roma</li>
+        <li>name-> Roman Empire</li>
+        <li>name-> Roman Republic</li>
+        <li>name-> Latin League</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -57,11 +57,11 @@
     <defName>NamerFactionHellada</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Hellada</li>
-        <li>name-&gt; Greece</li>
-        <li>name-&gt; The Greek Cities</li>
-        <li>name-&gt; Delian League</li>
-        <li>name-&gt; Athenian Empire</li>
+        <li>name-> Hellada</li>
+        <li>name-> Greece</li>
+        <li>name-> The Greek Cities</li>
+        <li>name-> Delian League</li>
+        <li>name-> Athenian Empire</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -69,11 +69,11 @@
     <defName>NamerFactionSparta</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Sparta</li>
-        <li>name-&gt; Peloponnesian League</li>
-        <li>name-&gt; Spartan Kingdom</li>
-        <li>name-&gt; Spartan Empire</li>
-        <li>name-&gt; Laconia</li>
+        <li>name-> Sparta</li>
+        <li>name-> Peloponnesian League</li>
+        <li>name-> Spartan Kingdom</li>
+        <li>name-> Spartan Empire</li>
+        <li>name-> Laconia</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -81,11 +81,11 @@
     <defName>NamerFactionMacedonia</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-&gt; Macedonia</li>
-        <li>name-&gt; Macedonian Kingdom</li>
-        <li>name-&gt; Macedonian Empire</li>
-        <li>name-&gt; Alexanders Empire</li>
-        <li>name-&gt; Seleukid Empire</li>
+        <li>name-> Macedonia</li>
+        <li>name-> Macedonian Kingdom</li>
+        <li>name-> Macedonian Empire</li>
+        <li>name-> Alexanders Empire</li>
+        <li>name-> Seleukid Empire</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
