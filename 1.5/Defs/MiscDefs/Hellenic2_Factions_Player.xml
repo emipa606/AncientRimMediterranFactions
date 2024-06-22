@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>PlayerHellenes</defName>
+        <label>lesser Hellenic tribe</label>
+        <description>A small group of Hellenes.</description>
+        <isPlayer>true</isPlayer>
+        <pawnSingular>Hellen</pawnSingular>
+        <pawnsPlural>Hellenes</pawnsPlural>
+		<categoryTag>Tribal</categoryTag>
+        <basicMemberKind>Hellen</basicMemberKind>
+        <techLevel>Neolithic</techLevel>
+        <backstoryCategories>
+            <li MayRequire="shavius.Classical.Flavour">Classical</li>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <factionIconPath>World/WorldObjects/Expanding/HellenicSettlement</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/Expanding/HellenicSettlement</settlementTexturePath>
+        <playerInitialSettlementNameMaker>TP_NamerSettlementHellenic</playerInitialSettlementNameMaker>
+        <factionNameMaker>TP_NamerFactionHellenic</factionNameMaker>
+        <settlementNameMaker>TP_NamerSettlementHellenic</settlementNameMaker>
+        <allowedCultures>
+          <li>Hellenes</li>
+        </allowedCultures>
+      <startingResearchTags>
+            <li>TribalStart</li>
+			<li>LowHellenicStart</li>
+        </startingResearchTags>
+   	 <forageabilityFactor>2</forageabilityFactor>
+   	 <startingTechprintsResearchTags>
+    	  <li>TribalStartTechprints</li>
+    	</startingTechprintsResearchTags>
+        <apparelStuffFilter>
+          <thingDefs>
+            <li>WoolSheep</li>
+			<li>AR_Bronze</li>
+          </thingDefs>
+        </apparelStuffFilter>
+   	 <recipePrerequisiteTags>
+      	<li>Tribal</li>
+  	  </recipePrerequisiteTags>
+    </FactionDef>
+</Defs>
