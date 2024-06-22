@@ -181,11 +181,11 @@
     <invNutrition>3</invNutrition>
     <apparelTags>
       <li>RomeCivil</li>
-      <!-- <li>Cape</li> -->
+      <!-- <li MayRequire="ludeon.rimworld.royalty">Cape</li> -->
       <!-- Doesn't need the tag because it's already covered below. This will stop two capes from spawning on one Pawn. -->
     </apparelTags>
     <apparelRequired>
-      <li>Apparel_Cape</li>
+      <li MayRequire="ludeon.rimworld.royalty">Apparel_Cape</li>
       <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
       <li>AR_Tunic</li>
     </apparelRequired>
@@ -243,7 +243,7 @@
       <min>1000</min>
       <max>5000</max>
     </apparelMoney>
-    <requiredWorkTags Inherit="False"></requiredWorkTags> <!-- No requirements to ensure Caravans always spawn -->
+    <requiredWorkTags IsNull="True" Inherit="False"></requiredWorkTags> <!-- No requirements to ensure Caravans always spawn -->
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -261,7 +261,7 @@
     <canBeSapper>true</canBeSapper>
     <combatPower>60</combatPower>
     <maxGenerationAge>45</maxGenerationAge>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood>
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -566,7 +566,7 @@
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <!-- <li>TribalHunter</li> -->
@@ -643,7 +643,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialFighter</li>
@@ -721,7 +721,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -799,7 +799,7 @@
     <fixedGender>Male</fixedGender>
     <backstoryCryptosleepCommonality>0.31</backstoryCryptosleepCommonality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialRoyal</li>
@@ -1198,7 +1198,7 @@
     <isFighter>true</isFighter>
     <canBeSapper>true</canBeSapper>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="False">
       <!--
       <li>
         <categoriesChildhood>
@@ -1329,6 +1329,7 @@
     <weaponTags>
       <li>Revolver</li>
       <li>SimpleGun</li>
+	  <li>OrientalHandCannon</li> <!-- From the T Samurai Mod, it's a hand mortar and very fitting -->
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>

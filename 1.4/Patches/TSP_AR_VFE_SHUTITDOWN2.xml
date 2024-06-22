@@ -301,8 +301,8 @@
       <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponMoney</xpath>
       <value>
         <weaponMoney>
-          <min>100</min>
-          <max>320</max>
+          <min>115</min>
+          <max>420</max>
         </weaponMoney>
       </value>
     </match>
@@ -499,6 +499,7 @@
         <TSP_AR_CitizenGirl>20</TSP_AR_CitizenGirl>
         <AR_Hoplite>20</AR_Hoplite>
         <AR_HopliteHeavy>10</AR_HopliteHeavy>
+		<TSP_AR_Aquilifer MayRequire="zal.legionaryequipment">0.5</TSP_AR_Aquilifer>
       </value>
     </match>
   </Operation>

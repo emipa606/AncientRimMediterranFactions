@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
     <FactionDef ParentName="PlayerFactionBase">
         <defName>PlayerHellenes</defName>
-        <label>Hellenic tribe</label>
-        <description>A small group of hellenes.</description>
+        <label>lesser Hellenic tribe</label>
+        <description>A small group of Hellenes.</description>
         <isPlayer>true</isPlayer>
-        <pawnSingular>hellen</pawnSingular>
-        <pawnsPlural>hellenes</pawnsPlural>
+        <pawnSingular>Hellen</pawnSingular>
+        <pawnsPlural>Hellenes</pawnsPlural>
 		<categoryTag>Tribal</categoryTag>
         <basicMemberKind>Hellen</basicMemberKind>
         <techLevel>Neolithic</techLevel>
@@ -25,20 +25,20 @@
         </allowedCultures>
       <startingResearchTags>
             <li>TribalStart</li>
+			<li>LowHellenicStart</li>
         </startingResearchTags>
-   	 <forageabilityFactor>1.7</forageabilityFactor>
+   	 <forageabilityFactor>2</forageabilityFactor>
    	 <startingTechprintsResearchTags>
     	  <li>TribalStartTechprints</li>
     	</startingTechprintsResearchTags>
         <apparelStuffFilter>
           <thingDefs>
             <li>WoolSheep</li>
+			<li>AR_Bronze</li>
           </thingDefs>
         </apparelStuffFilter>
    	 <recipePrerequisiteTags>
       	<li>Tribal</li>
   	  </recipePrerequisiteTags>
-
     </FactionDef>
-
 </Defs>

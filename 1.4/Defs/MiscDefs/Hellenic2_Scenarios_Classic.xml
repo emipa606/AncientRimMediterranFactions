@@ -3,10 +3,10 @@
 
   <ScenarioDef>
     <defName>HellenicTribe</defName>
-    <label>Hellenic Tribe</label>
-    <description>For a long time these people were little more than animals, but slow accumulation of knowledge brought them close to the outbreak of civilization. Environments are harsh, so they depend on wise guidance to bring them to glory and prosperity and out of desperation.\n\nNote: This is a difficult scenario.</description>
+    <label>Low Hellenic Tribe</label>
+    <description>For a long time these people were little more than animals, but slow accumulation of knowledge brought them close to the outbreak of civilization. Environments are harsh, so they depend on wise guidance to bring them to glory and prosperity and out of desperation.\n\m\n Note: Unlike the other tribes in the Ancient Rim series of Mods, this tribe does not have access to most of the technology of the Greeks and Romans. Thus, it is closer to the default tribal start and is therefore a more difficult scenario.</description>
     <scenario>
-      <summary>Five members of a hellenic tribe start building new civilization. Difficult.</summary>
+      <summary>Five members of a Hellenic tribe start building new civilization. More difficult than other AR starts.</summary>
       <playerFaction>
         <def>PlayerFaction</def>
         <factionDef>PlayerHellenes</factionDef>
@@ -51,8 +51,8 @@
 
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
-          <count>1</count>
-<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+          <count>3</count>
+			<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
         </li>
 
         <!-- Scatter some things near player start -->
@@ -71,7 +71,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Yor tribe was struggling to survive in a long centuries of wilderness. But your people were wise enough to appreciate every single piece of knowledge and expertise. Now you are close to the rise of civilization.</text>
+          <text>Yor tribe was struggling to survive in a long centuries of wilderness. Even so, your people were wise enough to appreciate every single piece of knowledge and expertise. Now you are close to the rise of civilization.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
 
