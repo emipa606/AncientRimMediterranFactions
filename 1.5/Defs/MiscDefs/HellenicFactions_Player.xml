@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FactionDef ParentName="HellenesBase">
+  <FactionDef ParentName="FactionBase">
     <defName>AR_PlayerFaction</defName>
     <label>Hellenic colony</label>
     <description>Your own Greek colony.</description>
@@ -15,7 +15,7 @@
         <categories MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">Classical</li>
         </categories>
-        <commonality MayRequire="shavius.classical.flavour">10</commonality>
+        <commonality MayRequire="shavius.classical.flavour">1</commonality>
       </li>
       <li>
         <categories>
@@ -33,7 +33,7 @@
     <factionIconPath>Icon/LaurelWreath</factionIconPath>
     <playerInitialSettlementNameMaker>NamerSettlementGreek</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerSettlementGreek</factionNameMaker>
-    <settlementNameMaker>NamerSettlementRome</settlementNameMaker>
+    <settlementNameMaker>NamerSettlementGreek</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>TribalStart</li>
@@ -42,10 +42,9 @@
     </startingResearchTags>
     <allowedCultures>
       <li>Hellian</li>
-	  <li>Hellenes</li>
     </allowedCultures>
     <apparelStuffFilter>
-      <thingDefs Inherit="False">
+      <thingDefs>
         <!-- <li>Cloth</li> -->
         <li>Leather_Pig</li>
         <li>AR_Bronze</li>

@@ -7,9 +7,13 @@
         <li>name->[NamesRome] of [PlacesRome]</li>
         <li>name->[NamesRome] [NamesRome]</li>
         <li>name->[NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] the [Color]</li>
         <li>name->[NamesRome] [NamesRome] of [PlacesRome]</li>
         <li>name->[NamesRome] [NamesRome] [NamesRome]</li>
         <li>name->[NamesRome] [NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] [NamesRome] [RomanNumeral]</li>
+        <li>name->[NamesRome] [ImperialNameLast][SylB]</li>
+        <li>name->[NamesRome] [ImperialNameLast][SylB]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -28,7 +32,7 @@
     </rulePack>
   </RulePackDef>
   <RulePackDef>
-    <defName>NamerFactionBaseRome</defName>
+    <defName>NamerSettlementRome</defName>
     <rulePack>
       <rulesStrings>
         <li>name->[PlacesRome]</li>
@@ -47,9 +51,15 @@
       <rulesStrings>
         <li>name-> Imperium Romana</li>
         <li>name-> Roma</li>
+        <li>name-> Rema</li>
+        <li>name-> Byzantium</li>
+        <li>name-> Basileia Rhomaion</li>
         <li>name-> Roman Empire</li>
-        <li>name-> Roman Republic</li>
-        <li>name-> Latin League</li>
+        <li>name-> Roman [empire]</li>
+        <li>name-> Reman [empire]</li>
+        <li>name-> Imperium Rema</li>
+        <li>name-> Romulus Land</li>
+        <li>name-> Remus Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -58,10 +68,13 @@
     <rulePack>
       <rulesStrings>
         <li>name-> Hellada</li>
-        <li>name-> Greece</li>
+        <li>name-> Greecian Confederation</li>
         <li>name-> The Greek Cities</li>
         <li>name-> Delian League</li>
-        <li>name-> Athenian Empire</li>
+        <li>name-> Athenia</li>
+        <li>name-> League of [Color] Greeks</li>
+        <li>name-> The [Color] City-States</li>
+        <li>name-> Hellenic Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -71,9 +84,10 @@
       <rulesStrings>
         <li>name-> Sparta</li>
         <li>name-> Peloponnesian League</li>
-        <li>name-> Spartan Kingdom</li>
-        <li>name-> Spartan Empire</li>
+        <li>name-> Lakedaimon</li>
         <li>name-> Laconia</li>
+        <li>name-> Lycurgus League</li>
+        <li>name-> Lysander Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -81,11 +95,15 @@
     <defName>NamerFactionMacedonia</defName>
     <rulePack>
       <rulesStrings>
-        <li>name-> Macedonia</li>
-        <li>name-> Macedonian Kingdom</li>
-        <li>name-> Macedonian Empire</li>
-        <li>name-> Alexanders Empire</li>
-        <li>name-> Seleukid Empire</li>
+        <li>name-> [Color] Diadochus</li>
+        <li>name-> [ColorBadass] Diadochus</li>
+        <li>name-> Neo-Macedonia</li>
+        <li>name-> Macedonian Satrapies</li>
+        <li>name-> The [Color] Satrapy</li>
+        <li>name-> The [ColorBadass] Satrapy</li>
+        <li>name-> Neo-Seleucid Diadochus</li>
+        <li>name-> Lost Diadochus</li>
+        <li>name-> Diadochi Land</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
