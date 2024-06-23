@@ -45,7 +45,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MeleeWeapon_Knife</thingDef>
-          <stuff>Steel</stuff>
+          <stuff>AR_Bronze</stuff>
           <count>3</count>
         </li>
 
@@ -65,6 +65,11 @@
           <def>ScatterThingsNearPlayerStart</def>
           <thingDef>WoolSheep</thingDef>
           <count>200</count>
+        </li>
+		
+        <li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
+          <def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
+          <numSenators MayRequire="oskarpotocki.vfe.classical">1</numSenators>
         </li>
 
 
