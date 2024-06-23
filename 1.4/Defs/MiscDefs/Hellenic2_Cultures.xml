@@ -13,7 +13,7 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalSophian</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
     </allowedPlaceTags>
     <iconPath>World/WorldObjects/Expanding/HellenicSettlement</iconPath>
     <iconColor>(0.9, 0.9, 0.9)</iconColor>

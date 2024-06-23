@@ -18,9 +18,10 @@
     <leaderTitle>imperator</leaderTitle>
     <factionIconPath>Icon/Lupa</factionIconPath>
     <colorSpectrum>
-      <li>(255,235,122)</li>
-      <li>(180,173,150)</li>
-      <li>(183,122,61)</li>
+		<li>(249,241,222)</li>
+		<li>(255,235,122)</li>
+		<li>(180,173,150)</li>
+		<li>(183,122,61)</li>
     </colorSpectrum>
     <factionNameMaker>NamerFactionRome</factionNameMaker>
     <settlementNameMaker>NamerSettlementRome</settlementNameMaker>
@@ -51,7 +52,7 @@
         <commonality>0.1</commonality>
       </li>
     </backstoryFilters>
-    <geneticVariance>0.4</geneticVariance>
+    <!-- <geneticVariance>0.4</geneticVariance> -->
     <allowedCultures Inherit="False">
       <li>Romulus</li>
     </allowedCultures>
@@ -232,7 +233,7 @@
         </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <fixedLeaderKinds>
+    <fixedLeaderKinds Inherit="False">
       <li>TSP_AR_Roman_Emperor</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>

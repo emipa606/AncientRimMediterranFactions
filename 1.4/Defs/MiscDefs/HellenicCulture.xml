@@ -12,9 +12,9 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>Icon/LupaGreyscale</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Neolithic</noble>
@@ -80,7 +80,7 @@
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
     </allowedPlaceTags>
     <iconPath>Icon/LaurelWreath</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>

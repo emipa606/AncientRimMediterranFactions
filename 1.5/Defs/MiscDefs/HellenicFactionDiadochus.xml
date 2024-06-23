@@ -183,7 +183,7 @@
         </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <fixedLeaderKinds>
+    <fixedLeaderKinds Inherit="False">
       <li>AR_General</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>

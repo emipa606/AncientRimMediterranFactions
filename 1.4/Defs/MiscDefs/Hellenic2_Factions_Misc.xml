@@ -20,7 +20,6 @@
 	  <li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
     </allowedCultures>
 	<disallowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
@@ -29,6 +28,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
 	  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+	  <!-- Forbidden Mod Memes -->
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
       <li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
@@ -36,6 +36,7 @@
       <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+	  <li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
 	</disallowedMemes>
 	<disallowedPrecepts>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
@@ -67,13 +68,14 @@
         <categories>
           <li MayRequire="shavius.classical.flavour">Classical</li>
         </categories>
-        <commonality>1</commonality>
+        <commonality MayRequire="shavius.classical.flavour">2</commonality>
       </li>
       <li>
         <categories>
             <li MayRequire="shavius.Classical.Flavour">Classical</li>
 			<li>Tribal</li>
         </categories>
+		<commonality>0.8</commonality>
       </li>
     </backstoryFilters>
     <apparelStuffFilter>
@@ -93,11 +95,11 @@
 		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
 		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
     </caravanTraderKinds>
-    <visitorTraderKinds>
-       
-    </visitorTraderKinds>
+    <visitorTraderKinds></visitorTraderKinds>
     <baseTraderKinds>
-      <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
+		<li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Base_Republic_Standard</li>
+		<li MayRequire="zal.legionaryequipment">Base_Roman_Standard</li>
     </baseTraderKinds>
 	<raidLootValueFromPointsCurve>
       <points>
@@ -114,7 +116,7 @@
   <FactionDef ParentName="HellenesBase">
     <defName>HellenesCivil</defName>
     <label>Pan-Hellenic coalition</label>
-    <description>A peaceful union of Hellenic cities, combining elements of the Roman, Macedonian, and several various Greek Factions, alongside assimilated Corunan tribesmen. This Faction was formed from the union of dozens of smaller Mediterranean-cultured city states alongside several minor Corunan tribes. Unlike their peers and constituent parts, this Faction is open-minded and seeks to enjoy the company of other cultures and civilizations. \n \n They are eager to expand their combined power primarily by trade and cultural influence, not war. \n However, this does not make them push overs: though pacifistic, they believe strong in self-defense and maintain standing regiments of soldiers to protect themselves from aggresion. For this reason, attacking them is harder to do than most tribesmen. Their Pan-Hellenic ethos comprises courage, hospitality, wisdom and individualism.</description>
+    <description>A peaceful union of Hellenic cities, combining elements of the Roman, Macedonian, and several various Greek Factions, alongside assimilated Corunan tribesmen. This Faction was formed from the union of dozens of smaller Mediterranean-cultured city states alongside several minor Corunan tribes. Unlike their peers and constituent parts, this Faction is open-minded and seeks to enjoy the company of other cultures and civilizations. \n \n They are eager to expand their combined power primarily by trade and cultural influence, not war. \n However, this does not make them push overs: though pacifistic, they believe strongly in self-defense and maintain standing regiments of soldiers to protect themselves from aggresion. For this reason, attacking them is harder to do than most tribesmen. Their Pan-Hellenic ethos comprises courage, hospitality, wisdom and individualism.</description>
     <colorSpectrum>
       <li>(0.25, 0.70, 0.95)</li>
       <li>(0.50, 0.65, 1)</li>
@@ -129,7 +131,6 @@
 	  <disallowedMemes>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
@@ -153,7 +154,7 @@
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
 		<!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li> -->
 	  </disallowedPrecepts>
-  <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+	<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <allowedCultures Inherit="False">
       <li>Hellenes</li>
     </allowedCultures>
@@ -163,9 +164,13 @@
       </points>
     </raidCommonalityFromPointsCurve>
     <caravanTraderKinds>
-      <li>Caravan_Neolithic_BulkGoods</li>
-      <li>Caravan_Neolithic_WarMerchant</li>
-      <li>Caravan_Neolithic_ShamanMerchant</li>
+		<li>Caravan_Neolithic_BulkGoods</li>
+		<li>Caravan_Neolithic_WarMerchant</li>
+		<li>Caravan_Neolithic_ShamanMerchant</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_BulkGoods</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_WarMerchant</li>
+		<li MayRequire="oskarpotocki.vfe.classical">VFEC_Caravan_Republic_Slaver</li>
+		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
        <li>Visitor_Neolithic_Standard</li>

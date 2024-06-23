@@ -200,6 +200,7 @@
     <factionLeader>true</factionLeader>
     <isFighter>false</isFighter>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <!-- <fixedGender>Male</fixedGender> -->
     <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
     <backstoryFiltersOverride>
@@ -566,6 +567,7 @@
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
     <factionLeader>true</factionLeader>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
@@ -643,6 +645,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
@@ -721,6 +724,7 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood MayRequire="shavius.classical.flavour">
@@ -797,6 +801,7 @@
     <labelFemale>Imperatrix</labelFemale>
     <race>Human</race>
     <fixedGender>Male</fixedGender>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <backstoryCryptosleepCommonality>0.31</backstoryCryptosleepCommonality>
 	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride Inherit="False">
