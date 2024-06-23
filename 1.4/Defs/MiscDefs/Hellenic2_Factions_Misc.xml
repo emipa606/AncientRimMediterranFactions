@@ -151,7 +151,7 @@
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Disapproved</li>
-		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li>
+		<!-- <li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Standard</li> -->
 	  </disallowedPrecepts>
   <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <allowedCultures Inherit="False">

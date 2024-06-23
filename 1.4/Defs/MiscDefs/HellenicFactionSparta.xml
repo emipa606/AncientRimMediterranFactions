@@ -32,7 +32,7 @@
         <categories MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categories>
-        <commonality>1</commonality>
+        <commonality MayRequire="shavius.classical.flavour">1.5</commonality>
       </li>
       <li>
         <categories>
@@ -59,7 +59,6 @@
         <commonality>0.25</commonality>
       </li>
     </backstoryFilters>
-    <geneticVariance>0</geneticVariance>
     <allowedCultures Inherit="False">
       <li>Hellian</li>
 	  <li>Hellenes</li>
@@ -115,7 +114,7 @@
       <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
       <li MayRequire="Ludeon.RimwWorld.Ideology">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophilia</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophilia</li>
     </disallowedMemes>
     <disallowedPrecepts>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>

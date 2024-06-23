@@ -11,10 +11,26 @@
 		<categoryTag>Tribal</categoryTag>
         <basicMemberKind>Hellen</basicMemberKind>
         <techLevel>Neolithic</techLevel>
-        <backstoryCategories>
-            <li MayRequire="shavius.Classical.Flavour">Classical</li>
-            <li>Tribal</li>
-        </backstoryCategories>
+		<!--
+		<backstoryCategories>
+			<li MayRequire="shavius.Classical.Flavour">Classical</li>
+			<li>Tribal</li>
+		</backstoryCategories>
+		-->
+		<backstoryFilters>
+			<li MayRequire="shavius.classical.flavour">
+				<categories>
+					<li MayRequire="shavius.classical.flavour">Classical</li>
+				</categories>
+				<commonality MayRequire="shavius.classical.flavour">10</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+				<commonality>1</commonality>
+			</li>
+		</backstoryFilters>
         <factionIconPath>World/WorldObjects/Expanding/HellenicSettlement</factionIconPath>
         <settlementTexturePath>World/WorldObjects/Expanding/HellenicSettlement</settlementTexturePath>
         <playerInitialSettlementNameMaker>TP_NamerSettlementHellenic</playerInitialSettlementNameMaker>
