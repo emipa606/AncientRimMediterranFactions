@@ -217,9 +217,8 @@
         <ScenarioDef MayRequire="oskarpotocki.vfe.classical">
           <defName>TSP_VFEC_AR_NewEmpire_Substitute</defName>
           <label>Ave You! (New Empire)</label>
-          <description>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you unite them on your terms, under your rule. Glory to the empire. Glory to the Emperor!
-
-NOTE: All classical antiquity Factions are permanently hostile to your "pretender" attempts! This will make peaceful unification impossible. Defy their calls for your arrest! Cross your own Rubicon, cast your die, and show them who truly rules the Rim!</description>
+          <description>Squabbling in the senate and cutthroat politics left you with distaste for anything regarding the will of the people. You deserve so much more - as your blood is royal and your wreath is golden. You gathered a few of the senators that sided with you and left the comforts of the Republic. It is time you unite them on your terms, under your rule. Glory to the empire. Glory to the Emperor! \n \n \n
+		  NOTE: All classical antiquity Factions are permanently hostile to your "pretender" attempts! This will make peaceful unification impossible. Defy their calls for your arrest! Cross your own Rubicon, cast your die, and show them who truly rules the Rim!</description>
           <scenario MayRequire="oskarpotocki.vfe.classical">
             <summary>A gathering of nobility with a grand purpose. It's your own Classical experience!</summary>
             <playerFaction MayRequire="oskarpotocki.vfe.classical">
@@ -355,6 +354,12 @@ AVE CAESAR!
                 <animalKind>Sheep</animalKind>
                 <count>1</count>
                 <bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+              </li>
+              <li Class="ScenPart_StartingAnimal">
+                <def>StartingAnimal</def>
+                <animalKind>Horse</animalKind>
+                <count>7</count>
+                <bondToRandomPlayerPawnChance>0.78</bondToRandomPlayerPawnChance>
               </li>
               <li Class="KCSG.ScenPart_AddStartingStructure" MayRequire="oskarpotocki.vfe.classical">
                 <def MayRequire="oskarpotocki.vfe.classical">VFEC_AddStartingStructure</def>

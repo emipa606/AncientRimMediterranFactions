@@ -4,7 +4,7 @@
   <ScenarioDef>
     <defName>HellenicTribe</defName>
     <label>Low Hellenic Tribe</label>
-    <description>For a long time these people were little more than animals, but slow accumulation of knowledge brought them close to the outbreak of civilization. Environments are harsh, so they depend on wise guidance to bring them to glory and prosperity and out of desperation.\n\m\n Note: Unlike the other tribes in the Ancient Rim series of Mods, this tribe does not have access to most of the technology of the Greeks and Romans. Thus, it is closer to the default tribal start and is therefore a more difficult scenario.</description>
+    <description>For a long time these people were little more than any other tribesmen, but slow accumulation of knowledge brought them close to the outbreak of civilization. Environments are harsh, so they depend on wise guidance to bring them to glory and prosperity and out of desperation.\n\n\n Note: Unlike the other tribes in the Ancient Rim series of Mods, this tribe does not have access to most of the technology of the Greeks and Romans. Thus, it is closer to the default tribal start and is therefore a more difficult scenario.</description>
     <scenario>
       <summary>Five members of a Hellenic tribe start building new civilization. More difficult than other AR starts.</summary>
       <playerFaction>
