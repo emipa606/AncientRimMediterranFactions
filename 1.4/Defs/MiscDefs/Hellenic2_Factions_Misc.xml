@@ -128,13 +128,21 @@
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
 		<li MayRequire="erdelf.humanoidalienraces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
 	</requiredMemes>
-	  <disallowedMemes>
+	  <disallowedMemes Inherit="False">
 		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
-		<li MayRequire="VanillaExpanded.VMemesE">VME_Aristocratic</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		<!-- Forbidden Mod Memes -->
+		<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
+		<li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+		<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+		<li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophobia</li>
 	  </disallowedMemes>
 	  <disallowedPrecepts>
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>

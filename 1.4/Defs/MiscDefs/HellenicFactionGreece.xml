@@ -95,6 +95,7 @@
       <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
       <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+	  <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophobia</li>
     </disallowedMemes>
     <disallowedPrecepts>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
