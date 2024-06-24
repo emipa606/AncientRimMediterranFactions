@@ -5,7 +5,7 @@
     <label>Romulus</label>
     <description>The great Roman culture.</description>
     <pawnNameMaker>NamerPersonRome</pawnNameMaker>
-	<pawnNameMakerFemale>NamerPersonRome</pawnNameMakerFemale>
+    <pawnNameMakerFemale>NamerPersonRome</pawnNameMakerFemale>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
@@ -73,7 +73,7 @@
     <label>Hellian</label>
     <description>The ancient Hellan culture.</description>
     <pawnNameMaker>NamerPersonGreek</pawnNameMaker>
-	<pawnNameMakerFemale>NamerPersonHellenFemale</pawnNameMakerFemale>
+    <pawnNameMakerFemale>NamerPersonHellenFemale</pawnNameMakerFemale>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
@@ -99,7 +99,7 @@
       </li>
     </thingStyleCategories>
     <styleItemTags>
-     <li>
+      <li>
         <tag>Roman</tag>
         <baseWeight>3</baseWeight>
         <weightFactor>2</weightFactor>

@@ -5,7 +5,7 @@
   <supportedVersions>
     <li>1.5</li>
   </supportedVersions>
-	<packageId>Tanypredator.Hellenic.Faction</packageId>
+  <packageId>Tanypredator.Hellenic.Faction</packageId>
   <description>
 This mod contains very simple hellenic faction, mostly made for unique names. The faction is tribal.\n\nI don't like the vanilla tribal naming, and I think that such naming should be more culture-dependent, as in VFE-Classical mod. So I made this faction mod inspired mostly with Ancient Greek names. The problem with this is that in Ancient Greece people usually had no surnames, but the game requires surnames, and it randomly uses either name or surname as a nickname. To make surnames I used modern surnames, toponimic surnames ("of Troy") and some agnomens.
 

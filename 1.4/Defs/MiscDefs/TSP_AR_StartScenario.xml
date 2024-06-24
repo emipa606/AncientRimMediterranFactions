@@ -3,7 +3,7 @@
   <scenarioDef>
     <defName>TSP_AR_RomePlayer</defName>
     <label>Your Own City-State</label>
-    <description>Your own Greek colony. Start with research befitting a city-state in classical antiquity and forge your own Hellenic republic... or empire! \n \n \n Note: Due to the Greeks and Romans of classical antiquity being more advanced than mere tribesmen, this scenario is easier than the default tribal start.</description>
+    <description>Your own Greek colony. Start with research befitting a city-state in classical antiquity and forge your own Hellenic republic... or empire!</description>
     <scenario>
       <summary>Three Greek freemen uncovered treason, saved the City-Staes, and then left to avoid the traitor's persecution.</summary>
       <playerFaction>
@@ -13,7 +13,8 @@
       <parts>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>You cried as your loved ones parted ways with you, but it had to be this way.
+          <text>
+You cried as your loved ones parted ways with you, but it had to be this way.
 
 You and your fellow newfound colonists were free citizens in the Hellenic City-States Faction. However, you accidentally uncovered a scandal in one of the Faction Bases' republican legislatures!
 	
@@ -27,7 +28,8 @@ Your village's legislature, grateful to you but unable to protect you from their
 
 Will you build a thriving republic in the model of your friends back home? Will your ambitions end the democratic hopes of your people and forge a new empire?
 
-Will your city-state survive at all?</text>
+Will your city-state survive at all?
+				</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">

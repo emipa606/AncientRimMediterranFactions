@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--sparta-->
-  <FactionDef ParentName="HellenesBase">
+  <FactionDef ParentName="FactionBase">
     <defName>AR_Faction_Sparta</defName>
     <label>Reformed Sparta</label>
     <description>Like the Greek city-states this Rim World is somehow hosting, this Faction is an image of the Spartan society from Old Earth's classical antiquity, without its greatest draw backs. Sparta is unique both here and in its time on Old Earth because of its intensely stratified society- in which no man could promote himself -focused almost entirely on military conquest, slavery, and raiding the countryside for more slaves. Spartans also emphasized the (relative) equality of women, as compared to other tribal Factions, but their restrictions on slaves were far more harsh and had no upward mobility whatsoever. Like their Greek kin, these people have claimed to have lived here for millennia, something to which the Tribal Factions admit. \n \n On Old Earth, Sparta was actually rendered irrelevant and unable to fight back in the end because of their absence of upward mobility. The legendary Old Earth Spartiates, raised from birth, could lose their Spartan warrior status while a lower caste could never earn it! \n Old Earth Spartiates were amazingly cohesive, which counted for a lot in ancient formation warfare. The trade off was that Spartiate numbers were relatively tiny because of the low supply of Spartiates and the total unwillingness to even consider arming anyone who wasn't already member of their ruling class. In fact, Lysander, the greatest general and admiral in Old Earth Spartan history, who singlehandedly defeated Old Earth Athens, was a slave. Lysander could never become a true Old Earth Spartan, nor was he ever made one. \n Furthermore, in addition to killing off "imperfect" children, any "imperfect" survivors were adopted into the slave class. Old Earth Sparta actively ensured that only their ruling class could become Spartans, and thus, unless they were already born into an eligible class, they were forsaken to servitude. \n \n It seems that these Spartans learned from that mistake and have allowed lower, free castes to earn the ability to be Spartiates, barring only slaves. This demographic reversal has ensured the survival and refinement of their culture. \n With a meritocratic ability for low-level freemen classes to "earn" Spartiate status unseen in ancient Old Earth, this Sparta poses a threat that no Old Earth Spartan could ever maintain. \n On this planet, Sparta is, and has always been, a fiercely warlike society, so one should never disregard the threat of this civilization. Their soldiers are more powerful than they look. Rim Spartans wield shields that deflect any melee weapon to this day. They are still an existential threat to any developing colony or base that has not fortified itself. Either befriend them or avoid them at all costs if you value your life.</description>
@@ -29,10 +29,10 @@
     <techLevel>Neolithic</techLevel>
     <backstoryFilters>
       <li MayRequire="shavius.classical.flavour">
-        <categories MayRequire="shavius.classical.flavour">
+        <categories>
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
         </categories>
-        <commonality MayRequire="shavius.classical.flavour">1.5</commonality>
+        <commonality>1</commonality>
       </li>
       <li>
         <categories>
@@ -59,9 +59,9 @@
         <commonality>0.25</commonality>
       </li>
     </backstoryFilters>
-    <allowedCultures Inherit="False">
+    <geneticVariance>0</geneticVariance>
+    <allowedCultures>
       <li>Hellian</li>
-	  <li>Hellenes</li>
     </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_WarMerchant</li>
@@ -103,9 +103,8 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
-	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
       <!-- Forbidden Mod Memes -->
-	  <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
       <li MayRequire="Zezz.Altrumeme">Altruism</li>
@@ -114,9 +113,18 @@
       <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
       <li MayRequire="Ludeon.RimwWorld.Ideology">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophilia</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophilia</li>
     </disallowedMemes>
     <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li>
@@ -221,13 +229,6 @@
       <li>AR_General</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
-	<modExtensions>
-        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
-          </chooseFromlayouts>
-        </li>
-	</modExtensions>
     <!-- Madness? -->
     <!-- THIS -->
     <!-- IS -->

@@ -1,69 +1,68 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<PlaceDef>
-		<defName>TSP_AR_ClassicalAntiquity_GreeceRome_PlaceFlavor</defName>
-		<tags>
-			<li>TSP_AR_Origin_AncientRim_GreeceRome</li>
-		</tags>
-		<placeRules>
-			<include>
-				<li MayRequire="ludeon.rimworld.ideology">PlaceMakerCommon</li>
-				<li>NamerPersonHellenUtility</li>
-				<li>TP_NamerPersonHellenUtility</li>
-				<li>GlobalUtility</li>
-			</include>
-			<rulesStrings>
-				<li>place_name->New Olympus</li>
-				<li>place_adjective->Mediterranean</li>
-				<li>place_summary->Medieval World</li>
-				<li>place_community->polis</li>
-				<li>place_community->forum</li>
-				<li>place_community->legion</li>
-				<li>place_community->assembly</li>
-				<li>place_job->plebian</li>
-				<li>place_job->legionnaire</li>
-				<li>place_job->colonus</li>
-				<li>place_job->centurion</li>
-				<li>place_job->praetorian</li>
-				<li>place_job->consul</li>
-				<li>place_job->governor</li>
-				<li>place_job->freeman</li>
-				<li>place_job->citizen</li>
-				<li>place_job->philosopher</li>
-				<li>place_job->vineyard owner</li>
-				<li>place_job->olive plantation owner</li>
-				<li>place_job->slave</li>
-				<li>place_job->olive oil salesman</li>
-				<li>place_job->sailor</li>
-				<li>place_job->soldier</li>
-				<li>place_job->king</li>
-				<li>place_job->senator</li>
-				<li>place_job->hoplite soldier</li>
-				<li>place_job->pikeman</li>
-				<li>place_powerCenter->Platonic Academy</li>
-				<li>place_powerCenter->governor's mansion</li>
-				<li>place_powerCenter->colesseum</li>
-				<li>place_powerCenter->philosophy school</li>
-				<li>place_powerCenter->great forum</li>
-				<li>place_massWeapon->a slave rebellion</li>
-				<li>place_massWeapon->many traitorous legions</li>
-				<li>place_massWeapon->many mercenaries</li>
-				<li>place_massWeapon->many rogue senators</li>
-				<li>place_massWeapon->the Praetorian Guard</li>
-				<li>place_personalWeapon->lance</li>
-				<li>place_personalWeapon->spatha</li>
-				<li>place_personalWeapon->gladius</li>
-				<li>place_personalWeapon->scorpio</li>
-				<li>place_personalWeapon->gastraphates</li>
-				<li>place_foeLeader->barbarian chief</li>
-				<li>place_foeLeader->revolting general</li>
-				<li>place_foeSoldiers->barbarian mercenaries</li>
-				<li>place_foeSoldiers->many traitorous legions</li>
-				<li>place_foeSoldiers->tribal allies</li>
-				<li>place_foeSoldiers->sellswords</li>
-				<li>place_foeSoldiers->revolting plebians</li>
-			</rulesStrings>
-		</placeRules>
-	</PlaceDef>
+  <PlaceDef>
+    <defName>TSP_AR_ClassicalAntiquity_GreeceRome_PlaceFlavor</defName>
+    <tags>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
+    </tags>
+    <placeRules>
+      <include>
+        <li MayRequire="ludeon.rimworld.ideology">PlaceMakerCommon</li>
+        <li>NamerPersonHellenUtility</li>
+        <li>TP_NamerPersonHellenUtility</li>
+        <li>GlobalUtility</li>
+      </include>
+      <rulesStrings>
+        <li>place_name->New Olympus</li>
+        <li>place_adjective->Mediterranean</li>
+        <li>place_summary->Medieval World</li>
+        <li>place_community->polis</li>
+        <li>place_community->forum</li>
+        <li>place_community->legion</li>
+        <li>place_community->assembly</li>
+        <li>place_job->plebian</li>
+        <li>place_job->legionnaire</li>
+        <li>place_job->colonus</li>
+        <li>place_job->centurion</li>
+        <li>place_job->praetorian</li>
+        <li>place_job->consul</li>
+        <li>place_job->governor</li>
+        <li>place_job->freeman</li>
+        <li>place_job->citizen</li>
+        <li>place_job->philosopher</li>
+        <li>place_job->vineyard owner</li>
+        <li>place_job->olive plantation owner</li>
+        <li>place_job->slave</li>
+        <li>place_job->olive oil salesman</li>
+        <li>place_job->sailor</li>
+        <li>place_job->soldier</li>
+        <li>place_job->king</li>
+        <li>place_job->senator</li>
+        <li>place_job->hoplite soldier</li>
+        <li>place_job->pikeman</li>
+        <li>place_powerCenter->Platonic Academy</li>
+        <li>place_powerCenter->governor's mansion</li>
+        <li>place_powerCenter->colesseum</li>
+        <li>place_powerCenter->philosophy school</li>
+        <li>place_powerCenter->great forum</li>
+        <li>place_massWeapon->a slave rebellion</li>
+        <li>place_massWeapon->many traitorous legions</li>
+        <li>place_massWeapon->many mercenaries</li>
+        <li>place_massWeapon->many rogue senators</li>
+        <li>place_massWeapon->the Praetorian Guard</li>
+        <li>place_personalWeapon->lance</li>
+        <li>place_personalWeapon->spatha</li>
+        <li>place_personalWeapon->gladius</li>
+        <li>place_personalWeapon->scorpio</li>
+        <li>place_personalWeapon->gastraphates</li>
+        <li>place_foeLeader->barbarian chief</li>
+        <li>place_foeLeader->revolting general</li>
+        <li>place_foeSoldiers->barbarian mercenaries</li>
+        <li>place_foeSoldiers->many traitorous legions</li>
+        <li>place_foeSoldiers->tribal allies</li>
+        <li>place_foeSoldiers->sellswords</li>
+        <li>place_foeSoldiers->revolting plebians</li>
+      </rulesStrings>
+    </placeRules>
+  </PlaceDef>
 </Defs>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <CultureDef>
     <defName>Hellenes</defName>
@@ -34,7 +33,7 @@
         <category MayRequire="vanillaexpanded.vmemese">VME_Hedonist</category>
         <priority MayRequire="vanillaexpanded.vmemese">2</priority>
       </li>
-	  <!--
+      <!--
       <li MayRequire="Ludeon.RimWorld.Ideology">
         <category>Hellenic</category>
         <priority>5</priority>
@@ -94,6 +93,4 @@
       </li>
     </styleItemTags>
   </CultureDef>
-
-
 </Defs>

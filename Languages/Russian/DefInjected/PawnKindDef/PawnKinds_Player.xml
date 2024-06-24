@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<!--1.4/Defs/PawnKindDefs/PawnKinds_Player.xml-->
-<Hellen.label>эллин</Hellen.label>
-
+  <!--1.4/Defs/PawnKindDefs/PawnKinds_Player.xml-->
+  <Hellen.label>эллин</Hellen.label>
 </LanguageData>

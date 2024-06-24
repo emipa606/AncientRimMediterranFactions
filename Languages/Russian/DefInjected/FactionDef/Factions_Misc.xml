@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<!--1.4/Defs/FactionDefs/Factions_Misc.xml-->
-<HellenesBase.pawnSingular>эллин</HellenesBase.pawnSingular>
-<HellenesBase.pawnsPlural>группа эллинов</HellenesBase.pawnsPlural>
-<HellenesBase.leaderTitle>стратег</HellenesBase.leaderTitle>
-
-<HellenesCivil.label>Эллада</HellenesCivil.label>
-<HellenesCivil.description>Относительно мирный союз греческих городов. Они стремятся расширить свое влияние за счет торговли и культурных связей. Нравственные цености Эллады включают мужество, гостеприимство, мудрость и предприимчивость.</HellenesCivil.description>
-
+  <!--1.4/Defs/FactionDefs/Factions_Misc.xml-->
+  <HellenesBase.pawnSingular>эллин</HellenesBase.pawnSingular>
+  <HellenesBase.pawnsPlural>группа эллинов</HellenesBase.pawnsPlural>
+  <HellenesBase.leaderTitle>стратег</HellenesBase.leaderTitle>
+  <HellenesCivil.label>Эллада</HellenesCivil.label>
+  <HellenesCivil.description>Относительно мирный союз греческих городов. Они стремятся расширить свое влияние за счет торговли и культурных связей. Нравственные цености Эллады включают мужество, гостеприимство, мудрость и предприимчивость.</HellenesCivil.description>
 </LanguageData>

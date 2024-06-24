@@ -6,9 +6,9 @@
     <value>
       <li>AR_Faction_Rome</li>
       <li>AR_Faction_Hellas</li>
-	  <li>HellenesCivil</li>
-	  <li>AR_PlayerFaction</li>
-	  <li>PlayerHellenes</li>
+      <li>HellenesCivil</li>
+      <li>AR_PlayerFaction</li>
+      <li>PlayerHellenes</li>
     </value>
   </Operation>
 </Patch>

@@ -32,10 +32,10 @@
     <li>oskarpotocki.vfe.classical</li>
     <li>shavius.classical.flavour</li>
     <li>zal.legionaryequipment</li>
-	<li>zal.greeksculptures</li>
+    <li>zal.greeksculptures</li>
   </loadAfter>
   <incompatibleWith>
-	<li>Tanypredator.Hellenic.Faction</li>
+    <li>Tanypredator.Hellenic.Faction</li>
   </incompatibleWith>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
@@ -78,5 +78,5 @@ Macedonia which is hostile and won't pursue for peace in its imperial interest
 [/list]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2458185861][img]https://img.shields.io/github/v/release/emipa606/AncientRimMediterranFactions?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
 </ModMetaData>
