@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>HellenicTribe</defName>
+    <label>Low Hellenic Tribe</label>
+    <description>For a long time these people were little more than any other tribesmen, but slow accumulation of knowledge brought them close to the outbreak of civilization. Environments are harsh, so they depend on wise guidance to bring them to glory and prosperity and out of desperation.\n\n\n Note: Unlike the other tribes in the Ancient Rim series of Mods, this tribe does not have access to most of the technology of the Greeks and Romans. Thus, it is closer to the default tribal start and is therefore a more difficult scenario.</description>
+    <scenario>
+      <summary>Five members of a Hellenic tribe start building new civilization. More difficult than other AR starts.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerHellenes</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>5</pawnCount>
+          <pawnChoiceCount>7</pawnChoiceCount>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>300</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Pemmican</thingDef>
+          <count>500</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineHerbal</thingDef>
+          <count>20</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MeleeWeapon_Knife</thingDef>
+          <stuff>AR_Bronze</stuff>
+          <count>3</count>
+        </li>
+
+        <li Class="ScenPart_StartingAnimal">
+          <def>StartingAnimal</def>
+          <count>3</count>
+			<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+        </li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>400</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoolSheep</thingDef>
+          <count>200</count>
+        </li>
+		
+        <li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
+          <def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
+          <numSenators MayRequire="oskarpotocki.vfe.classical">1</numSenators>
+        </li>
+
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Yor tribe was struggling to survive in a long centuries of wilderness. Even so, your people were wise enough to appreciate every single piece of knowledge and expertise. Now you are close to the rise of civilization.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<!--1.4/Defs/Scenarios/Scenarios_Classic.xml-->
+<HellenicTribe.label>Племя эллинов</HellenicTribe.label>
+<HellenicTribe.description>В течение долгого времени эти люди жили дикарями, но постепенное накопление знаний привело их на порог возникновения цивилизации. Мир суров, и им необходим мудрый предводитель, которое выведет их из тьмы к славе и процветанию.\n\nПримечание: Это сложный сценарий.</HellenicTribe.description>
+<HellenicTribe.scenario.summary>Пять представителей племени эллинов стремятся основать собственную культуру. Сложно.</HellenicTribe.scenario.summary>
+<HellenicTribe.scenario.parts.GameStartDialog.text>Ваше племя боролось за выживание в течение долгих веков варварства. Но ваши люди были достаточно мудры, чтобы бережно сохранять каждую крупицу знания и мастерства. Вы готовы основать постоянное поселение, где ваш народ сможет достичь славы и процветания.</HellenicTribe.scenario.parts.GameStartDialog.text>
+
+<HellenicTribe.scenario.name>Племя эллинов</HellenicTribe.scenario.name>
+<HellenicTribe.scenario.description>В течение долгого времени эти люди жили дикарями, но постепенное накопление знаний привело их на порог возникновения цивилизации. Мир суров, и им необходим мудрый предводитель, которое выведет их из тьмы к славе и процветанию.\n\nПримечание: Это сложный сценарий.</HellenicTribe.scenario.description>
+
+
+</LanguageData>

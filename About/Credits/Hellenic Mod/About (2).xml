@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>TP Hellenic Faction</name>
+  <author>Tanypredator</author>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+	<packageId>Tanypredator.Hellenic.Faction</packageId>
+  <description>
+This mod contains very simple hellenic faction, mostly made for unique names. The faction is tribal.\n\nI don't like the vanilla tribal naming, and I think that such naming should be more culture-dependent, as in VFE-Classical mod. So I made this faction mod inspired mostly with Ancient Greek names. The problem with this is that in Ancient Greece people usually had no surnames, but the game requires surnames, and it randomly uses either name or surname as a nickname. To make surnames I used modern surnames, toponimic surnames ("of Troy") and some agnomens.
+
+Recommended mods:
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2620745910]More Religious Origins[/url] essential to get a Hellenic Ideology structure.
+[*][url=https://steamcommunity.com/workshop/filedetails/?id=2787850474]Vanilla Factions Expanded - Classical[/url] for a lot of antique stuff.
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793]Alpha Mythology[/url] for great myth-themed anmals.
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3157382550]Greek Sculptures (Continued)[/url]
+[/list]
+
+
+Russian translation included.
+
+Feel free to use anything in this mod in any way.
+  </description>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+</ModMetaData>

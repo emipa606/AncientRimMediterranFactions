@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!-- Hellenes -->
+  <RulePackDef>
+    <defName>TP_NamerFactionHellenic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[HellenicFactionNames]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>HellenicFactionNames->Words/Names/HellenicFactionNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TP_NamerSettlementHellenic</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[HellenicToponym]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>HellenicToponym->Words/Names/HellenicToponym</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TP_NamerPersonHellenUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>HellenicNamesMale->Words/Names/HellenicNamesMale</li>
+        <li>HellenicNamesFemale->Words/Names/HellenicNamesFemale</li>
+        <li>HellenicLastNames->Words/Names/HellenicLastNames</li>
+        <li>HellenicFemaleLastNames->Words/Names/HellenicFemaleLastNames</li>
+        <li>HellenicMaleLastNames->Words/Names/HellenicMaleLastNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TP_NamerPersonHellen</defName>
+    <include>
+      <li>TP_NamerPersonHellenUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=8)->[HellenicNamesMale] [HellenicMaleLastNames]</li>
+        <li>r_name(p=2)->[HellenicNamesMale] [HellenicNamesMale]</li>
+        <li>r_name(p=4)->[HellenicNamesMale] [HellenicLastNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TP_NamerPersonHellenFemale</defName>
+    <include>
+      <li>TP_NamerPersonHellenUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=5)->[HellenicNamesFemale] [HellenicFemaleLastNames]</li>
+        <li>r_name(p=2)->[HellenicNamesFemale] [HellenicLastNames]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
