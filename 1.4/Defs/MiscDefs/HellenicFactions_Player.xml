@@ -42,7 +42,7 @@
     </startingResearchTags>
     <allowedCultures>
       <li>Hellian</li>
-      <li>Hellenes</li>
+	  <li>Hellenes</li>
     </allowedCultures>
     <apparelStuffFilter>
       <thingDefs Inherit="False">

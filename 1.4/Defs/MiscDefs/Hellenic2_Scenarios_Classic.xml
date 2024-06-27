@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
   <ScenarioDef>
     <defName>HellenicTribe</defName>
     <label>Low Hellenic Tribe</label>
@@ -11,17 +12,20 @@
         <factionDef>PlayerHellenes</factionDef>
       </playerFaction>
       <parts>
+
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
           <def>ConfigPage_ConfigureStartingPawns</def>
           <pawnCount>5</pawnCount>
           <pawnChoiceCount>7</pawnChoiceCount>
         </li>
+
         <!-- Player starting stuff spawn method-->
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
           <method>Standing</method>
         </li>
+
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
@@ -44,11 +48,13 @@
           <stuff>AR_Bronze</stuff>
           <count>3</count>
         </li>
+
         <li Class="ScenPart_StartingAnimal">
           <def>StartingAnimal</def>
           <count>3</count>
-          <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+			<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
         </li>
+
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
@@ -60,17 +66,23 @@
           <thingDef>WoolSheep</thingDef>
           <count>200</count>
         </li>
+		
         <li Class="VFEC.ScenPart_Senators" MayRequire="oskarpotocki.vfe.classical">
           <def MayRequire="oskarpotocki.vfe.classical">VFEC_Senators</def>
           <numSenators MayRequire="oskarpotocki.vfe.classical">1</numSenators>
         </li>
+
+
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
           <text>Yor tribe was struggling to survive in a long centuries of wilderness. Even so, your people were wise enough to appreciate every single piece of knowledge and expertise. Now you are close to the rise of civilization.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
+
       </parts>
     </scenario>
   </ScenarioDef>
+
 </Defs>
+
