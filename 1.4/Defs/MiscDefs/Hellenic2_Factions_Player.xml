@@ -50,6 +50,7 @@
         <apparelStuffFilter>
           <thingDefs>
             <li>WoolSheep</li>
+			<li MayRequire="TSP.Isengriff.Storytime">Leather_Jeub</li>
 			<li>AR_Bronze</li>
           </thingDefs>
         </apparelStuffFilter>

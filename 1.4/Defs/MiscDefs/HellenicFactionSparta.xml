@@ -14,7 +14,7 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>false</canSiege>
+    <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Archagetai</leaderTitle>
     <factionIconPath>Icon/Lambda</factionIconPath>

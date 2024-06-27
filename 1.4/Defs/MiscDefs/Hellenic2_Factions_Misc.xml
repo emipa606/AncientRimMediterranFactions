@@ -83,7 +83,7 @@
         <li>Cloth</li>
         <li>Leather_Pig</li>
         <li>AR_Bronze</li>
-		<li MayRequore="TSP.Isengriff.Storytime">Leather_Jeub</li>
+		<li MayRequire="TSP.Isengriff.Storytime">Leather_Jeub</li>
         <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li> -->
       </thingDefs>
       <disallowedThingDefs>
