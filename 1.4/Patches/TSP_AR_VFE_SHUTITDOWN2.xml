@@ -285,8 +285,8 @@
           <shieldMoney MayRequire="jecrell.jecstools">
             <min>200</min>
             <max>600</max>
-          </shieldMoney MayRequire="jecrell.jecstools">
-          <shieldTags>
+          </shieldMoney>
+          <shieldTags  MayRequire="jecrell.jecstools">
             <li>ShieldsGreekLight</li>
             <li>ShieldsGreek</li>
           </shieldTags>
