@@ -5,15 +5,16 @@
     <label>Romulus</label>
     <description>The great Roman culture.</description>
     <pawnNameMaker>NamerPersonRome</pawnNameMaker>
+    <pawnNameMakerFemale>NamerPersonRome</pawnNameMakerFemale>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconPath>Icon/LupaGreyscale</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Neolithic</noble>
@@ -71,14 +72,15 @@
     <defName>Hellian</defName>
     <label>Hellian</label>
     <description>The ancient Hellan culture.</description>
-    <pawnNameMaker>NamerPersonGreece</pawnNameMaker>
+    <pawnNameMaker>NamerPersonGreek</pawnNameMaker>
+    <pawnNameMakerFemale>NamerPersonHellenFemale</pawnNameMakerFemale>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
     <allowedPlaceTags>
-      <li>OriginTribal</li>
+      <li>TSP_AR_Origin_AncientRim_GreeceRome</li>
     </allowedPlaceTags>
     <iconPath>Icon/LaurelWreath</iconPath>
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
@@ -99,11 +101,26 @@
     <styleItemTags>
       <li>
         <tag>Roman</tag>
-        <baseWeight>2</baseWeight>
+        <baseWeight>3</baseWeight>
         <weightFactor>2</weightFactor>
       </li>
       <li>
-        <tag>Tribal</tag>
+        <tag>Rural</tag>
+        <baseWeight>0.5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>0.5</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Misc</tag>
         <baseWeight>1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
@@ -113,23 +130,23 @@
         <weightFactor>1</weightFactor>
       </li>
       <li>
-        <tag>BeardTribal</tag>
-        <baseWeight>0.3</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-      <li>
-        <tag>TattooFaceTribal</tag>
-        <baseWeight>0.4</baseWeight>
+        <tag>BeardRural</tag>
+        <baseWeight>0.1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
       <li>
         <tag>TattooBodyTribal</tag>
-        <baseWeight>0.4</baseWeight>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyMisc</tag>
+        <baseWeight>0.1</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
       <li>
         <tag>NoTattoo</tag>
-        <baseWeight>1</baseWeight>
+        <baseWeight>10</baseWeight>
         <weightFactor>1</weightFactor>
       </li>
     </styleItemTags>

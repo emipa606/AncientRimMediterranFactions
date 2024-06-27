@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
+    <defName>NamerPersonHellenUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>HellenicNamesMale->Words/Names/HellenicNamesMale</li>
+        <li>HellenicNamesFemale->Words/Names/HellenicNamesFemale</li>
+        <li>HellenicLastNames->Words/Names/HellenicLastNames</li>
+        <li>HellenicFemaleLastNames->Words/Names/HellenicFemaleLastNames</li>
+        <li>HellenicMaleLastNames->Words/Names/HellenicMaleLastNames</li>
+        <li>HellenicToponym->Words/Names/HellenicToponym</li>
+        <li>HellenicFactionNames->Words/Names/HellenicFactionNames</li>
+        <li>HellenicFactionNamesCountries->Words/Names/HellenicFactionNamesCountries</li>
+        <li>PlacesGreek->Words/Foreign/PlacesGreek</li>
+        <li>PlacesRome->Words/Foreign/PlacesRome</li>
+        <li>NamesGreek->Words/Foreign/NamesGreek</li>
+        <li>NamesRome->Words/Foreign/NamesRome</li>
+        <li>Numbers->Words/Foreign/Numbers</li>
+      </rulesFiles>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>HellenicNamesMale</keyword>
+          <path>Words/Names/HellenicNamesMale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicMaleLastNames</keyword>
+          <path>Words/Names/HellenicMaleLastNames</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicNamesFemale</keyword>
+          <path>Words/Names/HellenicNamesFemale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicFemaleLastNames</keyword>
+          <path>Words/Names/HellenicFemaleLastNames</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicToponym</keyword>
+          <path>Words/Names/HellenicToponym</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicFactionNames</keyword>
+          <path>Words/Names/HellenicFactionNames</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicFactionNamesCountries</keyword>
+          <path>Words/Names/HellenicFactionNamesCountries</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesGreek</keyword>
+          <path>Words/Foreign/NamesGreek</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesRome</keyword>
+          <path>Words/Foreign/NamesRome</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PlacesGreek</keyword>
+          <path>Words/Foreign/PlacesGreek</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PlacesRome</keyword>
+          <path>Words/Foreign/PlacesRome</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Numbers</keyword>
+          <path>Words/Foreign/Numbers</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
     <defName>NamerPersonRome</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
-        <li>name->[NamesRome] of [PlacesRome]</li>
+        <li>name->[NamesRome] 'of [PlacesRome]'</li>
         <li>name->[NamesRome] [NamesRome]</li>
-        <li>name->[NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] 'the [Numbers].'</li>
         <li>name->[NamesRome] the [Color]</li>
-        <li>name->[NamesRome] [NamesRome] of [PlacesRome]</li>
-        <li>name->[NamesRome] [NamesRome] [NamesRome]</li>
-        <li>name->[NamesRome] [NamesRome] the [Numbers].</li>
+        <li>name->[NamesRome] [NamesRome] 'of [PlacesRome]'</li>
+        <li>name->[NamesRome] [NamesRome] '[NamesRome]'</li>
+        <li>name->[NamesRome] [NamesRome] 'the [Numbers].'</li>
         <li>name->[NamesRome] [NamesRome] [RomanNumeral]</li>
         <li>name->[NamesRome] [ImperialNameLast][SylB]</li>
         <li>name->[NamesRome] [ImperialNameLast][SylB]</li>
+        <li>name->[NamesRome] [ImperialNameLast][SylA] 'of [HellenicFactionNames]'</li>
+        <li>name->[NamesRome] [HellenicNamesMale][SylB] 'of [HellenicFactionNames]'</li>
+        <li>name->[NamesRome] [HellenicLastNames]</li>
+        <li>name->[HellenicNamesMale] [HellenicMaleLastNames]</li>
+        <li>name->[HellenicNamesMale] [NamesRome] [HellenicNamesMale]</li>
+        <li>name->[HellenicNamesMale] [HellenicLastNames]</li>
+        <li>name->[HellenicNamesMale] [HellenicNamesMale] [RomanNumeral]</li>
+        <li>name->[HellenicNamesMale] [NamesRome]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -28,14 +109,92 @@
           <keyword>PlacesRome</keyword>
           <path>Words/Foreign/PlacesRome</path>
         </li>
+        <li Class="Rule_File">
+          <keyword>HellenicNamesMale</keyword>
+          <path>Words/Names/HellenicNamesMale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicMaleLastNames</keyword>
+          <path>Words/Names/HellenicMaleLastNames</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonGreek</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[NamesGreek] 'of [PlacesGreek]'</li>
+        <li>name->[NamesGreek] [NamesGreek]</li>
+        <li>name->[NamesGreek] 'the [Numbers].'</li>
+        <li>name->[NamesGreek] 'the [Color]'</li>
+        <li>name->[NamesGreek] [NamesGreek] 'of [PlacesRome]'</li>
+        <li>name->[NamesGreek] [NamesGreek] 'of [NamesRome]'</li>
+        <li>name->[NamesRome] [NamesGreek] '[NamesGreek] the [Numbers]'</li>
+        <li>name->[NamesGreek] [NamesGreek] 'the [Numbers].'</li>
+        <li>name->[NamesGreek] [NamesGreek] '[RomanNumeral]'</li>
+        <li>name->[NamesGreek] [NamesGreek] [NamesGreek]</li>
+        <li>name->[NamesRome] [HellenicNamesMale][SylB] 'of [HellenicFactionNames]'</li>
+        <li>name->[NamesRome] [HellenicLastNames] [HellenicLastNames]</li>
+        <li>name->[HellenicNamesMale][SylB] [NamesGreek]</li>
+        <li>name->[HellenicNamesMale] [HellenicMaleLastNames]</li>
+        <li>name->[HellenicNamesMale] [NamesGreek] [HellenicNamesMale]</li>
+        <li>name->[HellenicNamesMale] [HellenicLastNames]</li>
+        <li>name->[NamesGreek] '[HellenicNamesMale] [RomanNumeral]'</li>
+        <li>name->[HellenicNamesMale] [NamesGreek]</li>
+        <li>name->[HellenicNamesMale] [HellenicNamesMale]</li>
+        <li>name->[HellenicNamesMale] 'the [Color]'</li>
+        <li>name->[NamesGreek] [HellenicMaleLastNames]</li>
+        <li>name->[NamesGreek] [HellenicLastNames]</li>
+        <li>name->[NamesGreek] [HellenicMaleLastNames][SylB]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Numbers</keyword>
+          <path>Words/Foreign/Numbers</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesRome</keyword>
+          <path>Words/Foreign/NamesRome</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PlacesRome</keyword>
+          <path>Words/Foreign/PlacesRome</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicNamesMale</keyword>
+          <path>Words/Names/HellenicNamesMale</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>HellenicMaleLastNames</keyword>
+          <path>Words/Names/HellenicMaleLastNames</path>
+        </li>
       </rulesRaw>
     </rulePack>
   </RulePackDef>
   <RulePackDef>
     <defName>NamerSettlementRome</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
-        <li>name->[PlacesRome]</li>
+        <li>r_name->[PlacesRome]</li>
+        <li>r_name->[PlacesGreek]</li>
+        <li>r_name->[HellenicToponym]</li>
+        <li>r_name->[PlacesRome] [HellenicToponym]</li>
+        <li>r_name->[HellenicToponym] [PlacesRome]</li>
+        <li>r_name->[PlacesGreek] [HellenicToponym]</li>
+        <li>r_name->[HellenicToponym] [PlacesGreek]</li>
+        <li>r_name->[HellenicMaleNames]polis</li>
+        <li>r_name->[HellenicFemaleNames]polis</li>
+        <li>r_name->[HellenicLastNames]polis</li>
+        <li>r_name->[NamesGreek]polis</li>
+        <li>r_name->[NamesRome]polis</li>
+        <li>r_name->[ColorBadass] [HellenicFactionNamesCountries]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -43,10 +202,17 @@
           <path>Words/Foreign/PlacesRome</path>
         </li>
       </rulesRaw>
+      <rulesFiles>
+        <li>HellenicToponym->Words/Names/HellenicToponym</li>
+        <li>HellenicFactionNamesCountries->Words/Names/HellenicFactionNamesCountries</li>
+      </rulesFiles>
     </rulePack>
   </RulePackDef>
   <RulePackDef>
     <defName>NamerFactionRome</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
         <li>name-> Imperium Romana</li>
@@ -65,6 +231,9 @@
   </RulePackDef>
   <RulePackDef>
     <defName>NamerFactionHellada</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
         <li>name-> Hellada</li>
@@ -75,11 +244,21 @@
         <li>name-> League of [Color] Greeks</li>
         <li>name-> The [Color] City-States</li>
         <li>name-> Hellenic Land</li>
+        <li>name->[HellenicFactionNames]</li>
+        <li>name->[HellenicFactionNamesCountries]</li>
+        <li>name->[ColorBadass] [HellenicFactionNamesCountries]</li>
       </rulesStrings>
+      <rulesFiles>
+        <li>HellenicFactionNames->Words/Names/HellenicFactionNames</li>
+        <li>HellenicFactionNamesCountries->Words/Names/HellenicFactionNamesCountries</li>
+      </rulesFiles>
     </rulePack>
   </RulePackDef>
   <RulePackDef>
     <defName>NamerFactionSparta</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
         <li>name-> Sparta</li>
@@ -93,6 +272,9 @@
   </RulePackDef>
   <RulePackDef>
     <defName>NamerFactionMacedonia</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
     <rulePack>
       <rulesStrings>
         <li>name-> [Color] Diadochus</li>
@@ -104,7 +286,55 @@
         <li>name-> Neo-Seleucid Diadochus</li>
         <li>name-> Lost Diadochus</li>
         <li>name-> Diadochi Land</li>
+        <li>name-> [HellenicFactionNames] Satrapy</li>
+        <li>name-> [HellenicFactionNames] Diadochus</li>
+        <li>name-> [HellenicFactionNames] of Macedonia</li>
+        <li>name-> [HellenicFactionNamesCountriess] Satrapies</li>
       </rulesStrings>
+      <rulesFiles>
+        <li>HellenicFactionNames->Words/Names/HellenicFactionNames</li>
+        <li>HellenicFactionNamesCountries->Words/Names/HellenicFactionNamesCountries</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>NamerPersonHellenFemale</defName>
+    <include>
+      <li>NamerPersonHellenUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[HellenicNamesFemale] [HellenicFemaleLastNames]</li>
+        <li>r_name->[HellenicNamesFemale] [HellenicLastNames]</li>
+        <li>r_name->[HellenicNamesFemale] [HellenicToponym] [NamesGreek]</li>
+        <li>r_name->[HellenicNamesFemale] [HellenicToponym]</li>
+        <li>r_name->[NamesRome] [HellenicNamesFemale] [NamesGreek]</li>
+        <li>r_name->[NamesRome] [HellenicFemaleLastNames]</li>
+        <li>r_name->[HellenicNamesFemale] 'the [Numbers].'</li>
+        <li>r_name->[HellenicNamesFemale] [NamesGreek] 'the [Color]'</li>
+        <li>r_name->[NamesRome] [HellenicNamesFemale] [NamesRome]</li>
+        <li>r_name->[NamesRome] [HellenicFemaleLastNames]</li>
+        <li>r_name->[NamesGreek] [HellenicFemaleLastNames]</li>
+        <li>r_name->[HellenicNamesFemale] 'the [Numbers].'</li>
+        <li>r_name->[HellenicNamesFemale] [NamesRome] 'the [Color]'</li>
+        <li>r_name->[HellenicNamesFemale] [NamesGreek] 'the [Color]'</li>
+        <li>r_name->[HellenicNamesFemale] [HellenicToponym]</li>
+        <li>r_name->[HellenicNamesFemale] [NamesGreek]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>Numbers</keyword>
+          <path>Words/Foreign/Numbers</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>NamesRome</keyword>
+          <path>Words/Foreign/NamesRome</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>PlacesRome</keyword>
+          <path>Words/Foreign/PlacesRome</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
 </Defs>

@@ -17,6 +17,8 @@
         </categoriesChildhood>
       </li>
     </backstoryFiltersOverride>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelTags>
       <li>RomeCivil</li>
     </apparelTags>
@@ -79,6 +81,7 @@
     <isFighter>false</isFighter>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>5~14</initialResistanceRange>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
       <li MayRequire="savius.classical.flavour">
         <categoriesAdulthood>
@@ -135,6 +138,7 @@
     <canBeSapper>true</canBeSapper>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>1~7</initialResistanceRange>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
       <li MayRequire="savius.classical.flavour">
         <categoriesAdulthood>
@@ -143,7 +147,6 @@
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
-      <li>Intellectual</li>
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -178,11 +181,11 @@
     <invNutrition>3</invNutrition>
     <apparelTags>
       <li>RomeCivil</li>
-      <!-- <li>Cape</li> -->
+      <!-- <li MayRequire="ludeon.rimworld.royalty">Cape</li> -->
       <!-- Doesn't need the tag because it's already covered below. This will stop two capes from spawning on one Pawn. -->
     </apparelTags>
     <apparelRequired>
-      <li>Apparel_Cape</li>
+      <li MayRequire="ludeon.rimworld.royalty">Apparel_Cape</li>
       <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
       <li>AR_Tunic</li>
     </apparelRequired>
@@ -196,6 +199,8 @@
     <maxGenerationAge>100</maxGenerationAge>
     <factionLeader>true</factionLeader>
     <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <favoriteColor>(99,3,48)</favoriteColor>
     <!-- <fixedGender>Male</fixedGender> -->
     <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
     <backstoryFiltersOverride>
@@ -206,8 +211,7 @@
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
-    <requiredWorkTags>
-      <li>Intellectual</li>
+    <requiredWorkTags Inherit="False">
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -231,6 +235,7 @@
     <defName>AR_Trader</defName>
     <label>mercator</label>
     <trader>true</trader>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
@@ -239,6 +244,9 @@
       <min>1000</min>
       <max>5000</max>
     </apparelMoney>
+    <requiredWorkTags IsNull="True" Inherit="False">
+    </requiredWorkTags>
+    <!-- No requirements to ensure Caravans always spawn -->
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -256,7 +264,7 @@
     <canBeSapper>true</canBeSapper>
     <combatPower>60</combatPower>
     <maxGenerationAge>45</maxGenerationAge>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood>
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -300,7 +308,7 @@
       <!-- <li>AR_Galea</li> -->
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
           <max>2000</max>
@@ -357,7 +365,7 @@
     <apparelRequired>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
           <max>4000</max>
@@ -473,7 +481,7 @@
       <li>AR_LoricaHamata</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1850</min>
           <max>3000</max>
@@ -541,7 +549,7 @@
       <!-- Pauldimentum -->
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
           <max>2000</max>
@@ -561,7 +569,8 @@
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+    <favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <!-- <li>TribalHunter</li> -->
@@ -616,7 +625,7 @@
       <li>AR_LoricaMusculataR</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
           <max>2000</max>
@@ -638,7 +647,8 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+    <favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialFighter</li>
@@ -693,7 +703,7 @@
       <li>AR_LoricaMusculataG</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>200</min>
           <max>2000</max>
@@ -716,7 +726,8 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+    <favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -725,7 +736,6 @@
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
-      <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
       <min>2.8</min>
@@ -776,7 +786,7 @@
       <li>AR_LoricaMusculataR</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>2000</min>
           <max>4000</max>
@@ -793,18 +803,23 @@
     <labelFemale>Imperatrix</labelFemale>
     <race>Human</race>
     <fixedGender>Male</fixedGender>
-    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
-    <backstoryFiltersOverride>
+    <favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryCryptosleepCommonality>0.31</backstoryCryptosleepCommonality>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialRoyal</li>
           <li>ImperialFighter</li>
+          <li>TribalHunter</li>
+          <li>Hunter</li>
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Social</li>
+      <!-- <li>Intellectual</li> -->
     </requiredWorkTags>
     <combatPower>100</combatPower>
     <itemQuality>Legendary</itemQuality>
@@ -909,7 +924,7 @@
 			-->
     </specificApparelRequirements>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>5000</min>
           <max>10000</max>
@@ -960,7 +975,7 @@
       <li>HellenicSoldier</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>2000</max>
@@ -1008,7 +1023,7 @@
       <li>HellenicSoldier</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>2000</max>
@@ -1055,7 +1070,7 @@
       <li>HellenicHeavy</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>2000</max>
@@ -1116,7 +1131,7 @@
       <li>HellenicHeavy</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>2000</max>
@@ -1166,7 +1181,7 @@
       <li>Macedon</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>2000</max>
@@ -1189,7 +1204,8 @@
     <maxGenerationAge>40</maxGenerationAge>
     <isFighter>true</isFighter>
     <canBeSapper>true</canBeSapper>
-    <backstoryFiltersOverride>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="False">
       <!--
       <li>
         <categoriesChildhood>
@@ -1255,7 +1271,7 @@
       <li>AR_Chalmys</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>1000</min>
           <max>10000</max>
@@ -1320,6 +1336,8 @@
     <weaponTags>
       <li>Revolver</li>
       <li>SimpleGun</li>
+      <li>OrientalHandCannon</li>
+      <!-- From the T Samurai Mod, it's a hand mortar and very fitting -->
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
@@ -1345,7 +1363,7 @@
       <li>AR_Chalmys</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>10000</min>
           <max>20000</max>
@@ -1393,7 +1411,7 @@
       <li>Hellenic</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>500</min>
           <max>1500</max>
@@ -1440,7 +1458,7 @@
       <li>Hellenic</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <shieldMoney>
           <min>0</min>
           <max>500</max>
@@ -1504,7 +1522,7 @@
       <li>Toxotes</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
         <!-- Shields were integral to this -->
         <shieldMoney>
           <min>1000</min>
