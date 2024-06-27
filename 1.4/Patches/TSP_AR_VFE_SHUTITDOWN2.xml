@@ -281,11 +281,11 @@
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]</xpath>
       <value>
-        <li Class="PawnShields.ShieldPawnGeneratorProperties">
-          <shieldMoney>
+        <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+          <shieldMoney MayRequire="jecrell.jecstools">
             <min>200</min>
             <max>600</max>
-          </shieldMoney>
+          </shieldMoney MayRequire="jecrell.jecstools">
           <shieldTags>
             <li>ShieldsGreekLight</li>
             <li>ShieldsGreek</li>
