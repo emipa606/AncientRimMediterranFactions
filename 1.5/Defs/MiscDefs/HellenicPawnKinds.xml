@@ -222,6 +222,9 @@
       <min>900</min>
       <max>1800</max>
     </apparelMoney>
+	<weaponTags>
+		<li>ClassicalTrader</li>
+	</weaponTags>
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -244,6 +247,9 @@
       <min>1000</min>
       <max>5000</max>
     </apparelMoney>
+	<weaponTags>
+		<li>ClassicalTrader</li>
+	</weaponTags>
     <requiredWorkTags IsNull="True" Inherit="False">
     </requiredWorkTags>
     <!-- No requirements to ensure Caravans always spawn -->

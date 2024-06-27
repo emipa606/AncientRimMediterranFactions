@@ -222,6 +222,9 @@
       <min>900</min>
       <max>1800</max>
     </apparelMoney>
+	<weaponTags>
+		<li>ClassicalTrader</li> <!-- Inherits from the Base -->
+	</weaponTags>
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -253,6 +256,9 @@
       <!-- Roman Senators did not wear laurel wreaths -->
       <li>AR_Toga</li>
     </apparelRequired>
+	<weaponTags>
+		<li>ClassicalTrader</li>
+	</weaponTags>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Legionary</defName>
@@ -596,6 +602,7 @@
       <li>NeolithicHeavy</li>
       <li>NeolithicMeleeHeavy</li>
       <li>NeolithicMeleeAdvanced</li>
+	  <li>ClassicalTrader</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -1247,6 +1254,7 @@
       <li>MedievalHeavy</li>
       <li>HellenicHeavy</li>
       <li>Lance</li>
+	  <li>ClassicalTrader</li>
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
