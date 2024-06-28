@@ -645,6 +645,8 @@
       <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/disallowedMemes</xpath>
       <value>
         <disallowedMemes Inherit="False">
+			<li MayRequire="Ludeon.Rimworld.Ideology">Individualist</li>
+			
 			<!-- Forbidden Mod Memes -->
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
 			<li MayRequire="Zezz.Altrumeme">Altruism</li>
