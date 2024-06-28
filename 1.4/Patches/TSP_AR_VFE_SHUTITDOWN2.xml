@@ -638,6 +638,28 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
+    <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/disallowedMemes</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName="VFEC_WesternRepublic"]/disallowedMemes</xpath>
+      <value>
+        <disallowedMemes Inherit="False">
+			<!-- Forbidden Mod Memes -->
+			<li MayRequire="Qux.factionhippie">PeaceLove</li>
+			<li MayRequire="Zezz.Altrumeme">Altruism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+			<li MayRequire="erdelf.humanoidalienraces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
+		</disallowedMemes>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
     <xpath>/Defs/CultureDef[defName="VFEC_Roman"]/allowedPlaceTags</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
