@@ -128,7 +128,7 @@
                 </countRange>
               </li>
               <li>
-                <choiceChance>45</choiceChance>
+                <choiceChance>50</choiceChance>
                 <thingDef>VFEC_Jerky</thingDef>
                 <countRange>
                   <min>20</min>
@@ -208,6 +208,7 @@
         <!-- <li>NeolithicMelee</li> -->
         <li>NeolithicMeleeBasic</li>
         <li>Knife</li>
+		<li>Dagger</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -227,7 +228,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -242,7 +243,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -261,7 +262,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/apparelTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -297,15 +298,15 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponMoney</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/weaponMoney</xpath>
+      <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicTrader"]/weaponMoney</xpath>
       <value>
         <weaponMoney>
-          <min>115</min>
-          <max>420</max>
+          <min>215</min>
+          <max>1420</max>
         </weaponMoney>
       </value>
     </match>
@@ -313,7 +314,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]/apparelMoney</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -339,7 +340,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicArcher"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -353,7 +354,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="VFEC_RepublicAuxilia"]/weaponTags</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
@@ -575,7 +576,6 @@
 			<!-- Forbidden Mod Memes -->
 			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
-			<li MayRequire="Zezz.Altrumeme">Altruism</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
 			<li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
@@ -583,6 +583,7 @@
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+			<li  MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
 		</disallowedMemes>
       </value>
     </match>
@@ -620,11 +621,9 @@
       <xpath>/Defs/FactionDef[defName="VFEC_EasternRepublic"]/disallowedMemes</xpath>
       <value>
         <disallowedMemes Inherit="False">
-			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<!-- Forbidden Mod Memes -->
-			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
 			<li MayRequire="Zezz.Altrumeme">Altruism</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
@@ -674,4 +673,31 @@
 		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+	
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/requiredMemes</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/requiredMemes</xpath>
+      <value>
+        <requiredMemes Inherit="False">
+			<li MayRequire="ludeon.rimworld.biotech,vanillaexpanded.vmemese">VME_Republic</li>
+		</requiredMemes>
+      </value>
+    </match>
+    <!-- If it DOES NOT, add this instead. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
+      <value>
+        <requiredMemes Inherit="False">
+			<li MayRequire="ludeon.rimworld.biotech,vanillaexpanded.vmemese">VME_Republic</li>
+		</requiredMemes>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>

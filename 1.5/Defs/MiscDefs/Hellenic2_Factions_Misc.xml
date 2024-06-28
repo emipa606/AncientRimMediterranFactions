@@ -25,9 +25,11 @@
 	  <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Emancipation</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
 	  <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+
 	  <!-- Forbidden Mod Memes -->
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
@@ -37,6 +39,7 @@
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
 	  <li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+
 	</disallowedMemes>
 	<disallowedPrecepts>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
@@ -133,7 +136,7 @@
 		<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
-		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		<li MayRequire="Ludeon.Rimworld.Ideology">Individualist</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
 		<!-- Forbidden Mod Memes -->
@@ -144,7 +147,7 @@
 		<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
 		<li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophobia</li>
 	  </disallowedMemes>
-	  <disallowedPrecepts>
+	  <disallowedPrecepts Inherit="False">
 		<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
 		<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
@@ -155,7 +158,6 @@
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
 		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
-		<li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Approved</li>
 		<!-- <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li> -->
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Abhorrent</li>
 		<li MayRequire="martinbaste.Ideo.XenoPrecept">XenoDiversity_Horrible</li>

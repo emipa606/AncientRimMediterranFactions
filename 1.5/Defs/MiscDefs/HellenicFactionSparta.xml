@@ -14,7 +14,7 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>false</canSiege>
+    <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Archagetai</leaderTitle>
     <factionIconPath>Icon/Lambda</factionIconPath>
@@ -61,7 +61,7 @@
     </backstoryFilters>
     <allowedCultures Inherit="False">
       <li>Hellian</li>
-      <li>Hellenes</li>
+	  <li>Hellenes</li>
     </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_WarMerchant</li>
@@ -103,9 +103,9 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
       <!-- Forbidden Mod Memes -->
-      <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+	  <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
       <li MayRequire="Zezz.Altrumeme">Altruism</li>
@@ -221,13 +221,13 @@
       <li>AR_General</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
-    <modExtensions>
-      <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-          <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
-    </modExtensions>
+	<modExtensions>
+        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
+	</modExtensions>
     <!-- Madness? -->
     <!-- THIS -->
     <!-- IS -->

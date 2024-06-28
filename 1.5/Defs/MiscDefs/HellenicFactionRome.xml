@@ -18,10 +18,10 @@
     <leaderTitle>imperator</leaderTitle>
     <factionIconPath>Icon/Lupa</factionIconPath>
     <colorSpectrum>
-      <li>(249,241,222)</li>
-      <li>(255,235,122)</li>
-      <li>(180,173,150)</li>
-      <li>(183,122,61)</li>
+		<li>(249,241,222)</li>
+		<li>(255,235,122)</li>
+		<li>(180,173,150)</li>
+		<li>(183,122,61)</li>
     </colorSpectrum>
     <factionNameMaker>NamerFactionRome</factionNameMaker>
     <settlementNameMaker>NamerSettlementRome</settlementNameMaker>
@@ -91,7 +91,7 @@
     </requiredMemes>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
       <!-- Forbidden Mod Memes -->
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
@@ -226,11 +226,11 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
-          <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
+        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <fixedLeaderKinds Inherit="False">

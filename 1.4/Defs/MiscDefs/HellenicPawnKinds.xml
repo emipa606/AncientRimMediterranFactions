@@ -602,7 +602,8 @@
       <li>NeolithicHeavy</li>
       <li>NeolithicMeleeHeavy</li>
       <li>NeolithicMeleeAdvanced</li>
-	  <li>ClassicalTrader</li>
+	  <li>ClassicalAdvanced</li>
+	  <li>Praetorian</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -681,6 +682,7 @@
       <li>HellenicHeavy</li>
       <li>LongSword</li>
       <li>Lance</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -758,6 +760,7 @@
     <weaponTags>
       <!-- <li>RomeSoldier</li> -->
       <li>LongSword</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -857,6 +860,7 @@
       <li>NeolithicMeleeAdvanced</li>
       <li>LongSword</li>
       <li>Lance</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
+
 <Defs>
   <!-- Hellenes -->
   <RulePackDef>
@@ -12,6 +13,7 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
+
   <RulePackDef>
     <defName>TP_NamerSettlementHellenic</defName>
     <rulePack>
@@ -23,6 +25,7 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
+
   <RulePackDef>
     <defName>TP_NamerPersonHellenUtility</defName>
     <rulePack>
@@ -35,6 +38,7 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
+
   <RulePackDef>
     <defName>TP_NamerPersonHellen</defName>
     <include>
@@ -48,6 +52,7 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+
   <RulePackDef>
     <defName>TP_NamerPersonHellenFemale</defName>
     <include>
@@ -60,4 +65,5 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+
 </Defs>

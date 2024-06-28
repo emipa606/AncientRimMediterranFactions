@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/FactionDef[defName="VFEC_CentralRepublic"]</xpath>
+		<xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/allowedCultures</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>

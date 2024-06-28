@@ -42,7 +42,7 @@
     </startingResearchTags>
     <allowedCultures>
       <li>Hellian</li>
-      <li>Hellenes</li>
+	  <li>Hellenes</li>
     </allowedCultures>
     <apparelStuffFilter>
       <thingDefs Inherit="False">
@@ -50,6 +50,7 @@
         <li>Leather_Pig</li>
         <li>AR_Bronze</li>
         <li>Leather_Patch</li>
+		<li MayRequire="TSP.Isengriff.Storytime">Leather_Jeub</li>
         <!-- <li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li> -->
       </thingDefs>
       <disallowedThingDefs>
