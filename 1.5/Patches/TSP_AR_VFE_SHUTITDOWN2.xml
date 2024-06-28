@@ -689,7 +689,7 @@
       </value>
     </match>
     <!-- If it DOES NOT, add this instead. -->
-    <match Class="PatchOperationAdd">
+    <nomatch Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]</xpath>
       <value>
@@ -697,7 +697,7 @@
 			<li MayRequire="ludeon.rimworld.biotech,vanillaexpanded.vmemese">VME_Republic</li>
 		</requiredMemes>
       </value>
-    </match>
+    </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
 </Patch>
