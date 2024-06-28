@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--macedonia-->
-  <FactionDef ParentName="FactionBase">
+  <FactionDef ParentName="HellenesBase">
     <defName>AR_Faction_Macedonia</defName>
     <label>Lost Macedonian Diadochus</label>
     <description>Over five thousand years ago, in Old Earth's classical antiquity, Alexander the Great conquered one of the largest contiguous, land-based empires in human history, stretching from his Greek homeland, to Egypt, and all the way to the Indus River. This unification was the start of interactions between what would become Greece (then Rome) and Persia. Upon his death, with no declared heir, Alexander's family and loyal generals met and agreed to the Partition of Babylon, which divided the spoils of his empire agmonst the Diadochis (literally, ''successors''). The Partition ultimately failed, and the Diadochis went to war with each other until only three stood: one in Macedonia, one in Persia, and one under the Ptomeley Pharaohs of Egypt. \n \n Somehow, even after five thousand years, the heirs of those divided satrapies continue to exist in the fringes of human civilization, unspoiled by the technology of Core Worlds and Glitter Worlds, and unconquered by the mysterious Roman and Greek remnants on the planet. This Rim World is home to one such Lost Diadochus' satrapy. \n No one has any idea how generals and Macedonians from classical antiquity arrived here, but the society they maintain continues to mirror the civilization that Alexander built, in both cosmopolitan culture and warlike mindsets. \n \n This also means that it mirrors Alexander's ambition. \n \n The Diadochus of this Rim World, having united the Macedonian satrapies' bases under his rule, now seeks to revive Alexander the Great's legacy on a new globe. No alliances will be made and no peace brokered, for this Diadochus will seek to do what even Alexander the Great could not: conquer the world.</description>
@@ -71,6 +71,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
       <!-- Forbidden Mod Memes -->
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
@@ -107,10 +108,10 @@
         <kindDef>Peaceful</kindDef>
         <options>
           <AR_Citizen>50</AR_Citizen>
-          <AR_HopliteMakedon>20</AR_HopliteMakedon>
-          <AR_Peltast>100</AR_Peltast>
-          <AR_Toxotes>100</AR_Toxotes>
-          <AR_Psilos>100</AR_Psilos>
+          <AR_HopliteMakedon>100</AR_HopliteMakedon>
+          <AR_Peltast>50</AR_Peltast>
+          <AR_Toxotes>50</AR_Toxotes>
+          <AR_Psilos>50</AR_Psilos>
           <AR_Preatorian>30</AR_Preatorian>
           <AR_General>15</AR_General>
           <TSP_AR_CitizenGirl>20</TSP_AR_CitizenGirl>
@@ -175,15 +176,14 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
-        <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
-          <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
+        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <fixedLeaderKinds>
+    <fixedLeaderKinds Inherit="False">
       <li>AR_General</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
