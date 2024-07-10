@@ -211,9 +211,11 @@
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
+	<!--
     <requiredWorkTags Inherit="False">
       <li>Social</li>
     </requiredWorkTags>
+	-->
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
