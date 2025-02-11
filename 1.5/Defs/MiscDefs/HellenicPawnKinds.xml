@@ -1453,6 +1453,7 @@
     </weaponMoney>
     <weaponTags>
       <li>Slinger</li>
+	  <li>K4GRock</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
