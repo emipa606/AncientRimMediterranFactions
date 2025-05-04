@@ -21,7 +21,6 @@
 				<li>place_community->forum</li>
 				<li>place_community->legion</li>
 				<li>place_community->assembly</li>
-				<li>place_community->citizenry</li>
 				<li>place_job->plebian</li>
 				<li>place_job->legionnaire</li>
 				<li>place_job->colonus</li>
@@ -34,7 +33,7 @@
 				<li>place_job->philosopher</li>
 				<li>place_job->vineyard owner</li>
 				<li>place_job->olive plantation owner</li>
-				<li>place_job->taskmaster</li>
+				<li>place_job->slave</li>
 				<li>place_job->olive oil salesman</li>
 				<li>place_job->sailor</li>
 				<li>place_job->soldier</li>
@@ -42,20 +41,15 @@
 				<li>place_job->senator</li>
 				<li>place_job->hoplite soldier</li>
 				<li>place_job->pikeman</li>
-				<li>place_job->gladiator</li>
-				<li>place_job->legatus</li>
-				<li>place_job->centurion</li>
-				<li>place_job->tax collector</li>
 				<li>place_powerCenter->Platonic Academy</li>
 				<li>place_powerCenter->governor's mansion</li>
 				<li>place_powerCenter->colesseum</li>
 				<li>place_powerCenter->philosophy school</li>
 				<li>place_powerCenter->great forum</li>
-				<li>place_powerCenter->latifunda</li>
 				<li>place_massWeapon->a slave rebellion</li>
-				<li>place_massWeapon->many legions</li>
+				<li>place_massWeapon->many traitorous legions</li>
 				<li>place_massWeapon->many mercenaries</li>
-				<li>place_massWeapon->many Foederatis</li>
+				<li>place_massWeapon->many rogue senators</li>
 				<li>place_massWeapon->the Praetorian Guard</li>
 				<li>place_personalWeapon->lance</li>
 				<li>place_personalWeapon->spatha</li>
@@ -64,14 +58,11 @@
 				<li>place_personalWeapon->gastraphates</li>
 				<li>place_foeLeader->barbarian chief</li>
 				<li>place_foeLeader->revolting general</li>
-				<li>place_foeLeader->rogue senator</li>
-				<li>place_foeLeader->Praetorian Guard captain</li>
 				<li>place_foeSoldiers->barbarian mercenaries</li>
 				<li>place_foeSoldiers->many traitorous legions</li>
 				<li>place_foeSoldiers->tribal allies</li>
 				<li>place_foeSoldiers->sellswords</li>
 				<li>place_foeSoldiers->revolting plebians</li>
-				<li>place_foeSoldiers->Praetorian Guardsmen</li>
 			</rulesStrings>
 		</placeRules>
 	</PlaceDef>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--imperium romanum-->
-  <FactionDef ParentName="FactionBase">
+  <FactionDef ParentName="HellenesBase">
     <defName>AR_Faction_Rome</defName>
     <label>Rome</label>
-    <description>This particular Faction appears to be an exact mirror image of Old Earth's ancient Roman Empire, which is over five thousand years old and technically lasted for another thousand years after it was divided. The Romans of Old Earth built one of the largest, longest lasting, and technologically advanced civilizations in Old Earth's classical antiquity, whose legacy has lasted for the rest of human history and continues to impact the language, culture, and societal structure of most of the myriad human civilizations that exist even now. \n These people claim to have lived here for millennia, something that even the tribesmen on this Rim World have attested to, and no one is sure how they got here or how they managed to preserve the traditions of classical antiquity for this long. \n \n Then, as now, these far-flung Romans think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with ancient weapons like swords and spears. Do not disregard the threat of this civilization, however: their soldiers are more powerful than they look, wield shields that deflect any melee weapon to this day, and in large numbers, they can still destroy an entire colony in a day.</description>
+    <description>This particular Faction appears to be an exact mirror image of Old Earth's ancient Roman Empire, which is now over five thousand years old. Its original incarnation was divided in 395 AD and its western half died in less than a century after that, but Rome technically lasted for another thousand years, finally being ended in 1453 AD. The Romans of Old Earth built one of the largest, longest lasting, and technologically advanced civilizations in Old Earth's classical antiquity, whose legacy has lasted for the rest of human history and continues to impact the language, culture, and societal structure of most of the myriad of human civilizations that exist even now. \n How did an identical, Bronze Age, Roman society form eons after the real deal died? These people claim to have lived here for millennia, something that even the tribesmen on this Rim World have attested to, and no one is sure how they got here or how they managed to preserve the traditions of classical antiquity for this long. \n \n Then, as now, these far-flung Romans think to be the first and only true civilization on this world and believe to be committed to bring their civilization to other people. Normally they're working with simple mechanical tools and fight with ancient weapons like swords and spears. Do not disregard the threat of this civilization, however: their soldiers are more powerful than they look, wield shields that deflect any melee weapon to this day, and in large numbers, they can still destroy an entire colony in a day.</description>
     <categoryTag>Tribal</categoryTag>
     <pawnsPlural>Romans</pawnsPlural>
     <pawnSingular>Roman</pawnSingular>
@@ -18,9 +18,10 @@
     <leaderTitle>imperator</leaderTitle>
     <factionIconPath>Icon/Lupa</factionIconPath>
     <colorSpectrum>
-      <li>(255,235,122)</li>
-      <li>(180,173,150)</li>
-      <li>(183,122,61)</li>
+		<li>(249,241,222)</li>
+		<li>(255,235,122)</li>
+		<li>(180,173,150)</li>
+		<li>(183,122,61)</li>
     </colorSpectrum>
     <factionNameMaker>NamerFactionRome</factionNameMaker>
     <settlementNameMaker>NamerSettlementRome</settlementNameMaker>
@@ -51,8 +52,8 @@
         <commonality>0.1</commonality>
       </li>
     </backstoryFilters>
-    <geneticVariance>0.4</geneticVariance>
-    <allowedCultures>
+    <!-- <geneticVariance>0.4</geneticVariance> -->
+    <allowedCultures Inherit="False">
       <li>Romulus</li>
     </allowedCultures>
     <caravanTraderKinds>
@@ -63,7 +64,6 @@
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
-      <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
@@ -86,15 +86,12 @@
       <li MayRequire="Ludeon.Rimworld.Ideology">Supremacist</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
       <!-- If you have the Mod -->
-      <li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li>
+      <!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li> -->
       <li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
     </requiredMemes>
     <disallowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+	  <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
       <!-- Forbidden Mod Memes -->
       <li MayRequire="llunak.MorePrecepts">Pacifism</li>
       <li MayRequire="Qux.factionhippie">PeaceLove</li>
@@ -102,22 +99,12 @@
       <li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
       <li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
       <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
-      <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
+      <li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
       <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
     </disallowedMemes>
     <disallowedPrecepts>
-      <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Respected</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Exalted</li>
@@ -239,15 +226,14 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
-        <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
-          <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
+        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-    <fixedLeaderKinds>
+    <fixedLeaderKinds Inherit="False">
       <li>TSP_AR_Roman_Emperor</li>
     </fixedLeaderKinds>
     <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>

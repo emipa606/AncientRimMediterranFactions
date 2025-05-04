@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--hellada-->
-  <FactionDef ParentName="FactionBase">
+  <FactionDef ParentName="HellenesBase">
     <defName>AR_Faction_Hellas</defName>
     <label>Hellada city-states</label>
     <description>Clearly mirrored from Old Earth's classical antiquity, this Faction appears to emulate the decentralized connection of the Old Earth's Greek city-states prior to the conquest by Rome, particularly those like Athens. These Greeks think to be the perfect civilization on this Rim World and believe to be committed to bring their civilization to other people. \n They thrive on lively debate, granting significant political freedom to their Pawns, and open their doors to tradesmen every day at sunrise. Known for their decadence as much as their mastery of the arts, culture, and political sciences, these people claim to have lived here for millennia. Even the tribesmen admit that they were here long before them. No one is sure how they got here or how they managed to preserve the traditions of classical antiquity for this long. Moreover, Old Earth's Hellenic city-states fell to the far more advanced society of the Roman Republic (later an Empire), something that the Romans in this part of the Rim have failed to do. \n \n These Greeks approach the rest of this Rim World the same as the more honorable tribesmen do, and in a way starkly resembling their Old Earth forefathers. Despite their obvious technological weakness, this Faction can be a valuable friend because of their skill with low-tech warfare, their numbers, and their wealth. They pursue a gentle way of life where they can, spending their days arguing, philosophizing, and drinking. They are open to trade and alliances, even with strange peoples.</description>
@@ -46,22 +46,19 @@
       </li>
     </backstoryFilters>
     <geneticVariance>0.8</geneticVariance>
-    <allowedCultures>
+    <allowedCultures Inherit="False">
       <li>Hellian</li>
-      <li MayRequire="oskarpotocki.vfe.classical">VFEC_Roman</li>
     </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Neolithic_BulkGoods</li>
       <li>Caravan_Neolithic_WarMerchant</li>
       <li>Caravan_Neolithic_Slaver</li>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Caravan_Medieval_WineMerchant</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
       <li>Visitor_Neolithic_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
       <li>Base_Neolithic_Standard</li>
-      <li MayRequire="sasha.legionaryequipment">Base_Roman_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>
       <min>-5</min>
@@ -80,7 +77,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
       <!-- If you have the Mod -->
       <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
-      <li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li>
+      <!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li> -->
       <li MayRequire="VanillaExpanded.VMemesE">VME_PartyLife</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Trader</li>
     </requiredMemes>
@@ -98,20 +95,9 @@
       <li MayRequire="FalloutRedScare.FalloutRedScare">FRS_Structure_Socialist</li>
       <li MayRequire="SZ.TW.New.GuoHun">SZ_Structure_CultureQiYuan</li>
       <li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Corporate</li>
+	  <li MayRequire="erdelf.HumanoidAlienRaces,ludeon.rimworld.ideology">HAR_Xenophobia</li>
     </disallowedMemes>
     <disallowedPrecepts>
-      <li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-      <!-- For some reason, the game eliminates the entire Slavery Precept when generating Greek city-states if this line is included -->
-      <!-- <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li> -->
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
-      <li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Prohibited</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOnly</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_MedicalOrSocial</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Abhorrent</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Horrible</li>
       <li MayRequire="Ludeon.Rimworld.Ideology">IdeoDiversity_Standard</li>
@@ -202,18 +188,17 @@
       </li>
     </pawnGroupMakers>
     <modExtensions>
-      <li Class="KCSG.FactionSettlement" MayRequire="oskarpotocki.vfe.classical">
-        <useStructureLayout MayRequire="oskarpotocki.vfe.classical">True</useStructureLayout>
-        <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical">
-          <li MayRequire="oskarpotocki.vfe.classical">VFEC_ClassicalSettlement1</li>
-        </chooseFromlayouts>
-      </li>
+        <li Class="KCSG.CustomGenOption" MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+          <chooseFromlayouts MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vfe.classical,oskarpotocki.vanillafactionsexpanded.core">VFEC_ClassicalSettlement1</li>
+          </chooseFromlayouts>
+        </li>
     </modExtensions>
     <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <fixedLeaderKinds>
       <li>AR_Councilman</li>
       <li MayRequire="oskarpotocki.fge.classical">VFEC_RepublicSenator</li>
     </fixedLeaderKinds>
-    <settlementTexturePath>Icon/FactionBase/ClassicalAntiquityFactionBase</settlementTexturePath>
+    <settlementTexturePath>World/WorldObjects/Expanding/HellenicSettlement</settlementTexturePath>
   </FactionDef>
 </Defs>

@@ -17,6 +17,8 @@
         </categoriesChildhood>
       </li>
     </backstoryFiltersOverride>
+	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <apparelTags>
       <li>RomeCivil</li>
     </apparelTags>
@@ -79,6 +81,7 @@
     <isFighter>false</isFighter>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>5~14</initialResistanceRange>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
       <li MayRequire="savius.classical.flavour">
         <categoriesAdulthood>
@@ -135,6 +138,7 @@
     <canBeSapper>true</canBeSapper>
     <initialWillRange>1~3</initialWillRange>
     <initialResistanceRange>1~7</initialResistanceRange>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
       <li MayRequire="savius.classical.flavour">
         <categoriesAdulthood>
@@ -143,7 +147,6 @@
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
-      <li>Intellectual</li>
       <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
@@ -178,11 +181,11 @@
     <invNutrition>3</invNutrition>
     <apparelTags>
       <li>RomeCivil</li>
-      <!-- <li>Cape</li> -->
+      <!-- <li MayRequire="ludeon.rimworld.royalty">Cape</li> -->
       <!-- Doesn't need the tag because it's already covered below. This will stop two capes from spawning on one Pawn. -->
     </apparelTags>
     <apparelRequired>
-      <li>Apparel_Cape</li>
+      <li MayRequire="ludeon.rimworld.royalty">Apparel_Cape</li>
       <!-- Closest thing to the stola, which was the woman's equivalent of a toga -->
       <li>AR_Tunic</li>
     </apparelRequired>
@@ -196,6 +199,8 @@
     <maxGenerationAge>100</maxGenerationAge>
     <factionLeader>true</factionLeader>
     <isFighter>false</isFighter>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<favoriteColor>(99,3,48)</favoriteColor>
     <!-- <fixedGender>Male</fixedGender> -->
     <!-- They may complain about wearing a men's garment, and this is intended, but Senators on the Rim shouldn't neccessarily be all male -->
     <backstoryFiltersOverride>
@@ -206,10 +211,11 @@
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
-    <requiredWorkTags>
-      <li>Intellectual</li>
+	<!--
+    <requiredWorkTags Inherit="False">
       <li>Social</li>
     </requiredWorkTags>
+	-->
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
@@ -218,6 +224,9 @@
       <min>900</min>
       <max>1800</max>
     </apparelMoney>
+	<weaponTags>
+		<li>ClassicalTrader</li> <!-- Inherits from the Base -->
+	</weaponTags>
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -231,6 +240,7 @@
     <defName>AR_Trader</defName>
     <label>mercator</label>
     <trader>true</trader>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <gearHealthRange>
       <min>1.0</min>
       <max>3.0</max>
@@ -239,6 +249,7 @@
       <min>1000</min>
       <max>5000</max>
     </apparelMoney>
+    <requiredWorkTags IsNull="True" Inherit="False"></requiredWorkTags> <!-- No requirements to ensure Caravans always spawn -->
     <apparelTags>
       <li>RomeCivil</li>
       <li>RomeNoble</li>
@@ -247,6 +258,9 @@
       <!-- Roman Senators did not wear laurel wreaths -->
       <li>AR_Toga</li>
     </apparelRequired>
+	<weaponTags>
+		<li>ClassicalTrader</li>
+	</weaponTags>
   </PawnKindDef>
   <PawnKindDef ParentName="PawnRomeBase">
     <defName>AR_Legionary</defName>
@@ -256,7 +270,7 @@
     <canBeSapper>true</canBeSapper>
     <combatPower>60</combatPower>
     <maxGenerationAge>45</maxGenerationAge>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood>
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -300,12 +314,12 @@
       <!-- <li>AR_Galea</li> -->
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>200</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -357,12 +371,12 @@
     <apparelRequired>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>200</min>
           <max>4000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -473,12 +487,12 @@
       <li>AR_LoricaHamata</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1850</min>
           <max>3000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -541,12 +555,12 @@
       <!-- Pauldimentum -->
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>200</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -561,7 +575,8 @@
     <itemQuality>Excellent</itemQuality>
     <maxGenerationAge>50</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+	<favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <!-- <li>TribalHunter</li> -->
@@ -589,6 +604,8 @@
       <li>NeolithicHeavy</li>
       <li>NeolithicMeleeHeavy</li>
       <li>NeolithicMeleeAdvanced</li>
+	  <li>ClassicalAdvanced</li>
+	  <li>Praetorian</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -616,12 +633,12 @@
       <li>AR_LoricaMusculataR</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>200</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -638,7 +655,8 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride>
+	<favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialFighter</li>
@@ -666,6 +684,7 @@
       <li>HellenicHeavy</li>
       <li>LongSword</li>
       <li>Lance</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -693,12 +712,12 @@
       <li>AR_LoricaMusculataG</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>200</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreek</li>
           <li>ShieldsGreekHeavy</li>
         </shieldTags>
@@ -716,7 +735,8 @@
     <minGenerationAge>30</minGenerationAge>
     <maxGenerationAge>65</maxGenerationAge>
     <factionLeader>true</factionLeader>
-    <backstoryFiltersOverride MayRequire="shavius.classical.flavour">
+	<favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryFiltersOverride Inherit="False" MayRequire="shavius.classical.flavour">
       <li MayRequire="shavius.classical.flavour">
         <categoriesAdulthood MayRequire="shavius.classical.flavour">
           <li MayRequire="shavius.classical.flavour">ClassicalLegion</li>
@@ -725,7 +745,6 @@
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
-      <li>Social</li>
     </requiredWorkTags>
     <gearHealthRange>
       <min>2.8</min>
@@ -743,6 +762,7 @@
     <weaponTags>
       <!-- <li>RomeSoldier</li> -->
       <li>LongSword</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -776,12 +796,12 @@
       <li>AR_LoricaMusculataR</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>2000</min>
           <max>4000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -793,18 +813,23 @@
     <labelFemale>Imperatrix</labelFemale>
     <race>Human</race>
     <fixedGender>Male</fixedGender>
-    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
-    <backstoryFiltersOverride>
+	<favoriteColor>(99,3,48)</favoriteColor>
+    <backstoryCryptosleepCommonality>0.31</backstoryCryptosleepCommonality>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="False">
       <li>
         <categoriesAdulthood>
           <li>ImperialRoyal</li>
           <li>ImperialFighter</li>
+		  <li>TribalHunter</li>
+		  <li>Hunter</li>
         </categoriesAdulthood>
       </li>
     </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Social</li>
+	  <!-- <li>Intellectual</li> -->
     </requiredWorkTags>
     <combatPower>100</combatPower>
     <itemQuality>Legendary</itemQuality>
@@ -837,6 +862,7 @@
       <li>NeolithicMeleeAdvanced</li>
       <li>LongSword</li>
       <li>Lance</li>
+	  <li>ClassicalAdvanced</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -909,12 +935,12 @@
 			-->
     </specificApparelRequirements>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>5000</min>
           <max>10000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsRomeLegion</li>
         </shieldTags>
       </li>
@@ -960,12 +986,12 @@
       <li>HellenicSoldier</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreek</li>
         </shieldTags>
       </li>
@@ -1008,12 +1034,12 @@
       <li>HellenicSoldier</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreek</li>
         </shieldTags>
       </li>
@@ -1055,12 +1081,12 @@
       <li>HellenicHeavy</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreek</li>
           <li>ShieldsGreekHeavy</li>
         </shieldTags>
@@ -1116,12 +1142,12 @@
       <li>HellenicHeavy</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekMacedon</li>
         </shieldTags>
       </li>
@@ -1166,12 +1192,12 @@
       <li>Macedon</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>2000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekMacedon</li>
         </shieldTags>
       </li>
@@ -1189,7 +1215,8 @@
     <maxGenerationAge>40</maxGenerationAge>
     <isFighter>true</isFighter>
     <canBeSapper>true</canBeSapper>
-    <backstoryFiltersOverride>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="False">
       <!--
       <li>
         <categoriesChildhood>
@@ -1233,6 +1260,7 @@
       <li>MedievalHeavy</li>
       <li>HellenicHeavy</li>
       <li>Lance</li>
+	  <li>ClassicalTrader</li>
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
@@ -1255,12 +1283,12 @@
       <li>AR_Chalmys</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>10000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekSparta</li>
         </shieldTags>
       </li>
@@ -1320,6 +1348,7 @@
     <weaponTags>
       <li>Revolver</li>
       <li>SimpleGun</li>
+	  <li>OrientalHandCannon</li> <!-- From the T Samurai Mod, it's a hand mortar and very fitting -->
     </weaponTags>
     <invFoodDef Inherit="False">AR_FryedMeat</invFoodDef>
     <techHediffsMoney>
@@ -1345,12 +1374,12 @@
       <li>AR_Chalmys</li>
     </apparelRequired>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>10000</min>
           <max>20000</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekSparta</li>
         </shieldTags>
       </li>
@@ -1393,12 +1422,12 @@
       <li>Hellenic</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>500</min>
           <max>1500</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekLight</li>
         </shieldTags>
       </li>
@@ -1440,12 +1469,12 @@
       <li>Hellenic</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
-        <shieldMoney>
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>0</min>
-          <max>500</max>
+          <max>400</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekLight</li>
         </shieldTags>
       </li>
@@ -1504,13 +1533,13 @@
       <li>Toxotes</li>
     </apparelTags>
     <modExtensions>
-      <li Class="PawnShields.ShieldPawnGeneratorProperties">
+      <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
         <!-- Shields were integral to this -->
-        <shieldMoney>
+        <shieldMoney MayRequire="jecrell.jecstools">
           <min>1000</min>
           <max>1500</max>
         </shieldMoney>
-        <shieldTags>
+        <shieldTags MayRequire="jecrell.jecstools">
           <li>ShieldsGreekLight</li>
         </shieldTags>
       </li>

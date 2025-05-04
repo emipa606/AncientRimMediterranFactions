@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
+
     <PawnKindDef ParentName="BasePlayerPawnKind">
         <defName>Hellen</defName>
-        <label>Hellen</label>
+        <label>hellen</label>
         <race>Human</race>
         <defaultFactionType>PlayerHellenes</defaultFactionType>
-        <chemicalAddictionChance>0.085</chemicalAddictionChance>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <apparelTags>
             <li>Neolithic</li>
-			<li>Tribal</li>
         </apparelTags>
-		<weaponTags>
-			<li>Lance</li>
-			<li>Axe</li>
-			<li>K4GRock</li>
-			<li>BowMen</li>
-		</weaponTags>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelMoney>
             <min>500</min>
-            <max>1000</max>
+            <max>1200</max>
         </apparelMoney>
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <techHediffsMoney>
             <min>50</min>
-            <max>350</max>
+            <max>50</max>
         </techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
         <techHediffsChance>0.02</techHediffsChance>
-        <initialResistanceRange>1~4</initialResistanceRange>
+        <initialResistanceRange>9~15</initialResistanceRange>
     </PawnKindDef>
+
 </Defs>

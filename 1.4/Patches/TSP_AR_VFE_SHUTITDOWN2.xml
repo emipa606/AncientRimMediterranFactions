@@ -282,12 +282,12 @@
       <success>Always</success>
       <xpath>/Defs/PawnKindDef[defName="VFEC_TownGuard"]</xpath>
       <value>
-        <li Class="AR_PawnShields.ShieldPawnGeneratorProperties">
-          <shieldMoney>
+        <li Class="PawnShields.ShieldPawnGeneratorProperties" MayRequire="jecrell.jecstools">
+          <shieldMoney MayRequire="jecrell.jecstools">
             <min>200</min>
             <max>600</max>
           </shieldMoney>
-          <shieldTags>
+          <shieldTags  MayRequire="jecrell.jecstools">
             <li>ShieldsGreekLight</li>
             <li>ShieldsGreek</li>
           </shieldTags>
@@ -646,6 +646,7 @@
       <value>
         <disallowedMemes Inherit="False">
 			<li MayRequire="Ludeon.Rimworld.Ideology">Individualist</li>
+			
 			<!-- Forbidden Mod Memes -->
 			<li MayRequire="Qux.factionhippie">PeaceLove</li>
 			<li MayRequire="Zezz.Altrumeme">Altruism</li>

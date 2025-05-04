@@ -15,6 +15,10 @@
       <li>RomePlayer</li>
       <li>Hellenic</li>
     </apparelTags>
+	<weaponTags>
+		<li>Toolagri</li>
+		<li>K4GRock</li>
+	</weaponTags>
     <apparelRequired>
       <li>AR_Tunic</li>
     </apparelRequired>
