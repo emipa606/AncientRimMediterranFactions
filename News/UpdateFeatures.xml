@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="AncientRimMediterranFactions_UpdateFeatureBase">
+		<modNameReadable>AncientRimMediterranFactions</modNameReadable>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2458185861</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="AncientRimMediterranFactions_UpdateFeatureBase">
+		<defName>AncientRimMediterranFactions_1_5_1</defName>
+		<assemblyVersion>1.5.1</assemblyVersion>
+		<content>This mod will not be further updated, please use Ancient Rim Mods (Continued) (TSP) by TurtleShroom instead.</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
+
